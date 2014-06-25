@@ -1,5 +1,5 @@
 # koa-test [![NPM version][npmjs-img]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
-> koa-test
+> tosck desc
 
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
@@ -11,12 +11,12 @@ $ npm install koa-test
 
 
 ## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
-+ **koa-test** [gittip][author-gittip] [github][author-github] [twitter][author-twitter] [npmjs][author-npmjs] [website][author-website]
++ **Charlike Mike Reagent  @ ** [gittip][author-gittip] - [github][author-github] - [twitter][author-twitter] - [npmjs][author-npmjs] - [website][author-website]
 
 
-## License [![koa-test license][license-img]][license-url]
-Copyright (c) 2014 [koa-test][author-website], contributors.  
-Released under the [`koa-test`][license-url] license.
+## License [![MIT license][license-img]][license-url]
+Copyright (c) 2014 [tosckjs][author-website], contributors.  
+Released under the [`MIT`][license-url] license.
 
 ***
 _Project generated with `Metalify` June 25, 2014._
@@ -26,24 +26,23 @@ _Project generated with `Metalify` June 25, 2014._
 [npmjs-img]: http://img.shields.io/npm/v/koa-test.svg
 [npmjs-install]: https://nodei.co/npm/koa-test.png?mini=true
 
-[license-url]: https://github.com/koa-test/blob/master/license.md
-[license-img]: http://img.shields.io/badge/license-koa-test-blue.svg
+[license-url]: https://github.com/tosckjs/koa-test/blob/master/license.md
+[license-img]: http://img.shields.io/badge/license-MIT-blue.svg
 
-[travis-url]: https://travis-ci.org/koa-test
-[travis-img]: https://travis-ci.org/koa-test.png?branch=master
+[travis-url]: https://travis-ci.org/tosckjs/koa-test
+[travis-img]: https://travis-ci.org/tosckjs/koa-test.png?branch=master
 
-[depstat-url]: https://david-dm.org/koa-test
-[depstat-img]: https://david-dm.org/koa-test.png
+[depstat-url]: https://david-dm.org/tosckjs/koa-test
+[depstat-img]: https://david-dm.org/tosckjs/koa-test.png
 
-[author-gittip-img]: http://img.shields.io/gittip/koa-test.svg
-[author-gittip]: https://www.gittip.com/koa-test
-[author-github]: https://github.com/koa-test
-[author-twitter]: https://twitter.com/koa-test
+[author-gittip-img]: http://img.shields.io/gittip/tosckjs.svg
+[author-gittip]: https://www.gittip.com/tosckjs
+[author-github]: https://github.com/tosckjs
+[author-twitter]: https://twitter.com/tosckjs
 
-[author-website]: koa-test
-[author-npmjs]: https://npmjs.org/~koa-test
+[author-website]: tosck.com
+[author-npmjs]: https://npmjs.org/~tunnckocore
 
-***
 
 ***
 
