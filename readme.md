@@ -22,9 +22,9 @@ $ npm install fn-methodify
 + [npmjs/tunnckocore][author-npmjs]
 
 
-## License
-Copyright (c) 2014 Jon Schlinkert, contributors.  
-Released under the MIT license
+## License [![MIT license][license-img]][license-url]
+Copyright (c) 2014 [Charlike Mike Reagent][author-website], contributors.  
+Released under the [`MIT`][license-url] license
 
 ***
 
