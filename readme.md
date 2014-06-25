@@ -1,11 +1,11 @@
 # koa-better-body [![NPM version][npmjs-img]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
 
-> A full-feature koa body parser middleware. Support multipart, urlencoded and json request bodies. Provides same functionality as Express&#x27;s bodyParser - multer. And all that is wrapped only around co-body and formidable
+> A full-feature [`koa`](https://github.com/koajs/koa) body parser middleware. Support `multipart`, `urlencoded` and `json` request bodies. Provides same functionality as Express's bodyParser - [`multer`](https://github.com/expressjs/multer). And all that is wrapped only around
+[`co-body`](https://github.com/visionmedia/co-body) and [`formidable`](https://felixge/node-formidable).
 
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
-
-> Install with [npm](https://npm.im)
+> Install [`npmjs/koa-better-body`](http://npm.im/koa-better-body) with [npm](https://npm.im)
 
 ```bash
 $ npm install koa-better-body
