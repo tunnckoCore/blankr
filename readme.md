@@ -24,10 +24,11 @@ $ npm install fn-methodify
 
 ## License [![MIT license][license-img]][license-url]
 Copyright (c) 2014 [Charlike Mike Reagent][author-website], contributors.
+
 Released under the [`MIT`][license-url] license.
 
-
 ***
+
 
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore
