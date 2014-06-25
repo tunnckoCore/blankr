@@ -24,7 +24,6 @@ $ npm install fn-methodify
 
 ## License [![MIT license][license-img]][license-url]
 Copyright (c) 2014 [Charlike Mike Reagent][author-website], contributors.
-
 Released under the [`MIT`][license-url] license.
 
 ***
