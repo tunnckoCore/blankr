@@ -11,7 +11,7 @@ $ npm install koa-test
 
 
 ## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
-+ **Charlike Mike Reagent  @ ** [gittip][author-gittip] - [github][author-github] - [twitter][author-twitter] - [npmjs][author-npmjs] - [website][author-website]
++ **Charlike Mike Reagent** **~** [gittip][author-gittip] - [github][author-github] - [twitter][author-twitter] - [npmjs][author-npmjs] - [website][author-website]
 
 
 ## License [![MIT license][license-img]][license-url]
