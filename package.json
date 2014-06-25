@@ -1,0 +1,36 @@
+{
+  "name": "fn-methodify",
+  "version": "0.0.0",
+  "description": "Take function and make it behaves as a method of class or object.",
+  "main": "index.js",
+  "scripts": {
+    "start": "make start",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tunnckoCore/fn-methodify.git"
+  },
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {},
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/tunnckoCore/fn-methodify/license.md",
+  }],
+  "author": {
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  },
+  "maintainers": [{
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  }],
+  "contributors": [{
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  }],
+}
