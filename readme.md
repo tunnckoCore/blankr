@@ -20,6 +20,10 @@ $ npm install koa-better-body
 + [npmjs/tunnckoCore][author-npmjs]
 
 
+## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
++ **Charlike Mike Reagent** ~ [gittip][author-gittip] - [github][author-github] - [twitter][author-twitter] - [npmjs][author-npmjs] - [website][author-website]
+
+
 ## License [![MIT license][license-img]][license-url]
 Copyright (c) 2014 [Charlike Mike Reagent][author-website], contributors.  
 Released under the [`MIT`][license-url] license.
