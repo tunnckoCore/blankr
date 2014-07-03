@@ -75,16 +75,16 @@ Released under the [`MIT`][license-url] license.
 
 [npmjs-url]: http://npm.im/koa-better-body
 [npmjs-img]: http://img.shields.io/npm/v/koa-better-body.svg
-[npmjs-install]: https://nodei.co/npm/koa-better-body.png?mini=true
+[npmjs-install]: https://nodei.co/npm/koa-better-body.svg?mini=true
 
 [license-url]: https://github.com/tunnckoCore/koa-better-body/blob/master/license.md
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg
 
 [travis-url]: https://travis-ci.org/tunnckoCore/koa-better-body
-[travis-img]: https://travis-ci.org/tunnckoCore/koa-better-body.png?branch=master
+[travis-img]: https://travis-ci.org/tunnckoCore/koa-better-body.svg?branch=master
 
 [depstat-url]: https://david-dm.org/tunnckoCore/koa-better-body
-[depstat-img]: https://david-dm.org/tunnckoCore/koa-better-body.png
+[depstat-img]: https://david-dm.org/tunnckoCore/koa-better-body.svg
 
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore
