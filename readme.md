@@ -1,6 +1,27 @@
+### 1.0.0 / June 08, 2014
+---
+- Pretty styling
+- auto badges
+- add history
+- add [`extend`][extend-url], because of options merging bug.
+- add better tests - only 7, for all use cases.
+- need suggestions for `error 413` handling, maybe [`raw-body`][rawbody-url] problem/logic?
+- when upload, always returned type is `application/octet-stream`, not `image/png`, `image/gif`, etc - maybe [`formidable`][formidable-url] problem/logic?
+- deprecation message also comes from `formidable`
+- always `json` and `urlencoded` bodies will be pushed to request `.body.fields` object.
+
+---
+### 1.0.0 / June 08, 2014
+---
+- initial release
+
+
+
 # koa-better-body [![NPM version][npmjs-img]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
 > A [`koa`][koa-url] body parser middleware with support for `multipart/form-data`, `application/json` or `application/x-www-form-urlencoded` request bodies. Via [formidable][formidable-url] and [co-body][cobody-url]
 
+
+[//]: # (This may be the most platform independent comment)
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
 > Install with [npm](https://npmjs.org)
