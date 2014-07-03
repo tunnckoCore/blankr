@@ -10,16 +10,14 @@ $ npm install koa-better-body
 ```
 
 
-## API
-
 ## Examples
 > For a more comprehensive examples, see [examples](./examples) folder.
 
 - [`examples/multer`](./examples/multer.js) - usage like Express's bodyParser - [multer][multer-url] `npm run examples-multer`
 - [`examples/koa-router`](./examples/koa-router.js) - usage with Alex's [koa-router][koa-router-url] `npm run examples-koa-router`
 
-## Options
 
+## Options
 > However, `koa-better-body` have few custom options, see also [co-body][cobody-url], [raw-body][rawbody-url], [formidable][formidable-url]
 
 - `patchNode` **{Boolean}** Patch request body to Node's `ctx.req` object, default `false`
@@ -33,17 +31,6 @@ $ npm install koa-better-body
 - `formidable.multiples` **{Boolean}** See [formidable-options](./readme.md#formidable-options), our default `true`
 - `formidable.keepExtensions` **{Boolean}** See [formidable-options](./readme.md#formidable-options), our default `true`
 - `return` **{GeneratorFunction}** That you can use with [koa][koa-url] or [co][co-url]
-
-
-## formidable options
-> See [node-formidable][formidable-url] for a full list of options
-
-- `bytesExpected` **{Integer}** The expected number of bytes in this form, default `null`
-- `maxFields` **{Integer}** Limits the number of fields that the querystring parser will decode, default `1000`
-- `maxFieldsSize` **{Integer}** Limits the amount of memory a field can allocate _in bytes_, default `2mb`
-- `uploadDir` **{String}** Sets the directory for placing file uploads in, default `os.tmpDir()`
-- `hash` **{String}** If you want checksums calculated for incoming files - `'sha1'` or `'md5'`, default `false`
-- `multiples` **{Boolean}** Multiple file uploads or no, default `false`
 
 
 ## Tests
