@@ -11,6 +11,59 @@
 $ npm install koa-better-body
 ```
 
+## Options
+
+> `koa-body` supports all [`formidable`][formidable-url] **and** [`co-body`][cobody-url] (to [`raw-body`][rawbody-url]) options. Be sure to look at their READMEs for more information. However, `koa-body` have few custom options
+
+```js
+  var log     = console.log,
+      app     = require('koa')(),
+      koaBody = require('../index'),
+      port    = process.env.PORT || 4290,
+      host    = 'http://localhost';
+
+
+  app
+    .use(koaBody({
+      multipart: true,
+      formLimit: 15,
+      formidable: {
+        uploadDir: __dirname + '/uploads'
+      }
+    }))
+    .use(function *(next) {
+      if (this.request.method == 'POST') {
+        log(this.request.body);
+        // => POST body object
+        this.body = JSON.stringify(this.request.body, null, 2);
+      }
+      yield next;
+    })
+    .listen(port);
+
+
+  log('Visit %s:%s/ in browser.', host, port);
+  log();
+  log('Test with executing this commands:');
+  log('curl -i %s:%s/whatever -d "name=charlike"', host, port);
+  log('curl -i %s:%s/whatever -d "name=some-long-name-for-error"', host, port);
+  log('curl -i %s:%s/whatever -F "source=@%s/avatar.png"', host, port, __dirname);
+  log();
+  log('Press CTRL+C to stop...');
+```
+
+- `patchNode` **{Boolean}** Patch request body to Node's `ctx.req` object, default `false`
+- `patchKoa` **{Boolean}** Patch request body to Koa's `ctx.request` object, default `true`
+- `jsonLimit` **{String|Number}** The byte limit of the JSON body, default `1mb`
+- `formLimit` **{String|Number}** The byte limit of the form body, default `56kb`
+- `encoding` **{String}** Sets encoding for incoming form fields, default `utf-8`
+- `multipart` **{Boolean}** Support `multipart/form-data` request bodies, default `false`
+- `formidable` **{Object}** Options that are passing to `formidable`
+- `formidable.maxFields` **{Number}** koa-body's default is to `10`
+- `formidable.multiples` **{Boolean}** koa-body's default is to `true`
+- `formidable.keepExtensions` **{Boolean}** koa-body's default is to `true`
+- `return` **{GeneratorFunction}** descr
+
 
 ## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
 **Charlike Mike Reagent**
