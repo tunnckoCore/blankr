@@ -66,29 +66,11 @@ $ npm test
 + [npmjs/dlau][author-dlau-npmjs]
 
 
+
 ## License [![MIT license][license-img]][license-url]
 Copyright (c) 2014 [Charlike Mike Reagent][author-website], [Daryl Lau][author-dlau-website], [contributors](https://github.com/tunnckoCore/koa-better-body/graphs/contributors).  
 Released under the [`MIT`][license-url] license.
 
----
-
-## v1.0.0 / June 08, 2014
-- Pretty styling
-- auto badges
-- add history
-- add [`extend`][extend-url], because of options merging bug.
-- add better tests - only 7, for all use cases.
-- need suggestions for `error 413` handling, maybe [`raw-body`][rawbody-url] problem/logic?
-- when upload, always returned type is `application/octet-stream`, not `image/png`, `image/gif`, etc - maybe [`formidable`][formidable-url] problem/logic?
-- deprecation message also comes from `formidable`
-- always `json` and `urlencoded` bodies will be pushed to request `.body.fields` object.
-
----
-
-## v1.0.0 / June 08, 2014
-- initial release
-
----
 
 [npmjs-url]: http://npm.im/koa-better-body
 [npmjs-img]: http://img.shields.io/npm/v/koa-better-body.svg
