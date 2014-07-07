@@ -66,7 +66,7 @@ Strip only all block comments by default
  */
 var bar = function(/* and these single-line block comment */) {
   /**
-   * but not that comment
+   * also that comment
    */
   var str = 'something'
 };
