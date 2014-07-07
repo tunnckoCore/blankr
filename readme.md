@@ -33,8 +33,8 @@ var baz = function () {
   // this multiline
   // line comment
   var some = true;
-  //
-  var fafa = true; //may be and this
+  //this
+  var fafa = true; //and this
   // var also = 'that';
   var but = 'not'; //! that comment
 };
