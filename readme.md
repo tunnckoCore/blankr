@@ -11,8 +11,7 @@ Strip all comments
 ```js
 /*!
  * this multiline
- * block comment, no matter it is `top banner`
- * it will not be removed, cuz it have `!`
+ * block comment ('top banner')
  */
 
 'use strict';
@@ -45,8 +44,8 @@ var baz = function () {
 var fun = false;
 ```
 - `str` **{String}** file content or string to strip to
-- `opts` **{Object}** options are passed to `#block`, and `#line`
-- `return` **{String|Array}**
+- `opts` **{Object}** options are passed to `.block`, and `.line`
+- `return` **{String}**
 
 **Source:**
 ```js
