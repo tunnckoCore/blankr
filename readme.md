@@ -15,6 +15,9 @@
 ### Option()
 Initialize a new `Option` with the given `flags` and `description`.
 
+- `flags` **{String}** 
+- `description` **{String}** 
+
 #### Source:
 ```js
 function Option(flags, description) {
@@ -31,6 +34,8 @@ function Option(flags, description) {
 
 ### Command()
 Initialize a new `Command`.
+
+- `name` **{String}** 
 
 #### Source:
 ```js
@@ -56,6 +61,7 @@ will be passed as the first arg, followed by
 the rest of __ARGV__ remaining.
 
 #### Example:
+
 ```js
 program
   .version('0.0.1')
@@ -87,6 +93,10 @@ program
 program.parse(process.argv);
 ```
 
+- `name` **{String}** 
+- `[desc]` **{String}** 
+- `return` **{Command}** the new command
+
 #### Source:
 ```js
 Command.prototype.command = function(name, desc) {
@@ -106,6 +116,9 @@ Command.prototype.command = function(name, desc) {
 ### Command#parseExpectedArgs()
 Parse expected `args`.
 For example `["[type]"]` becomes `[{ required: false, name: 'type' }]`.
+
+- `args` **{Array}** 
+- `return` **{Command}** for chaining
 
 #### Source:
 ```js
@@ -130,6 +143,7 @@ Command.prototype.parseExpectedArgs = function(args){
 Register callback `fn` for the command.
 
 #### Example:
+
 ```js
 program
   .command('help')
@@ -138,6 +152,9 @@ program
     // output help here
   });
 ```
+
+- `fn` **{Function}** 
+- `return` **{Command}** for chaining
 
 #### Source:
 ```js
@@ -197,6 +214,7 @@ all will output this way when `--help` is used.
    "-p --pepper"
 
 #### Example:
+
 ```js
 / simple boolean defaulting to false
 program.option('-p, --pepper', 'add pepper');
@@ -225,6 +243,12 @@ program.chdir
 / optional argument
 program.option('-c, --cheese [type]', 'add cheese [marble]');
 ```
+
+- `flags` **{String}** 
+- `description` **{String}** 
+- `fn` **{Function|Mixed}** or default
+- `defaultValue` **{Mixed}** 
+- `return` **{Command}** for chaining
 
 #### Source:
 ```js
@@ -277,6 +301,9 @@ Command.prototype.option = function(flags, description, fn, defaultValue){
 ### Command#parse()
 Parse `argv`, settings options and invoking commands when defined.
 
+- `argv` **{Array}** 
+- `return` **{Command}** for chaining
+
 #### Source:
 ```js
 Command.prototype.parse = function(argv){
@@ -306,6 +333,9 @@ Command.prototype.parse = function(argv){
 ### Command#parseOptions()
 Parse options from `argv` returning `argv`
 void of these options.
+
+- `argv` **{Array}** 
+- `return` **{Array}**
 
 #### Source:
 ```js
@@ -386,6 +416,10 @@ Set the program version to `str`.
 This method auto-registers the "-V, --version" flag
 which will print the version number when passed.
 
+- `str` **{String}** 
+- `flags` **{String}** 
+- `return` **{Command}** for chaining
+
 #### Source:
 ```js
 Command.prototype.version = function(str, flags){
@@ -404,6 +438,9 @@ Command.prototype.version = function(str, flags){
 ### Command#description()
 Set the description `str`.
 
+- `str` **{String}** 
+- `return` **{String|Command}**
+
 #### Source:
 ```js
 Command.prototype.description = function(str){
@@ -415,6 +452,9 @@ Command.prototype.description = function(str){
 
 ### Command#usage()
 Set / get the command usage `str`.
+
+- `str` **{String}** 
+- `return` **{String|Command}**
 
 #### Source:
 ```js
@@ -440,6 +480,7 @@ Command.prototype.usage = function(str){
 ### Command#outputHelp()
 Output help information for this command
 
+
 #### Source:
 ```js
 Command.prototype.outputHelp = function(){
@@ -450,6 +491,7 @@ Command.prototype.outputHelp = function(){
 
 ### Command#help()
 Output help information and exit.
+
 
 #### Source:
 ```js
