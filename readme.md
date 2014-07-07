@@ -1,8 +1,8 @@
 ## API
 ### Table of contents
-- [strip](#strip)
-- [strip.block()](#stripblock)
-- [strip.line()](#stripline)
+- [strip](#stripstr-opts)
+- [strip.block()](#stripblockstr-opts)
+- [strip.line()](#striplinestr-opts)
 
 ### strip(str[, opts])
 Strip all comments
