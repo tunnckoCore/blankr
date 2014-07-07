@@ -6,6 +6,7 @@
 
 ### strip(str[, opts])
 Strip all comments
+
 **Example:**
 ```js
 /*!
@@ -55,6 +56,7 @@ var strip = module.exports = function(str, opts) {
 
 ### strip.block(str[, opts])
 Strip only block comments
+
 **Example:**
 ```js
 /**
@@ -85,6 +87,7 @@ strip.block = function(str, opts) {
 
 ### strip.line(str[, opts])
 Strip only line comments
+
 **Example:**
 ```js
 // this single-line line comment
