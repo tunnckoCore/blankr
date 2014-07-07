@@ -43,6 +43,7 @@ var baz = function () {
 // line comment
 var fun = false;
 ```
+
 - `str` **{String}** file content or string to strip to
 - `opts` **{Object}** options are passed to `.block`, and `.line`
 - `return` **{String}**
@@ -71,6 +72,8 @@ var bar = function(/* and these single-line block comment */) {
    */
   var str = 'something'
 };
+```
+
 - `str` **{String}** file content or string to strip to
 - `opts` **{Object}** if `safe:true`, strip only that not starts with `/*!` or `/**!`
 - `return` **{String}**
@@ -105,6 +108,7 @@ var baz = function () {
   var but = 'not'; //! that comment
 };
 ```
+
 - `str` **{String}** file content or string to strip to
 - `opts` **{Object}** if `safe:true`, strip all that not starts with `//!`
 - `return` **{String}**
