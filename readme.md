@@ -1,4 +1,5 @@
 ## API
+**Table of contents**
 - [Option()](#option)
 - [Command()](#command)
 - [Command#command()](#commandcommand)
