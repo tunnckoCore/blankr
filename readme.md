@@ -7,7 +7,7 @@
 ### strip(str[, opts])
 Strip all comments
 
-**Example:**
+###### Example:
 ```js
 /*!
  * this multiline
