@@ -13,7 +13,6 @@
 - [Command#help()](#commandhelp)
 
 ### Option()
-
 Initialize a new `Option` with the given `flags` and `description`.
 
 #### Source:
@@ -31,7 +30,6 @@ function Option(flags, description) {
 ```
 
 ### Command()
-
 Initialize a new `Command`.
 
 #### Source:
@@ -46,7 +44,6 @@ function Command(name) {
 ```
 
 ### Command#command()
-
 Add command `name`.
 
 The `.action()` callback is invoked when the
@@ -59,7 +56,6 @@ will be passed as the first arg, followed by
 the rest of __ARGV__ remaining.
 
 #### Example:
-
 ```js
 program
   .version('0.0.1')
@@ -108,7 +104,6 @@ Command.prototype.command = function(name, desc) {
 ```
 
 ### Command#parseExpectedArgs()
-
 Parse expected `args`.
 For example `["[type]"]` becomes `[{ required: false, name: 'type' }]`.
 
@@ -132,11 +127,9 @@ Command.prototype.parseExpectedArgs = function(args){
 ```
 
 ### Command#action()
-
 Register callback `fn` for the command.
 
 #### Example:
-
 ```js
 program
   .command('help')
@@ -192,7 +185,6 @@ Command.prototype.action = function(fn){
 ```
 
 ### Command#option()
-
 Define option with `flags`, `description` and optional
 coercion `fn`.
 
@@ -205,7 +197,6 @@ all will output this way when `--help` is used.
    "-p --pepper"
 
 #### Example:
-
 ```js
 / simple boolean defaulting to false
 program.option('-p, --pepper', 'add pepper');
@@ -284,7 +275,6 @@ Command.prototype.option = function(flags, description, fn, defaultValue){
 ```
 
 ### Command#parse()
-
 Parse `argv`, settings options and invoking commands when defined.
 
 #### Source:
@@ -314,7 +304,6 @@ Command.prototype.parse = function(argv){
 ```
 
 ### Command#parseOptions()
-
 Parse options from `argv` returning `argv`
 void of these options.
 
@@ -392,7 +381,6 @@ Command.prototype.parseOptions = function(argv){
 ```
 
 ### Command#version()
-
 Set the program version to `str`.
 
 This method auto-registers the "-V, --version" flag
@@ -414,7 +402,6 @@ Command.prototype.version = function(str, flags){
 ```
 
 ### Command#description()
-
 Set the description `str`.
 
 #### Source:
@@ -427,7 +414,6 @@ Command.prototype.description = function(str){
 ```
 
 ### Command#usage()
-
 Set / get the command usage `str`.
 
 #### Source:
@@ -452,7 +438,6 @@ Command.prototype.usage = function(str){
 ```
 
 ### Command#outputHelp()
-
 Output help information for this command
 
 #### Source:
@@ -464,7 +449,6 @@ Command.prototype.outputHelp = function(){
 ```
 
 ### Command#help()
-
 Output help information and exit.
 
 #### Source:
