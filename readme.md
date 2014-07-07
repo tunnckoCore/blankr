@@ -8,7 +8,6 @@
 Strip all comments
 
 **Example:**
-
 ```js
 /*!
  * this multiline
@@ -49,6 +48,7 @@ var fun = false;
 - `return` **{String}**
 
 **Source:**
+
 ```js
 var strip = module.exports = function(str, opts) {
   return str ? strip.block(strip.line(str, opts), opts) : '';
@@ -59,6 +59,7 @@ var strip = module.exports = function(str, opts) {
 Strip only block comments
 
 **Example:**
+
 ```js
 /**
  * this multiline
@@ -75,6 +76,7 @@ var bar = function(/* and these single-line block comment */) {
 - `return` **{String}**
 
 **Source:**
+
 ```js
 strip.block = function(str, opts) {
   opts = opts || {};
@@ -90,6 +92,7 @@ strip.block = function(str, opts) {
 Strip only line comments
 
 **Example:**
+
 ```js
 // this single-line line comment
 var baz = function () {
@@ -107,6 +110,7 @@ var baz = function () {
 - `return` **{String}**
 
 **Source:**
+
 ```js
 strip.line = function(str, opts) {
   opts = opts || {};
@@ -115,5 +119,6 @@ strip.line = function(str, opts) {
     re = new RegExp(reLineIgnore, 'gm');
   }
   return str ? str.replace(re, '') : '';
-};```
+};
+```
 
