@@ -7,7 +7,9 @@
 ### strip(str[, opts])
 Strip all comments
 
-**Example:** ```js
+**Example:**
+
+```js
 /*!
  * this multiline
  * block comment ('top banner')
