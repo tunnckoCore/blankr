@@ -1,70 +1,94 @@
 ## API
 ### Table of contents
-- [strip.banner()](#stripbanner)
-- [strip.safeBlock()](#stripsafeblock)
+- [strip](#strip)
 - [strip.block()](#stripblock)
 - [strip.line()](#stripline)
 
-### strip.banner()
-Strip banners
+### strip
+Strip all comments
 
-- `str` **{String}** 
-- `return` **{String}**
-
-**Source:**
+**Example:**
 ```js
-strip.banner = function(str, opts) {
-  opts = opts || {};
-  var re = new RegExp('^' + reBlock + '\\s+', 'g');
-  if(opts.safe) {
-    re = new RegExp('^[^\\/\*\*?\!]' + reBlock + '\\s+', 'g');
-  }
-  return str ? str.replace(re, '') : '';
+/*!
+ * this multiline
+ * block comment, no matter it is `top banner`
+ * it will not be removed, cuz it have `!`
+ */
+
+'use strict';
+
+/**!
+ * and this multiline
+ * block comment
+ */
+var foo = function(/* and these single-line block comment */) {};
+
+/**
+ * and this multiline
+ * block comment
+ */
+var bar = function(/* and these single-line block comment */) {};
+
+// this single-line line comment
+var baz = function () {
+  // this multiline
+  // line comment
+  var some = true;
+  //
+  var fafa = true; //may be and this
+  // var also = 'that';
+  var but = 'not'; //! that comment
 };
 
+// also this multiline
+// line comment
+var fun = false;
 ```
-
-### strip.safeBlock()
-Strip block comments except
-for banner
-
-- `str` **{String}** 
-- `return` **{String}**
+- `str` **{String}** file content or string to strip to
+- `opts` **{Object}** options are passed to .block, and .line
+- `return` **{String|Array}**
 
 **Source:**
 ```js
-strip.safeBlock = function(str) {
-  var re = new RegExp('[^\\/\*\*?\!]' + reBlock + '\\n', 'gm');
-  return str ? str.replace(re, '') : '';
+var strip = module.exports = function(str, opts) {
+  return str ? strip.block(strip.line(str, opts), opts) : '';
 };
-
 ```
 
 ### strip.block()
-Strip block comments
+Strip only all block comments by default
 
-- `str` **{String}** 
+- `str` **{String}** file content or string to strip to
+- `opts` **{Object}** if `safe:true`, strips only that not starts with `/*!` or `/**!`
 - `return` **{String}**
 
 **Source:**
 ```js
-strip.block = function(str) {
-  var re = new RegExp(reBlock, 'g');
+strip.block = function(str, opts) {
+  opts = opts || {};
+  var re = new RegExp(reBlock + reBlockEnd, 'gm');
+  if(opts.safe) {
+    re = new RegExp(reBlockIgnore + reBlockEnd, 'gm');
+  }
   return str ? str.replace(re, '') : '';
 };
-
 ```
 
 ### strip.line()
-Strip line comments
+Strip all line comments
 
-- `str` **{String}** 
+- `str` **{String}** file content or string to strip to
+- `opts` **{Object}** if `safe:true`, strip all that not starts with `//!`
 - `return` **{String}**
 
 **Source:**
 ```js
-strip.line = function(str) {
+strip.line = function(str, opts) {
+  opts = opts || {};
   var re = new RegExp(reLine, 'gm');
+  if(opts.safe) {
+    re = new RegExp(reLineIgnore, 'gm');
+  }
   return str ? str.replace(re, '') : '';
-};
+};```
 
