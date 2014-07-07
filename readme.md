@@ -16,6 +16,7 @@
 
 Initialize a new `Option` with the given `flags` and `description`.
 
+#### Source:
 ```js
 function Option(flags, description) {
   this.flags = flags;
@@ -33,6 +34,7 @@ function Option(flags, description) {
 
 Initialize a new `Command`.
 
+#### Source:
 ```js
 function Command(name) {
   this.commands = [];
@@ -56,37 +58,40 @@ When the `name` is "*" an un-matched command
 will be passed as the first arg, followed by
 the rest of __ARGV__ remaining.
 
-Examples:
+#### Example:
 
-     program
-       .version('0.0.1')
-       .option('-C, --chdir <path>', 'change the working directory')
-       .option('-c, --config <path>', 'set config path. defaults to ./deploy.conf')
-       .option('-T, --no-tests', 'ignore test hook')
+```js
+program
+  .version('0.0.1')
+  .option('-C, --chdir <path>', 'change the working directory')
+  .option('-c, --config <path>', 'set config path. defaults to ./deploy.conf')
+  .option('-T, --no-tests', 'ignore test hook')
 
-     program
-       .command('setup')
-       .description('run remote setup commands')
-       .action(function(){
-         console.log('setup');
-       });
+program
+  .command('setup')
+  .description('run remote setup commands')
+  .action(function(){
+    console.log('setup');
+  });
 
-     program
-       .command('exec <cmd>')
-       .description('run the given remote command')
-       .action(function(cmd){
-         console.log('exec "%s"', cmd);
-       });
+program
+  .command('exec <cmd>')
+  .description('run the given remote command')
+  .action(function(cmd){
+    console.log('exec "%s"', cmd);
+  });
 
-     program
-       .command('*')
-       .description('deploy the given env')
-       .action(function(env){
-         console.log('deploying "%s"', env);
-       });
+program
+  .command('*')
+  .description('deploy the given env')
+  .action(function(env){
+    console.log('deploying "%s"', env);
+  });
 
-     program.parse(process.argv);
+program.parse(process.argv);
+```
 
+#### Source:
 ```js
 Command.prototype.command = function(name, desc) {
   var args = name.split(/ +/);
@@ -105,9 +110,9 @@ Command.prototype.command = function(name, desc) {
 ### Command#parseExpectedArgs()
 
 Parse expected `args`.
-
 For example `["[type]"]` becomes `[{ required: false, name: 'type' }]`.
 
+#### Source:
 ```js
 Command.prototype.parseExpectedArgs = function(args){
   if (!args.length) return;
@@ -130,15 +135,18 @@ Command.prototype.parseExpectedArgs = function(args){
 
 Register callback `fn` for the command.
 
-Examples:
+#### Example:
 
-     program
-       .command('help')
-       .description('display verbose help')
-       .action(function(){
-          // output help here
-       });
+```js
+program
+  .command('help')
+  .description('display verbose help')
+  .action(function(){
+    // output help here
+  });
+```
 
+#### Source:
 ```js
 Command.prototype.action = function(fn){
   var self = this;
@@ -196,35 +204,38 @@ all will output this way when `--help` is used.
    "-p|--pepper"
    "-p --pepper"
 
-Examples:
+#### Example:
 
-    // simple boolean defaulting to false
-    program.option('-p, --pepper', 'add pepper');
+```js
+/ simple boolean defaulting to false
+program.option('-p, --pepper', 'add pepper');
 
-    --pepper
-    program.pepper
-    // => Boolean
+--pepper
+program.pepper
+/ => Boolean
 
-    // simple boolean defaulting to true
-    program.option('-C, --no-cheese', 'remove cheese');
+/ simple boolean defaulting to true
+program.option('-C, --no-cheese', 'remove cheese');
 
-    program.cheese
-    // => true
+program.cheese
+/ => true
 
-    --no-cheese
-    program.cheese
-    // => false
+--no-cheese
+program.cheese
+/ => false
 
-    // required argument
-    program.option('-C, --chdir <path>', 'change the working directory');
+/ required argument
+program.option('-C, --chdir <path>', 'change the working directory');
 
-    --chdir /tmp
-    program.chdir
-    // => "/tmp"
+--chdir /tmp
+program.chdir
+/ => "/tmp"
 
-    // optional argument
-    program.option('-c, --cheese [type]', 'add cheese [marble]');
+/ optional argument
+program.option('-c, --cheese [type]', 'add cheese [marble]');
+```
 
+#### Source:
 ```js
 Command.prototype.option = function(flags, description, fn, defaultValue){
   var self = this
@@ -276,6 +287,7 @@ Command.prototype.option = function(flags, description, fn, defaultValue){
 
 Parse `argv`, settings options and invoking commands when defined.
 
+#### Source:
 ```js
 Command.prototype.parse = function(argv){
   // implicit help
@@ -306,6 +318,7 @@ Command.prototype.parse = function(argv){
 Parse options from `argv` returning `argv`
 void of these options.
 
+#### Source:
 ```js
 Command.prototype.parseOptions = function(argv){
   var args = []
@@ -385,6 +398,7 @@ Set the program version to `str`.
 This method auto-registers the "-V, --version" flag
 which will print the version number when passed.
 
+#### Source:
 ```js
 Command.prototype.version = function(str, flags){
   if (0 == arguments.length) return this._version;
@@ -403,6 +417,7 @@ Command.prototype.version = function(str, flags){
 
 Set the description `str`.
 
+#### Source:
 ```js
 Command.prototype.description = function(str){
   if (0 == arguments.length) return this._description;
@@ -415,6 +430,7 @@ Command.prototype.description = function(str){
 
 Set / get the command usage `str`.
 
+#### Source:
 ```js
 Command.prototype.usage = function(str){
   var args = this._args.map(function(arg){
@@ -439,6 +455,7 @@ Command.prototype.usage = function(str){
 
 Output help information for this command
 
+#### Source:
 ```js
 Command.prototype.outputHelp = function(){
   process.stdout.write(this.helpInformation());
@@ -450,6 +467,7 @@ Command.prototype.outputHelp = function(){
 
 Output help information and exit.
 
+#### Source:
 ```js
 Command.prototype.help = function(){
   this.outputHelp();
