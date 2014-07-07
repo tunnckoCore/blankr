@@ -1,3 +1,4 @@
+## API
 - [Option()](#option)
 - [Command()](#command)
 - [Command#command()](#commandcommand)
@@ -12,7 +13,7 @@
 - [Command#outputHelp()](#commandoutputhelp)
 - [Command#help()](#commandhelp)
 
-#### Option()
+### Option()
 Initialize a new `Option` with the given `flags` and `description`.
 
 - `flags` **{String}** 
@@ -32,7 +33,7 @@ function Option(flags, description) {
 }
 ```
 
-#### Command()
+### Command()
 Initialize a new `Command`.
 
 - `name` **{String}** 
@@ -48,7 +49,7 @@ function Command(name) {
 }
 ```
 
-#### Command#command()
+### Command#command()
 Add command `name`.
 
 The `.action()` callback is invoked when the
@@ -113,7 +114,7 @@ Command.prototype.command = function(name, desc) {
 };
 ```
 
-#### Command#parseExpectedArgs()
+### Command#parseExpectedArgs()
 Parse expected `args`.
 For example `["[type]"]` becomes `[{ required: false, name: 'type' }]`.
 
@@ -139,7 +140,7 @@ Command.prototype.parseExpectedArgs = function(args){
 };
 ```
 
-#### Command#action()
+### Command#action()
 Register callback `fn` for the command.
 
 **Example:**
@@ -201,7 +202,7 @@ Command.prototype.action = function(fn){
 };
 ```
 
-#### Command#option()
+### Command#option()
 Define option with `flags`, `description` and optional
 coercion `fn`.
 
@@ -298,7 +299,7 @@ Command.prototype.option = function(flags, description, fn, defaultValue){
 };
 ```
 
-#### Command#parse()
+### Command#parse()
 Parse `argv`, settings options and invoking commands when defined.
 
 - `argv` **{Array}** 
@@ -330,7 +331,7 @@ Command.prototype.parse = function(argv){
 };
 ```
 
-#### Command#parseOptions()
+### Command#parseOptions()
 Parse options from `argv` returning `argv`
 void of these options.
 
@@ -410,7 +411,7 @@ Command.prototype.parseOptions = function(argv){
 };
 ```
 
-#### Command#version()
+### Command#version()
 Set the program version to `str`.
 
 This method auto-registers the "-V, --version" flag
@@ -435,7 +436,7 @@ Command.prototype.version = function(str, flags){
 };
 ```
 
-#### Command#description()
+### Command#description()
 Set the description `str`.
 
 - `str` **{String}** 
@@ -450,7 +451,7 @@ Command.prototype.description = function(str){
 };
 ```
 
-#### Command#usage()
+### Command#usage()
 Set / get the command usage `str`.
 
 - `str` **{String}** 
@@ -477,7 +478,7 @@ Command.prototype.usage = function(str){
 };
 ```
 
-#### Command#outputHelp()
+### Command#outputHelp()
 Output help information for this command
 
 
@@ -489,7 +490,7 @@ Command.prototype.outputHelp = function(){
 };
 ```
 
-#### Command#help()
+### Command#help()
 Output help information and exit.
 
 
