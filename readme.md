@@ -45,7 +45,7 @@ var baz = function () {
 var fun = false;
 ```
 - `str` **{String}** file content or string to strip to
-- `opts` **{Object}** options are passed to .block, and .line
+- `opts` **{Object}** options are passed to `#block`, and `#line`
 - `return` **{String|Array}**
 
 **Source:**
