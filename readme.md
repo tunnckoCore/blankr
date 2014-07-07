@@ -58,8 +58,21 @@ var strip = module.exports = function(str, opts) {
 ### strip.block()
 Strip only all block comments by default
 
+**Example:**
+```js
+/**
+ * this multiline
+ * block comment
+ */
+var bar = function(/* and these single-line block comment */) {
+  /**
+   * but not that comment
+   */
+  var str = 'something'
+};
+```
 - `str` **{String}** file content or string to strip to
-- `opts` **{Object}** if `safe:true`, strips only that not starts with `/*!` or `/**!`
+- `opts` **{Object}** if `safe:true`, strip only that not starts with `/*!` or `/**!`
 - `return` **{String}**
 
 **Source:**
@@ -77,6 +90,19 @@ strip.block = function(str, opts) {
 ### strip.line()
 Strip all line comments
 
+**Example:**
+```js
+// this single-line line comment
+var baz = function () {
+  // this multiline
+  // line comment
+  var some = true;
+  //this
+  var fafa = true; //and this
+  // var also = 'that';
+  var but = 'not'; //! that comment
+};
+```
 - `str` **{String}** file content or string to strip to
 - `opts` **{Object}** if `safe:true`, strip all that not starts with `//!`
 - `return` **{String}**
@@ -90,5 +116,6 @@ strip.line = function(str, opts) {
     re = new RegExp(reLineIgnore, 'gm');
   }
   return str ? str.replace(re, '') : '';
-};```
+};
+```
 
