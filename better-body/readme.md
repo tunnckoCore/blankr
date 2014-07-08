@@ -60,6 +60,7 @@ $ npm test
 + [github/tunnckoCore][author-github]
 + [twitter/tunnckoCore][author-twitter]
 + [npmjs/tunnckoCore][author-npmjs]
++ freenode/tunnckoCore `/msg **tunnckoCore** [your message here]`
 
 **Daryl Lau**
 + [github/dlau][author-dlau-github]
