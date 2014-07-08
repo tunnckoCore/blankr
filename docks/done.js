@@ -7,7 +7,7 @@ function read(src) {
   return str;
 }
 
-var fileContent = read('fixture.four.js');
+var fileContent = read('index.js');
 var docks = new Docks(/*fileContent*/);
 docks
   .content(fileContent)
@@ -23,7 +23,7 @@ if (process.argv[2] == 'parse') {
 }
 
 function genApiDocs() {
-  var comments = read('fixture.four.json');
+  var comments = read('readme.json');
   var content = [], toc = [];
   JSON.parse(comments).forEach(function(comment) {
     if (comment.isPrivate) return;

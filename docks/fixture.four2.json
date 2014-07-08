@@ -1,0 +1,92 @@
+[
+  {
+    "description": "### strip(str[, opts])\nStrip all comments",
+    "param": [
+      "{String}  str  file content or string to strip to",
+      "{Object}  opts  options are passed to `.block`, and `.line`"
+    ],
+    "return": "{String}",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "str",
+        "description": "file content or string to strip to"
+      },
+      {
+        "type": "Object",
+        "name": "opts",
+        "description": "options are passed to `.block`, and `.line`"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "var strip = module.exports = function(str, opts) {\n  return str ? strip.block(strip.line(str, opts), opts) : '';\n};\n\n",
+    "context": {
+      "type": "declaration",
+      "name": "strip",
+      "value": "module.exports = function(str, opts) {",
+      "string": "strip"
+    }
+  },
+  {
+    "description": "### strip.block(str[, opts])\nStrip only block comments",
+    "param": [
+      "{String}  str  file content or string to strip to",
+      "{Object}  opts  if `safe:true`, strip only that not starts with `/*!` or `/**!`"
+    ],
+    "return": "{String}",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "str",
+        "description": "file content or string to strip to"
+      },
+      {
+        "type": "Object",
+        "name": "opts",
+        "description": "if `safe:true`, strip only that not starts with `/*!` or `/**!`"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "strip.block = function(str, opts) {\n  opts = opts || {};\n  var re = new RegExp(reBlock + reBlockEnd, 'gm');\n  if(opts.safe) {\n    re = new RegExp(reBlockIgnore + reBlockEnd, 'gm');\n  }\n  return str ? str.replace(re, '') : '';\n};\n\n",
+    "context": {
+      "type": "method",
+      "receiver": "strip",
+      "name": "block",
+      "string": "strip.block()"
+    }
+  },
+  {
+    "description": "### strip.line(str[, opts])\nStrip only line comments",
+    "param": [
+      "{String}  str  file content or string to strip to",
+      "{Object}  opts  if `safe:true`, strip all that not starts with `//!`"
+    ],
+    "return": "{String}",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "str",
+        "description": "file content or string to strip to"
+      },
+      {
+        "type": "Object",
+        "name": "opts",
+        "description": "if `safe:true`, strip all that not starts with `//!`"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "strip.line = function(str, opts) {\n  opts = opts || {};\n  var re = new RegExp(reLine, 'gm');\n  if(opts.safe) {\n    re = new RegExp(reLineIgnore, 'gm');\n  }\n  return str ? str.replace(re, '') : '';\n};\n",
+    "context": {
+      "type": "method",
+      "receiver": "strip",
+      "name": "line",
+      "string": "strip.line()"
+    }
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "description": "Module dependencies",
+    "isPrivate": true,
+    "ignore": false,
+    "source": "var fs = require('fs');\nvar parser = require('./parser');\nvar reBlock = '\\\\/\\\\*\\\\*(.|[\\\\r\\\\n]|\\\\n)*?\\\\*\\\\/\\\\n?\\\\n?';\n\n\n",
+    "context": {
+      "type": "declaration",
+      "name": "fs",
+      "value": "require('fs')",
+      "string": "fs"
+    }
+  },
+  {
+    "description": "Initialize a new `Docks` instanceof with `content` to parse.",
+    "param": "{String}  content  optional, content to parse",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "content",
+        "description": "optional, content to parse"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "function Docks(content) {\n  if (!(this instanceof Docks)) {return new Docks(content);}\n  this.contents = content ? content : '';\n  this._comments = [];\n  this._sources = [];\n  this._results = [];\n  this.regex = new RegExp('^' + reBlock, 'gm');\n}\n\n",
+    "context": {
+      "type": "function",
+      "name": "Docks",
+      "string": "Docks()"
+    }
+  },
+  {
+    "description": "Provide content from who to parse comments/sources",
+    "param": "{String}  content  optional, content to parse",
+    "return": "{Docks}",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "content",
+        "description": "optional, content to parse"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "Docks.prototype.content = function (content) {\n  this.contents = content;\n  return this;\n};\n\n",
+    "context": {
+      "type": "method",
+      "constructor": "Docks",
+      "cons": "Docks",
+      "name": "content",
+      "string": "Docks.prototype.content()"
+    }
+  },
+  {
+    "description": "Get comments from previously given content",
+    "return": "{Array}",
+    "api": "public",
+    "isPrivate": false,
+    "ignore": false,
+    "source": "Docks.prototype.comments = function() {\n  return this._comments;\n};\n\n",
+    "context": {
+      "type": "method",
+      "constructor": "Docks",
+      "cons": "Docks",
+      "name": "comments",
+      "string": "Docks.prototype.comments()"
+    }
+  },
+  {
+    "description": "Get source for every comment,\nfrom previously given content",
+    "return": "{Array}",
+    "api": "public",
+    "isPrivate": false,
+    "ignore": false,
+    "source": "Docks.prototype.sources = function() {\n  return this._sources;\n};\n\n",
+    "context": {
+      "type": "method",
+      "constructor": "Docks",
+      "cons": "Docks",
+      "name": "sources",
+      "string": "Docks.prototype.sources()"
+    }
+  },
+  {
+    "description": "Get final parsed result\nfrom previously given content",
+    "return": "{Object}",
+    "api": "public",
+    "isPrivate": false,
+    "ignore": false,
+    "source": "Docks.prototype.result = function() {\n  return this._results;\n};\n\n",
+    "context": {
+      "type": "method",
+      "constructor": "Docks",
+      "cons": "Docks",
+      "name": "result",
+      "string": "Docks.prototype.result()"
+    }
+  },
+  {
+    "description": "Parse only comments of given content",
+    "param": "{String}  content  optional, parse/extract `comments` of the given content",
+    "return": "{Docks}",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "content",
+        "description": "optional, parse/extract `comments` of the given content"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "Docks.prototype.parseComments = function(content) {\n  content = this.contents ? this.contents : content;\n  this._comments = content.match(this.regex);\n  return this;\n};\n\n",
+    "context": {
+      "type": "method",
+      "constructor": "Docks",
+      "cons": "Docks",
+      "name": "parseComments",
+      "string": "Docks.prototype.parseComments()"
+    }
+  },
+  {
+    "description": "Parse only source of given content",
+    "param": "{String}  content  optional, parse/extract `sources` of the given content",
+    "return": "{Docks}",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "content",
+        "description": "optional, parse/extract `sources` of the given content"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "Docks.prototype.parseSources = function(content) {\n  content = this.contents ? this.contents : content;\n  this._sources = content.split(this.regex).slice(1).filter(function(item, i) {\n    return item[0] !== ' '\n  });\n  return this;\n};\n\n",
+    "context": {
+      "type": "method",
+      "constructor": "Docks",
+      "cons": "Docks",
+      "name": "parseSources",
+      "string": "Docks.prototype.parseSources()"
+    }
+  },
+  {
+    "description": "Parse given content",
+    "param": "{String}  content  optional, content to parse",
+    "return": "{Object}           object with `comments` array and `sources` array",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "content",
+        "description": "optional, content to parse"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "Docks.prototype.parse = function (content) {\n  var self = this;\n  content = this.contents ? this.contents : content;\n  this.parseComments(content);\n  this.parseSources(content);\n\n  this._comments.forEach(function(comment, index) {\n    comment = parser.parseComment(comment);\n    comment.isPrivate = comment.api && comment.api !== 'private' ? false : true;\n    comment.ignore = comment.description[2] !== '!' ? false : true;\n    comment.source = self._sources[index]\n    comment.context = self.parseCodeContext(comment.source);\n\n    if (/`\\@/gm.test(comment.description)) {\n      comment.description = comment.description.replace(/`\\@/gm, '@');\n    }\n\n    comment.description = comment.description.replace(/^\\*\\*\\!?\\n/, '');\n    self._results.push(comment)\n  });\n  return this._results;\n};\n\n",
+    "context": {
+      "type": "method",
+      "constructor": "Docks",
+      "cons": "Docks",
+      "name": "parse",
+      "string": "Docks.prototype.parse()"
+    }
+  },
+  {
+    "description": "Parse the context from the given `str` of js.\n\nThis method attempts to discover the context\nfor the comment based on it's code. Currently\nsupports:\n\n  - function statements\n  - function expressions\n  - prototype methods\n  - prototype properties\n  - methods\n  - properties\n  - declarations",
+    "param": "{String}  str",
+    "return": "{Object}",
+    "api": "public",
+    "params": [
+      {
+        "type": "String",
+        "name": "str",
+        "description": ""
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "Docks.prototype.parseCodeContext = function(str){\n  var str = str.split('\\n')[0];\n\n  // function statement\n  if (/^function ([\\w$]+) *\\(/.exec(str)) {\n    return {\n        type: 'function'\n      , name: RegExp.$1\n      , string: RegExp.$1 + '()'\n    };\n  // function expression\n  } else if (/^var *([\\w$]+)[ \\t]*=[ \\t]*function/.exec(str)) {\n    return {\n        type: 'function'\n      , name: RegExp.$1\n      , string: RegExp.$1 + '()'\n    };\n  // prototype method\n  } else if (/^([\\w$]+)\\.prototype\\.([\\w$]+)[ \\t]*=[ \\t]*function/.exec(str)) {\n    return {\n        type: 'method'\n      , constructor: RegExp.$1\n      , cons: RegExp.$1\n      , name: RegExp.$2\n      , string: RegExp.$1 + '.prototype.' + RegExp.$2 + '()'\n    };\n  // prototype property\n  } else if (/^([\\w$]+)\\.prototype\\.([\\w$]+)[ \\t]*=[ \\t]*([^\\n;]+)/.exec(str)) {\n    return {\n        type: 'property'\n      , constructor: RegExp.$1\n      , cons: RegExp.$1\n      , name: RegExp.$2\n      , value: RegExp.$3\n      , string: RegExp.$1 + '.prototype.' + RegExp.$2\n    };\n  // method\n  } else if (/^([\\w$.]+)\\.([\\w$]+)[ \\t]*=[ \\t]*function/.exec(str)) {\n    return {\n        type: 'method'\n      , receiver: RegExp.$1\n      , name: RegExp.$2\n      , string: RegExp.$1 + '.' + RegExp.$2 + '()'\n    };\n  // property\n  } else if (/^([\\w$]+)\\.([\\w$]+)[ \\t]*=[ \\t]*([^\\n;]+)/.exec(str)) {\n    return {\n        type: 'property'\n      , receiver: RegExp.$1\n      , name: RegExp.$2\n      , value: RegExp.$3\n      , string: RegExp.$1 + '.' + RegExp.$2\n    };\n  // declaration\n  } else if (/^var +([\\w$]+)[ \\t]*=[ \\t]*([^\\n;]+)/.exec(str)) {\n    return {\n        type: 'declaration'\n      , name: RegExp.$1\n      , value: RegExp.$2\n      , string: RegExp.$1\n    };\n  }\n};\n\n",
+    "context": {
+      "type": "method",
+      "constructor": "Docks",
+      "cons": "Docks",
+      "name": "parseCodeContext",
+      "string": "Docks.prototype.parseCodeContext()"
+    }
+  },
+  {
+    "description": "Expose `Docks`.",
+    "isPrivate": true,
+    "ignore": false,
+    "source": "module.exports = Docks;",
+    "context": {
+      "type": "property",
+      "receiver": "module",
+      "name": "exports",
+      "value": "Docks",
+      "string": "module.exports"
+    }
+  }
+]

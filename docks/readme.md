@@ -1,29 +1,21 @@
-/*!
- * docks <https://github.com/tunnckoCore/docks>
- * @todo repo, npm, clean, template, docs
- * 
- * Copyright (c) 2014 Charlike Mike Reagent, contributors.
- * Licensed under the MIT license.
- */
+## API
+### Table of contents
+- [Docks()](#docks)
+- [Docks#content()](#dockscontent)
+- [Docks#comments()](#dockscomments)
+- [Docks#sources()](#dockssources)
+- [Docks#result()](#docksresult)
+- [Docks#parseComments()](#docksparsecomments)
+- [Docks#parseSources()](#docksparsesources)
+- [Docks#parse()](#docksparse)
+- [Docks#parseCodeContext()](#docksparsecodecontext)
 
-'use strict';
+Initialize a new `Docks` instanceof with `content` to parse.
 
-/**
- * Module dependencies
- */
+- `content` **{String}** optional, content to parse
 
-var fs = require('fs');
-var parser = require('./parser');
-var reBlock = '\\/\\*\\*(.|[\\r\\n]|\\n)*?\\*\\/\\n?\\n?';
-
-
-/**
- * Initialize a new `Docks` instanceof with `content` to parse.
- *
- * @param  {String}  content  optional, content to parse
- * @api public
- */
-
+**Source:**
+```js
 function Docks(content) {
   if (!(this instanceof Docks)) {return new Docks(content);}
   this.contents = content ? content : '';
@@ -32,77 +24,77 @@ function Docks(content) {
   this._results = [];
   this.regex = new RegExp('^' + reBlock, 'gm');
 }
+```
 
-/**
- * Provide content from who to parse comments/sources
- *
- * @param   {String}  content  optional, content to parse
- * @return  {Docks}
- * @api public
- */
+Provide content from who to parse comments/sources
 
+- `content` **{String}** optional, content to parse
+- `return` **{Docks}**
+
+**Source:**
+```js
 Docks.prototype.content = function (content) {
   this.contents = content;
   return this;
 };
+```
 
-/**
- * Get comments from previously given content
- *
- * @return  {Array}
- * @api public
- */
+Get comments from previously given content
 
+- `return` **{Array}**
+
+**Source:**
+```js
 Docks.prototype.comments = function() {
   return this._comments;
 };
+```
 
-/**
- * Get source for every comment,
- * from previously given content
- *
- * @return  {Array}
- * @api public
- */
+Get source for every comment,
+from previously given content
 
+- `return` **{Array}**
+
+**Source:**
+```js
 Docks.prototype.sources = function() {
   return this._sources;
 };
+```
 
-/**
- * Get final parsed result 
- * from previously given content
- * 
- * @return  {Object}
- * @api public
- */
+Get final parsed result
+from previously given content
 
+- `return` **{Object}**
+
+**Source:**
+```js
 Docks.prototype.result = function() {
   return this._results;
 };
+```
 
-/**
- * Parse only comments of given content
- *
- * @param   {String}  content  optional, parse/extract `comments` of the given content
- * @return  {Docks}
- * @api public
- */
+Parse only comments of given content
 
+- `content` **{String}** optional, parse/extract `comments` of the given content
+- `return` **{Docks}**
+
+**Source:**
+```js
 Docks.prototype.parseComments = function(content) {
   content = this.contents ? this.contents : content;
   this._comments = content.match(this.regex);
   return this;
 };
+```
 
-/**
- * Parse only source of given content
- *
- * @param   {String}  content  optional, parse/extract `sources` of the given content
- * @return  {Docks}
- * @api public
- */
+Parse only source of given content
 
+- `content` **{String}** optional, parse/extract `sources` of the given content
+- `return` **{Docks}**
+
+**Source:**
+```js
 Docks.prototype.parseSources = function(content) {
   content = this.contents ? this.contents : content;
   this._sources = content.split(this.regex).slice(1).filter(function(item, i) {
@@ -110,15 +102,15 @@ Docks.prototype.parseSources = function(content) {
   });
   return this;
 };
+```
 
-/**
- * Parse given content
- *
- * @param   {String}  content  optional, content to parse
- * @return  {Object}           object with `comments` array and `sources` array
- * @api public
- */
+Parse given content
 
+- `content` **{String}** optional, content to parse
+- `return` **{Object}**           object with `comments` array and `sources` array
+
+**Source:**
+```js
 Docks.prototype.parse = function (content) {
   var self = this;
   content = this.contents ? this.contents : content;
@@ -141,27 +133,27 @@ Docks.prototype.parse = function (content) {
   });
   return this._results;
 };
+```
 
-/**
- * Parse the context from the given `str` of js.
- *
- * This method attempts to discover the context
- * for the comment based on it's code. Currently
- * supports:
- *
- *   - function statements
- *   - function expressions
- *   - prototype methods
- *   - prototype properties
- *   - methods
- *   - properties
- *   - declarations
- *
- * @param   {String}  str 
- * @return  {Object}      
- * @api public
- */
+Parse the context from the given `str` of js.
 
+This method attempts to discover the context
+for the comment based on it's code. Currently
+supports:
+
+  - function statements
+  - function expressions
+  - prototype methods
+  - prototype properties
+  - methods
+  - properties
+  - declarations
+
+- `str` **{String}** 
+- `return` **{Object}**
+
+**Source:**
+```js
 Docks.prototype.parseCodeContext = function(str){
   var str = str.split('\n')[0];
 
@@ -225,9 +217,5 @@ Docks.prototype.parseCodeContext = function(str){
     };
   }
 };
+```
 
-/**
- * Expose `Docks`.
- */
-
-module.exports = Docks;
