@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+        <!-- Omit the viewport http://getbootstrap.com/getting-started/#disable-responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+        <title>Grith API</title>
+
+        <!-- ===========================
+            AUTHORITY / SEO    
+        ============================ 
+        <meta name="canonical" content="[webpage address]">
+        -->
+        <meta name="google-site-verification" content="[google code here]">
+
+        <meta name="description" content="excert of latest blog post content here ~160 chars">
+        <meta name="keywords" content="responsive theme, grid layout, grid blog, gallery template, responsive gallery template">
+        <meta name="robots" content="all,index,nofollow">
+        <meta name="author" content="ThemeMinistry">
+
+        <!-- ===========================
+            Facebook OpenGraph    
+        ============================ -->
+        <meta property="og:type" content="blog">
+        <meta property="og:site_name" content="[sitename or brand name]">
+        <meta property="og:image" content="[uri to website image]">
+        <meta property="og:title" content="[title of website]">
+        <meta property="og:description" content="[excert of latest blog post content here ~160 chars]">
+        <meta property="og:url" content="[webpage address]">
+
+        <!-- ===========================
+            Twitter Card    
+        ============================
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:author" content="@username">
+        <meta name="twitter:title" content="[title of website]">
+        <meta name="twitter:description" content="[excert of latest blog post content here ~160 chars]">
+        -->
+         
+        <!-- ===========================
+            STYLESHEET    
+        ============================ -->
+        <link rel="stylesheet" href="assets/css/plugins/bootstrap/3.1.0/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/ubuntu-titling/ubuntu-titling.css">
+        <link rel="stylesheet" href="assets/css/plugins/css3magic/magic.css">
+        <link rel="stylesheet" href="assets/css/custom/custom.css">
+
+        <!-- ===========================
+            html5shiv(m) & Respond.js    
+        ============================ -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="assets/css/plugins/font-awesome/font-awesome-ie7.css">
+        <![endif]-->
+
+        <script id="jquerylib" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    </head>
+    <body class="grith fw fw-page page-gallery">
+        
+        <header class="navbar-fixed-top-x">
+            <h1 class="grith fw global-hide">Grith &mdash; Reponsive Gallery / Blog Theme</h1>
+            <div class="container">
+                <div class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" data-toggle="collapse" data-target="#grith-navbar-collapse">
+                            <i class="glyphicon glyphicon-bookmark"></i> Grith
+                        </a>
+                    </div>
+                    <nav class="collapse navbar-collapse" id="grith-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Gallery</a></li>
+                            <li><a href="holderjs.html">Holderjs</a></li>
+                            <li><a href="dummy.html">Dummy</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Blog Feed</a></li>
+                                    <li><a href="#">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li id="grith-resize" class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resize <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="grith fw resize-btn browxser active" id="grith-auto">Auto fit</a></li>
+                                    <li><a href="#" class="grith fw resize-btn ipad-poxrt" id="ipadPortrait">iPad portrait</a></li>
+                                    <li><a href="#" class="grith fw resize-btn ipad-lxand" id="ipadLandscape">iPad landscape</a></li>
+                                    <li><a href="#" class="grith fw resize-btn iphone-poxrt" id="iphonePortrait">iPhone portrait</a></li>
+                                    <li><a href="#" class="grith fw resize-btn iphone-laxnd" id="iphoneLandscape">iPhone landscape</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav> <!-- .nav-collapse -->
+                </div>
+            </div>
+        </header>
+
+        <div id="loadingModal" class="grith fw load modal fade" tabindex="-1" role="dialog" 
+             aria-labelledby="loadingModal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="grith fw modal-container modal-content">
+                    <div class="grith fw loading-circle"></div>
+                    <div class="grith fw loading-circle1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="grith fw alert alert-info">
+                        This page use <a href="#flickr.com/service/api/" rel="nofollow">Flickr API</a> for gallery images.
+                        All rights of images belong to their respective owners.
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grith-container">
+            <!-- ===========================
+                Gallery Item Markup    
+            ================================
+            
+            <div class="grith fw list item">
+                <img class="img-responsive lazy" data-original="http://something.com/picture.png">
+                <div class="metadata clearfix">
+                    <div class="pull-left">
+                        <i class="glyphicon glyphicon-user"></i> admin
+                    </div>
+                    <div class="pull-right">
+                        <i class="glyphicon glyphicon-eye-open"></i> 136
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+        <button type="button" class="grith fw load more hidden btn btn-primary btn-lg btn-block" data-loading-text="Loading...">
+            <i class="glyphicon glyphicon-check"></i> Load more
+        </button>
+
+
+        <script src="assets/js/plugins/bootstrap/3.1.0/bootstrap.min.js"></script>
+        <script src="assets/js/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/plugins/lazyload/jquery.LazyLoad.js"></script>
+        <script src="assets/js/plugins/grid-a-licious/makeboxes.js"></script>
+        <script src="assets/js/plugins/grid-a-licious/jquery.grid-a-licious.min.js"></script>
+
+        <!-- ===========================
+            Demo of Gallery type    
+        ============================ -->
+        <script src="assets/js/custom/grith.config.app.js"></script>
+        <script src="assets/js/custom/grith.gallery.flickr.js"></script>
+
+        <script src="assets/js/custom/custom.js"></script>
+    </body>
+</html>
