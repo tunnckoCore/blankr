@@ -18,35 +18,83 @@ var reBlock = '\\/\\*\\*(.|[\\r\\n]|\\n)*?\\*\\/\\n?\\n?';
 
 
 /**
- * [Docks description]
+ * Constructor for Docks
+ *
+ * @param  {String}  content  optional, content to parse
  */
 
-function Docks() {
-  this.contents = '';
+function Docks(content) {
+  this.contents = content ? content : '';
   this._comments = [];
   this._sources = [];
   this._results = [];
   this.regex = new RegExp('^' + reBlock, 'gm');
 }
 
+/**
+ * Provide content from who to parse comments/sources
+ *
+ * @param   {String}  content  optional, content to parse
+ * @return  {Docks}
+ */
+
 Docks.prototype.content = function (content) {
   this.contents = content;
   return this;
 };
+
+/**
+ * Get comments from previously given content
+ *
+ * @return  {Array}
+ */
+
 Docks.prototype.comments = function() {
   return this._comments;
 };
+
+/**
+ * Get source for every comment,
+ * from previously given content
+ *
+ * @return  {Array}
+ */
+
 Docks.prototype.sources = function() {
   return this._sources;
 };
+
+/**
+ * Get final parsed result 
+ * from previously given content
+ * 
+ * @return  {Object}
+ */
+
 Docks.prototype.result = function() {
   return this._results;
 };
+
+/**
+ * Parse only comments of given content
+ *
+ * @param   {String}  content  optional, parse/extract `comments` of the given content
+ * @return  {Docks}
+ */
+
 Docks.prototype.parseComments = function(content) {
   content = this.contents ? this.contents : content;
   this._comments = content.match(this.regex);
   return this;
 };
+
+/**
+ * Parse only source of given content
+ *
+ * @param   {String}  content  optional, parse/extract `sources` of the given content
+ * @return  {Docks}
+ */
+
 Docks.prototype.parseSources = function(content) {
   content = this.contents ? this.contents : content;
   this._sources = content.split(this.regex).slice(1).filter(function(item, i) {
@@ -54,11 +102,20 @@ Docks.prototype.parseSources = function(content) {
   });
   return this;
 };
+
+/**
+ * Parse given content
+ *
+ * @param   {String}  content  optional, content to parse
+ * @return  {Object}           object with `comments` array and `sources` array
+ */
+
 Docks.prototype.parse = function (content) {
   var self = this;
+  content = this.contents ? this.contents : content;
   this.parseComments(content);
   this.parseSources(content);
-  
+
   this._comments.forEach(function(comment, index) {
     comment = parser.parseComment(comment);
     comment.isPrivate = comment.api && comment.api !== 'private' ? false : true;
@@ -91,8 +148,8 @@ Docks.prototype.parse = function (content) {
  *   - properties
  *   - declarations
  *
- * @param {String} str
- * @return {Object}
+ * @param   {String}  str 
+ * @return  {Object}      
  * @api public
  */
 
@@ -159,7 +216,6 @@ Docks.prototype.parseCodeContext = function(str){
     };
   }
 };
-
 
 
 module.exports = Docks;
