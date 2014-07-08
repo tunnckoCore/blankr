@@ -22,6 +22,17 @@ var reBlock = '\\/\\*\\*(.|[\\r\\n]|\\n)*?\\*\\/\\n?\\n?';
  * 
  * Initialize a new `Docks` instance with `content` to parse.
  *
+ * **Example:**
+ *
+ * ```js
+ * var Docks = require('docks');
+ * var fs = require('fs');
+ *
+ * var content = fs.readFileSync('somefile.js', 'utf-8');
+ * var docks = new Docks(content);
+ * docks.parse();
+ * ```
+ * 
  * @param  {String}  content  optional, content to parse
  * @api public
  */
@@ -38,7 +49,20 @@ function Docks(content) {
 /**
  * ### Docks#content()
  * Provide content from who to parse comments/sources
+ * 
+ * **Example:**
  *
+ * ```js
+ * var Docks = require('docks');
+ * var fs = require('fs');
+ *
+ * var content = fs.readFileSync('somefile.js', 'utf-8');
+ * var docks = new Docks();
+ * docks
+ *   .content(content)
+ *   .parse();
+ * ```
+ * 
  * @param   {String}  content  optional, content to parse
  * @return  {Docks}
  * @api public
@@ -52,6 +76,19 @@ Docks.prototype.content = function (content) {
 /**
  * ### Docks#comments()
  * Get comments from previously given content
+ * 
+ * **Example:**
+ *
+ * ```js
+ * var Docks = require('docks');
+ * var fs = require('fs');
+ *
+ * var content = fs.readFileSync('somefile.js', 'utf-8');
+ * var docks = new Docks();
+ * docks
+ *   .content(content)
+ *   .comments();
+ * ```
  *
  * @return  {Array}
  * @api public
@@ -79,6 +116,20 @@ Docks.prototype.sources = function() {
  * Get final parsed result 
  * from previously given content
  * 
+ * **Example:**
+ *
+ * ```js
+ * var Docks = require('docks');
+ * var fs = require('fs');
+ *
+ * var content = fs.readFileSync('somefile.js', 'utf-8');
+ * var docks = new Docks();
+ * docks
+ *   .content(content)
+ *   .parse()
+ *   .result();
+ * ```
+ *
  * @return  {Object}
  * @api public
  */
@@ -90,6 +141,19 @@ Docks.prototype.result = function() {
 /**
  * ### Docks#parseComments()
  * Parse only comments of given content
+ * 
+ * **Example:**
+ *
+ * ```js
+ * var Docks = require('docks');
+ * var fs = require('fs');
+ *
+ * var content = fs.readFileSync('somefile.js', 'utf-8');
+ * var docks = new Docks();
+ * docks
+ *   .parseComments(content)
+ *   .comments();
+ * ```
  *
  * @param   {String}  content  optional, parse/extract `comments` of the given content
  * @return  {Docks}
@@ -105,6 +169,19 @@ Docks.prototype.parseComments = function(content) {
 /**
  * ### Docks#parseSources()
  * Parse only source of given content
+ * 
+ * **Example:**
+ *
+ * ```js
+ * var Docks = require('docks');
+ * var fs = require('fs');
+ *
+ * var content = fs.readFileSync('somefile.js', 'utf-8');
+ * var docks = new Docks();
+ * docks
+ *   .parseSources(content)
+ *   .sources();
+ * ```
  *
  * @param   {String}  content  optional, parse/extract `sources` of the given content
  * @return  {Docks}
@@ -122,6 +199,17 @@ Docks.prototype.parseSources = function(content) {
 /**
  * ### Docks#parse()
  * Parse given content
+ * 
+ * **Example:**
+ *
+ * ```js
+ * var Docks = require('docks');
+ * var fs = require('fs');
+ *
+ * var content = fs.readFileSync('somefile.js', 'utf-8');
+ * var docks = new Docks();
+ * docks.parse(content);
+ * ```
  *
  * @param   {String}  content  optional, content to parse
  * @return  {Object}           object with `comments` array and `sources` array
