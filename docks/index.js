@@ -18,12 +18,13 @@ var reBlock = '\\/\\*\\*(.|[\\r\\n]|\\n)*?\\*\\/\\n?\\n?';
 
 
 /**
- * Initialize a new `Docks` builder with a working `content`.
+ * Initialize a new `Docks` instanceof with `content` to parse.
  *
  * @param  {String}  content  optional, content to parse
  */
 
 function Docks(content) {
+  if (!(this instanceof Docks)) {return new Docks(content);}
   this.contents = content ? content : '';
   this._comments = [];
   this._sources = [];
