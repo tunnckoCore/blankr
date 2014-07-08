@@ -13,6 +13,8 @@
 
 Initialize a new `Docks` instance with `content` to parse.
 
+- `content` **{String}** optional, content to parse
+
 **Example:**
 
 ```js
@@ -23,8 +25,6 @@ var content = fs.readFileSync('somefile.js', 'utf-8');
 var docks = new Docks(content);
 docks.parse();
 ```
-
-- `content` **{String}** optional, content to parse
 
 **Source:**
 ```js
@@ -41,6 +41,9 @@ function Docks(content) {
 ### Docks#content()
 Provide content from who to parse comments/sources
 
+- `content` **{String}** optional, content to parse
+- `return` **{Docks}**
+
 **Example:**
 
 ```js
@@ -54,9 +57,6 @@ docks
   .parse();
 ```
 
-- `content` **{String}** optional, content to parse
-- `return` **{Docks}**
-
 **Source:**
 ```js
 Docks.prototype.content = function (content) {
@@ -67,6 +67,8 @@ Docks.prototype.content = function (content) {
 
 ### Docks#comments()
 Get comments from previously given content
+
+- `return` **{Array}**
 
 **Example:**
 
@@ -81,8 +83,6 @@ docks
   .comments();
 ```
 
-- `return` **{Array}**
-
 **Source:**
 ```js
 Docks.prototype.comments = function() {
@@ -96,6 +96,19 @@ from previously given content
 
 - `return` **{Array}**
 
+**Example:**
+
+```js
+var Docks = require('docks');
+var fs = require('fs');
+
+var content = fs.readFileSync('somefile.js', 'utf-8');
+var docks = new Docks();
+docks
+  .content(content)
+  .sources();
+```
+
 **Source:**
 ```js
 Docks.prototype.sources = function() {
@@ -106,6 +119,8 @@ Docks.prototype.sources = function() {
 ### Docks#result()
 Get final parsed result
 from previously given content
+
+- `return` **{Object}**
 
 **Example:**
 
@@ -121,8 +136,6 @@ docks
   .result();
 ```
 
-- `return` **{Object}**
-
 **Source:**
 ```js
 Docks.prototype.result = function() {
@@ -132,6 +145,9 @@ Docks.prototype.result = function() {
 
 ### Docks#parseComments()
 Parse only comments of given content
+
+- `content` **{String}** optional, parse/extract `comments` of the given content
+- `return` **{Docks}**
 
 **Example:**
 
@@ -146,9 +162,6 @@ docks
   .comments();
 ```
 
-- `content` **{String}** optional, parse/extract `comments` of the given content
-- `return` **{Docks}**
-
 **Source:**
 ```js
 Docks.prototype.parseComments = function(content) {
@@ -160,6 +173,9 @@ Docks.prototype.parseComments = function(content) {
 
 ### Docks#parseSources()
 Parse only source of given content
+
+- `content` **{String}** optional, parse/extract `sources` of the given content
+- `return` **{Docks}**
 
 **Example:**
 
@@ -173,9 +189,6 @@ docks
   .parseSources(content)
   .sources();
 ```
-
-- `content` **{String}** optional, parse/extract `sources` of the given content
-- `return` **{Docks}**
 
 **Source:**
 ```js
@@ -191,6 +204,9 @@ Docks.prototype.parseSources = function(content) {
 ### Docks#parse()
 Parse given content
 
+- `content` **{String}** optional, content to parse
+- `return` **{Object}**           object with `comments` array and `sources` array
+
 **Example:**
 
 ```js
@@ -201,9 +217,6 @@ var content = fs.readFileSync('somefile.js', 'utf-8');
 var docks = new Docks();
 docks.parse(content);
 ```
-
-- `content` **{String}** optional, content to parse
-- `return` **{Object}**           object with `comments` array and `sources` array
 
 **Source:**
 ```js
