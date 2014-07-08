@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+        <!-- Omit the viewport http://getbootstrap.com/getting-started/#disable-responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+        <title>Marked.js Media Enhancements</title>
+
+        <!-- ===========================
+            AUTHORITY SEO    
+        ============================ 
+        <meta name="canonical" content="[webpage address]">
+        -->
+        <meta name="google-site-verification" content="[google code here]">
+
+        <meta name="description" content="excert of latest blog post content here ~160 chars">
+        <meta name="keywords" content="responsive theme, grid layout, grid blog, gallery template, responsive gallery template">
+        <meta name="robots" content="all,index,nofollow">
+        <meta name="author" content="ThemeMinistry">
+
+        <!-- ===========================
+            Facebook OpenGraph    
+        ============================ -->
+        <meta property="og:type" content="blog">
+        <meta property="og:site_name" content="[sitename or brand name]">
+        <meta property="og:image" content="[uri to website image]">
+        <meta property="og:title" content="[title of website]">
+        <meta property="og:description" content="[excert of latest blog post content here ~160 chars]">
+        <meta property="og:url" content="[webpage address]">
+
+        <!-- ===========================
+            Twitter Card    
+        ============================
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:author" content="@username">
+        <meta name="twitter:title" content="[title of website]">
+        <meta name="twitter:description" content="[excert of latest blog post content here ~160 chars]">
+        -->
+
+        <!-- ===========================
+            STYLESHEET    
+        ============================ -->
+
+        <link rel="stylesheet" href="assets/css/plugins/bootstrap/3.1.0/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="assets/css/plugins/ubuntu-titling/ubuntu-titling.css">-->
+        <link rel="stylesheet" href="assets/css/plugins/css3magic/magic.css">
+        <link rel="stylesheet" href="assets/css/custom/custom.css">
+        <!-- Documentation extras -->
+        <link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+        <link rel="stylesheet" title="Google Code" href="http://localhost/bsmdjs/styles/googlecode.css">
+
+        <!-- ===========================
+            html5shiv(m) & Respond.js    
+        ============================ -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="assets/css/plugins/font-awesome/font-awesome-ie7.css">
+        <![endif]-->
+
+        <script id="jquerylib" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+        <script src="assets/js/custom/markedfat.js"></script>
+    </head>
+    <body class="grith fw fw-page fw-page-install page-gallery eternity-form">
+        <!--<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+            <h1 class="grith fw global-hide">Grith &mdash; Reponsive Gallery Blog Theme</h1>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">We <i class="fa fa-heart"></i> Grith</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="../getting-started">Installation</a>
+                        </li>
+                    </ul>
+                    <p class="navbar-text navbar-right">
+                        <span class="response">System requirements</span>
+                    </p>
+                </nav>
+            </div>
+        </header>
+-->
+
+        <form>
+            <input class="form-control" name="title" type="text" placeholder="Title?" />
+            <textarea class="form-control raw-md" rows="30" data-provide="markdown" placeholder="Markdown Syntax"># (GitHub-Flavored) Markdown Editor
+http://github.io
+#### YouTube Autolink
+http://youtube.com/v/GtGJnXB972I
+___
+#### Vimeo Autolink
+https://www.vimeo.com/11918221
+___
+#### Viddler Autolink
+https://www.viddler.com/v/d6c37b62
+___
+#### DailyMotion Autolink
+http://www.dailymotion.com/video/x1eqps5_shadows-heretic-kingdoms-trailer_videogames
+___
+
+
+Basic useful feature list:
+
+ * Ctrl/Cmd + S to save the file
+ * Drag and drop a file into here to load it
+ * File contents are saved in the URL so you can share files
+
+
+I'm no good at writing sample / filler text, so go write something yourself.
+
+Look, a list!
+
+ * foo
+ * bar
+ * baz
+
+And here's some code!
+
+```javascript
+$(function(){
+  $('div').html('I am a div.');
+});
+```
+
+This is [on GitHub](https://github.com/jbt/markdown-editor) so let me know if I've b0rked it somewhere.
+
+
+Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
+the inspiration to this, and some handy implementation hints, came.
+
+### Stuff used to make this:
+
+ * [marked](https://github.com/chjj) for Markdown parsing
+ * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
+ * [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
+ * [js-deflate](https://github.com/dankogai/js-deflate) for gzipping of data to make it fit in URLs
+
+
+
+___
+
+## Hello World
+
+- a
+- list
+
+```ruby
+def hello_world
+  puts "hello world"
+end
+```
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+| grith api     | are big dad   |  $434 |
+
+> Blockquotes are very handy 
+> in email to emulate reply text.
+> This line is part of the same quote.
+
+[Link to Google](https://www.google.com)
+
+~~strike text~~ *italic* __bold__  
+
+javascript
+```javascript
+var press = function () {
+   console.log('yeah');
+};
+```
+
+The Fatdown bundle includes the following plugins:
+
+ - **Autoemail** --- email addresses such as example@example.org are automatically turned into links
+ - **Autolink** --- URLs such as http://github.com are automatically turned into links
+ - **Escaper** --- special characters can be escaped with a backslash
+ - **FancyPants** --- some typography is enhanced, e.g. (c) (tm) and "quotes"
+ - **HTMLComments** --- you can use HTML comments
+ - **HTMLElements** --- several HTML elements are allowed
+ - **HTMLEntities** --- HTML entities such as ♥ are decoded
+ - **Litedown** --- a Markdown*-like* syntax
+ - **MediaEmbed** --- URLs from media sites are automatically embedded:<br/>
+   http://youtu.be/QH2-TGUlwu4
+
+The parser/renderer used on this page page has been generated by [this script](https://github.com/s9e/TextFormatter/blob/master/scripts/generateFatdownDemo.php). It's been minified with Google Closure Compiler to 32.5 KB (11.6 KB compressed)
+
+***
+
+[![Build Status](https://travis-ci.org/s9e/TextFormatter.png?branch=master)](https://travis-ci.org/s9e/TextFormatter)
+[![Coverage Status](https://coveralls.io/repos/s9e/TextFormatter/badge.png)](https://coveralls.io/r/s9e/TextFormatter)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/s9e/TextFormatter/badges/quality-score.png?s=3942dab3c410fb9ce02001e7446d1083fa91172c)](https://scrutinizer-ci.com/g/s9e/TextFormatter/)
+
+___
+
+
+## Bootstrap Markdown
+
+Markdown editing meet Bootstrap.
+
+| Version | Compatibility with Bootstrap |
+| :---: | :---: |
+| Bootstrap Markdown v2.x | **only** compatible with Bootstrap 3.x |
+| Bootstrap Markdown v1.x | **only** compatible with Bootstrap 2.x |
+
+Demo and documentation on [http://toopay.github.com/bootstrap-markdown/](http://toopay.github.com/bootstrap-markdown/)
+
+### LICENSE
+
+> Copyright 2013 Taufan Aditya
+> 
+> Licensed under the Apache License, Version 2.0 (the "License");
+> you may not use this file except in compliance with the License.
+> You may obtain a copy of the License at
+>
+> http://www.apache.org/licenses/LICENSE-2.0
+>
+> Unless required by applicable law or agreed to in writing, software
+> distributed under the License is distributed on an "AS IS" BASIS,
+> WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+> See the License for the specific language governing permissions and
+> limitations under the License.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/toopay/bootstrap-markdown/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+            </textarea>
+
+        </form> 
+
+
+
+
+        <script src="assets/js/plugins/bootstrap/3.1.0/bootstrap.min.js"></script><!--
+        <script src="assets/js/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/plugins/lazyload/jquery.LazyLoad.js"></script>
+        <script src="assets/js/plugins/grid-a-licious/makeboxes.js"></script>
+        <script src="assets/js/plugins/grid-a-licious/jquery.grid-a-licious.min.js"></script>-->
+
+        <!-- ===========================
+            Demo of Gallery type    
+        ============================ 
+        <script src="assets/js/custom/grith.config.app.js"></script>
+        <script src="assets/js/custom/grith.gallery.flickr.js"></script>
+        
+        <script src="assets/js/custom/custom.js"></script>-->
+        <script src="http://yuku-t.com/jquery-overlay/jquery.overlay.js"></script>
+        <script src="http://yuku-t.com/jquery-textcomplete/jquery.textcomplete.js"></script>
+        <script src="assets/js/custom/fatdown.js"></script>
+        
+        <script src="assets/js/custom/emojies.js"></script>
+        <script src="assets/js/custom/bsmd.js"></script>
+        <script>
+            //if (typeof s9e.TextFormatter == "object") {
+            //    console.log(s9e.TextFormatter);
+            //}
+            $('.raw-md').textcomplete([
+                {// emoji strategy
+                    match: /\B:([\-+\w]*)$/,
+                    search: function(term, callback) {
+                       callback($.map(emojies, function(emoji) {
+                            return emoji.indexOf(term) === 0 ? emoji : null;
+                        }));
+                    },
+                    template: function(value) {
+                        return '<img class="emojies emojies_' + value + '" src="https://github.global.ssl.fastly.net/images/icons/emoji/' + value + '.png">';
+                    },
+                    replace: function(value) {
+                        return ':' + value + ':';
+                    },
+                    index: 1,
+                    maxCount: 5
+                }
+            ]);
+            hljs.configure({classPrefix: 'hljs-'});
+
+            marked.setOptions({
+                langPrefix: "",
+                highlight: function(code, lang) {
+                    return hljs.highlight(lang, code).value;
+                }
+            });
+
+        </script>
+        <script src="assets/js/custom/grith.config.app.js"></script>
+
+    </body>
+</html>
