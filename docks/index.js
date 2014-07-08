@@ -32,23 +32,33 @@ function Docks() {
 Docks.prototype.content = function (content) {
   this.contents = content;
   return this;
-}
+};
 Docks.prototype.comments = function() {
   return this._comments;
-}
+};
 Docks.prototype.sources = function() {
   return this._sources;
-}
+};
 Docks.prototype.result = function() {
   return this._results;
-}
-
-Docks.prototype.parse = function (content) {
-  var self = this;
-  this._comments = (this.contents? this.contents : content).match(this.regex);
-  this._sources = (this.contents? this.contents : content).split(this.regex).slice(1).filter(function(item, i) {
+};
+Docks.prototype.parseComments = function(content) {
+  content = this.contents ? this.contents : content;
+  this._comments = content.match(this.regex);
+  return this;
+};
+Docks.prototype.parseSources = function(content) {
+  content = this.contents ? this.contents : content;
+  this._sources = content.split(this.regex).slice(1).filter(function(item, i) {
     return item[0] !== ' '
   });
+  return this;
+};
+Docks.prototype.parse = function (content) {
+  var self = this;
+  this.parseComments(content);
+  this.parseSources(content);
+  
   this._comments.forEach(function(comment, index) {
     comment = parser.parseComment(comment);
     comment.isPrivate = comment.api && comment.api !== 'private' ? false : true;
@@ -63,8 +73,8 @@ Docks.prototype.parse = function (content) {
     comment.description = comment.description.replace(/^\*\*\!?\n/, '');
     self._results.push(comment)
   });
-  return self._results;
-}
+  return this._results;
+};
 
 /**
  * Parse the context from the given `str` of js.
