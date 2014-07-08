@@ -10,6 +10,8 @@
 - [Docks#parse()](#docksparse)
 - [Docks#parseCodeContext()](#docksparsecodecontext)
 
+### Docks([content])
+
 Initialize a new `Docks` instanceof with `content` to parse.
 
 - `content` **{String}** optional, content to parse
@@ -26,6 +28,7 @@ function Docks(content) {
 }
 ```
 
+### Docks#content([content])
 Provide content from who to parse comments/sources
 
 - `content` **{String}** optional, content to parse
@@ -39,6 +42,7 @@ Docks.prototype.content = function (content) {
 };
 ```
 
+### Docks#comments()
 Get comments from previously given content
 
 - `return` **{Array}**
@@ -50,6 +54,7 @@ Docks.prototype.comments = function() {
 };
 ```
 
+### Docks#sources()
 Get source for every comment,
 from previously given content
 
@@ -62,6 +67,7 @@ Docks.prototype.sources = function() {
 };
 ```
 
+### Docks#result()
 Get final parsed result
 from previously given content
 
@@ -74,6 +80,7 @@ Docks.prototype.result = function() {
 };
 ```
 
+### Docks#parseComments([content])
 Parse only comments of given content
 
 - `content` **{String}** optional, parse/extract `comments` of the given content
@@ -88,6 +95,7 @@ Docks.prototype.parseComments = function(content) {
 };
 ```
 
+### Docks#parseSources([content])
 Parse only source of given content
 
 - `content` **{String}** optional, parse/extract `sources` of the given content
@@ -104,6 +112,7 @@ Docks.prototype.parseSources = function(content) {
 };
 ```
 
+### Docks#parse([content])
 Parse given content
 
 - `content` **{String}** optional, content to parse
@@ -135,6 +144,7 @@ Docks.prototype.parse = function (content) {
 };
 ```
 
+### Docks#parseCodeContext([content])
 Parse the context from the given `str` of js.
 
 This method attempts to discover the context
@@ -154,25 +164,25 @@ supports:
 
 **Source:**
 ```js
-Docks.prototype.parseCodeContext = function(str){
-  var str = str.split('\n')[0];
+Docks.prototype.parseCodeContext = function(content){
+  var content = content.split('\n')[0];
 
   // function statement
-  if (/^function ([\w$]+) *\(/.exec(str)) {
+  if (/^function ([\w$]+) *\(/.exec(content)) {
     return {
         type: 'function'
       , name: RegExp.$1
       , string: RegExp.$1 + '()'
     };
   // function expression
-  } else if (/^var *([\w$]+)[ \t]*=[ \t]*function/.exec(str)) {
+  } else if (/^var *([\w$]+)[ \t]*=[ \t]*function/.exec(content)) {
     return {
         type: 'function'
       , name: RegExp.$1
       , string: RegExp.$1 + '()'
     };
   // prototype method
-  } else if (/^([\w$]+)\.prototype\.([\w$]+)[ \t]*=[ \t]*function/.exec(str)) {
+  } else if (/^([\w$]+)\.prototype\.([\w$]+)[ \t]*=[ \t]*function/.exec(content)) {
     return {
         type: 'method'
       , constructor: RegExp.$1
@@ -181,7 +191,7 @@ Docks.prototype.parseCodeContext = function(str){
       , string: RegExp.$1 + '.prototype.' + RegExp.$2 + '()'
     };
   // prototype property
-  } else if (/^([\w$]+)\.prototype\.([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(str)) {
+  } else if (/^([\w$]+)\.prototype\.([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(content)) {
     return {
         type: 'property'
       , constructor: RegExp.$1
@@ -191,7 +201,7 @@ Docks.prototype.parseCodeContext = function(str){
       , string: RegExp.$1 + '.prototype.' + RegExp.$2
     };
   // method
-  } else if (/^([\w$.]+)\.([\w$]+)[ \t]*=[ \t]*function/.exec(str)) {
+  } else if (/^([\w$.]+)\.([\w$]+)[ \t]*=[ \t]*function/.exec(content)) {
     return {
         type: 'method'
       , receiver: RegExp.$1
@@ -199,7 +209,7 @@ Docks.prototype.parseCodeContext = function(str){
       , string: RegExp.$1 + '.' + RegExp.$2 + '()'
     };
   // property
-  } else if (/^([\w$]+)\.([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(str)) {
+  } else if (/^([\w$]+)\.([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(content)) {
     return {
         type: 'property'
       , receiver: RegExp.$1
@@ -208,7 +218,7 @@ Docks.prototype.parseCodeContext = function(str){
       , string: RegExp.$1 + '.' + RegExp.$2
     };
   // declaration
-  } else if (/^var +([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(str)) {
+  } else if (/^var +([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(content)) {
     return {
         type: 'declaration'
       , name: RegExp.$1
