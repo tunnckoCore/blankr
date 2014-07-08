@@ -31,6 +31,9 @@ function genApiDocs() {
     var ctx = comment.context;
     var title = ctx.string.replace('.prototype.','#');
     if (!ctx) return;
+    if (~comment.description.indexOf('Module dependencies')) return;
+    if (~comment.description.indexOf('Inherit from')) return;
+    if (!ctx.string.indexOf('module.exports')) return;
 
     toc.push('- [' + title + '](#' + slug(title) + ')');
 

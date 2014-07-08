@@ -8,11 +8,10 @@
 - [Docks#parseComments()](#docksparsecomments)
 - [Docks#parseSources()](#docksparsesources)
 - [Docks#parse()](#docksparse)
-- [Docks#parseCodeContext()](#docksparsecodecontext)
 
-### Docks([content])
+### Docks()
 
-Initialize a new `Docks` instanceof with `content` to parse.
+Initialize a new `Docks` instance with `content` to parse.
 
 - `content` **{String}** optional, content to parse
 
@@ -28,7 +27,7 @@ function Docks(content) {
 }
 ```
 
-### Docks#content([content])
+### Docks#content()
 Provide content from who to parse comments/sources
 
 - `content` **{String}** optional, content to parse
@@ -80,7 +79,7 @@ Docks.prototype.result = function() {
 };
 ```
 
-### Docks#parseComments([content])
+### Docks#parseComments()
 Parse only comments of given content
 
 - `content` **{String}** optional, parse/extract `comments` of the given content
@@ -95,7 +94,7 @@ Docks.prototype.parseComments = function(content) {
 };
 ```
 
-### Docks#parseSources([content])
+### Docks#parseSources()
 Parse only source of given content
 
 - `content` **{String}** optional, parse/extract `sources` of the given content
@@ -112,7 +111,7 @@ Docks.prototype.parseSources = function(content) {
 };
 ```
 
-### Docks#parse([content])
+### Docks#parse()
 Parse given content
 
 - `content` **{String}** optional, content to parse
@@ -128,7 +127,7 @@ Docks.prototype.parse = function (content) {
 
   this._comments.forEach(function(comment, index) {
     comment = parser.parseComment(comment);
-    comment.isPrivate = comment.api && comment.api !== 'private' ? false : true;
+    comment.isPrivate = comment.api && comment.api === 'private' ? true : false;
     comment.ignore = comment.description[2] !== '!' ? false : true;
     comment.source = self._sources[index]
     comment.context = self.parseCodeContext(comment.source);
@@ -141,91 +140,6 @@ Docks.prototype.parse = function (content) {
     self._results.push(comment)
   });
   return this._results;
-};
-```
-
-### Docks#parseCodeContext([content])
-Parse the context from the given `str` of js.
-
-This method attempts to discover the context
-for the comment based on it's code. Currently
-supports:
-
-  - function statements
-  - function expressions
-  - prototype methods
-  - prototype properties
-  - methods
-  - properties
-  - declarations
-
-- `str` **{String}** 
-- `return` **{Object}**
-
-**Source:**
-```js
-Docks.prototype.parseCodeContext = function(content){
-  var content = content.split('\n')[0];
-
-  // function statement
-  if (/^function ([\w$]+) *\(/.exec(content)) {
-    return {
-        type: 'function'
-      , name: RegExp.$1
-      , string: RegExp.$1 + '()'
-    };
-  // function expression
-  } else if (/^var *([\w$]+)[ \t]*=[ \t]*function/.exec(content)) {
-    return {
-        type: 'function'
-      , name: RegExp.$1
-      , string: RegExp.$1 + '()'
-    };
-  // prototype method
-  } else if (/^([\w$]+)\.prototype\.([\w$]+)[ \t]*=[ \t]*function/.exec(content)) {
-    return {
-        type: 'method'
-      , constructor: RegExp.$1
-      , cons: RegExp.$1
-      , name: RegExp.$2
-      , string: RegExp.$1 + '.prototype.' + RegExp.$2 + '()'
-    };
-  // prototype property
-  } else if (/^([\w$]+)\.prototype\.([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(content)) {
-    return {
-        type: 'property'
-      , constructor: RegExp.$1
-      , cons: RegExp.$1
-      , name: RegExp.$2
-      , value: RegExp.$3
-      , string: RegExp.$1 + '.prototype.' + RegExp.$2
-    };
-  // method
-  } else if (/^([\w$.]+)\.([\w$]+)[ \t]*=[ \t]*function/.exec(content)) {
-    return {
-        type: 'method'
-      , receiver: RegExp.$1
-      , name: RegExp.$2
-      , string: RegExp.$1 + '.' + RegExp.$2 + '()'
-    };
-  // property
-  } else if (/^([\w$]+)\.([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(content)) {
-    return {
-        type: 'property'
-      , receiver: RegExp.$1
-      , name: RegExp.$2
-      , value: RegExp.$3
-      , string: RegExp.$1 + '.' + RegExp.$2
-    };
-  // declaration
-  } else if (/^var +([\w$]+)[ \t]*=[ \t]*([^\n;]+)/.exec(content)) {
-    return {
-        type: 'declaration'
-      , name: RegExp.$1
-      , value: RegExp.$2
-      , string: RegExp.$1
-    };
-  }
 };
 ```
 

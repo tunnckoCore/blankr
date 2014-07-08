@@ -18,9 +18,9 @@ var reBlock = '\\/\\*\\*(.|[\\r\\n]|\\n)*?\\*\\/\\n?\\n?';
 
 
 /**
- * ### Docks([content])
+ * ### Docks()
  * 
- * Initialize a new `Docks` instanceof with `content` to parse.
+ * Initialize a new `Docks` instance with `content` to parse.
  *
  * @param  {String}  content  optional, content to parse
  * @api public
@@ -36,7 +36,7 @@ function Docks(content) {
 }
 
 /**
- * ### Docks#content([content])
+ * ### Docks#content()
  * Provide content from who to parse comments/sources
  *
  * @param   {String}  content  optional, content to parse
@@ -88,7 +88,7 @@ Docks.prototype.result = function() {
 };
 
 /**
- * ### Docks#parseComments([content])
+ * ### Docks#parseComments()
  * Parse only comments of given content
  *
  * @param   {String}  content  optional, parse/extract `comments` of the given content
@@ -103,7 +103,7 @@ Docks.prototype.parseComments = function(content) {
 };
 
 /**
- * ### Docks#parseSources([content])
+ * ### Docks#parseSources()
  * Parse only source of given content
  *
  * @param   {String}  content  optional, parse/extract `sources` of the given content
@@ -120,7 +120,7 @@ Docks.prototype.parseSources = function(content) {
 };
 
 /**
- * ### Docks#parse([content])
+ * ### Docks#parse()
  * Parse given content
  *
  * @param   {String}  content  optional, content to parse
@@ -136,7 +136,7 @@ Docks.prototype.parse = function (content) {
 
   this._comments.forEach(function(comment, index) {
     comment = parser.parseComment(comment);
-    comment.isPrivate = comment.api && comment.api !== 'private' ? false : true;
+    comment.isPrivate = comment.api && comment.api === 'private' ? true : false;
     comment.ignore = comment.description[2] !== '!' ? false : true;
     comment.source = self._sources[index]
     comment.context = self.parseCodeContext(comment.source);
@@ -152,7 +152,7 @@ Docks.prototype.parse = function (content) {
 };
 
 /**
- * ### Docks#parseCodeContext([content])
+ * ### Docks#parseCodeContext()
  * Parse the context from the given `str` of js.
  *
  * This method attempts to discover the context
@@ -169,7 +169,7 @@ Docks.prototype.parse = function (content) {
  * 
  * @param   {String}  str 
  * @return  {Object}      
- * @api public
+ * @api private
  */
 
 Docks.prototype.parseCodeContext = function(content){
