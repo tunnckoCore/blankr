@@ -18,7 +18,7 @@ var reBlock = '\\/\\*\\*(.|[\\r\\n]|\\n)*?\\*\\/\\n?\\n?';
 
 
 /**
- * Constructor for Docks
+ * Initialize a new `Docks` builder with a working `content`.
  *
  * @param  {String}  content  optional, content to parse
  */
@@ -217,5 +217,8 @@ Docks.prototype.parseCodeContext = function(str){
   }
 };
 
+/**
+ * Expose `Docks`.
+ */
 
 module.exports = Docks;
