@@ -1,3 +1,5 @@
+'use strict';
+
 var prodown = {
     regex: {
         //links:         /!?\[([^\]<>]+)\]\(([^ \)<>]+)( "[^\(\)\"]+")?\)/g,
@@ -31,6 +33,9 @@ var prodown = {
               j = 0;
 
         var _newline = prodown.regexCheck(str, 'newline');
+        var _headings, _blockcode, _inlinecode, _horizontal, _strong,
+        _bold, _italic_i, _italic_em,
+         _link_mention, _link_full, _link_auto, _link_ref, _lists;
 
 
         str = '\n' + str + '\n';
@@ -210,7 +215,7 @@ var prodown = {
          * [2]:http://example.com
          */
         while ((_link_ref = prodown.regexCheck(str, 'link_ref')) !== null) {
-            helper1 = new RegExp('\\[' + _link_ref[2] + '\\]: ?([^ \n]+)', "gi");
+            helper1 = new RegExp('\\[' + _link_ref[2] + '\\]: ?([^ \n]+)', 'gi');
             if ((helper = helper1.exec(str)) !== null) {
                 //sitename = prodown.getSitenameFromLink(helper[1]);
                 str = str.replace(_link_ref[0], '<a class="prodown ref" href="' + helper[1] + '">' + _link_ref[1] + '</a>');
@@ -299,10 +304,10 @@ var prodown = {
 
 
 
-function parseMD() {
+/*function parseMD() {
   var plainMD = document.getElementById('plainMD').value;
   document.getElementById('resultMD').innerHTML = prodown.toHTML(plainMD);
-}
+}*/
 
 
-//module.exports.prodown = prodown;
+module.exports.prodown = prodown;
