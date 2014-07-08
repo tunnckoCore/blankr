@@ -1,3 +1,23 @@
+# strip-comments [![NPM version](https://badge.fury.io/js/strip-comments.svg)](http://badge.fury.io/js/strip-comments)
+
+> Strip comments from code. Remove both line comments and block comments.
+
+Should work with any language that uses the same syntax, e.g. JavaScript, LESS, SASS/SCSS, CSS.
+
+## Install
+
+### [npm](npmjs.org)
+
+```bash
+ npm i strip-comments --save
+ ```
+
+### [bower](https://github.com/bower/bower)
+
+```bash
+ npm install strip-comments --save
+ ```
+
 ## API
 ### Table of contents
 - [strip](#stripstr-opts)
@@ -126,3 +146,21 @@ strip.line = function(str, opts) {
 };
 ```
 
+
+## Tests
+
+```bash
+mocha -R spec
+```
+
+
+## Author
+
+**Jon Schlinkert**
+
++ [github/jonschlinkert](https://github.com/jonschlinkert)
++ [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
+
+## License
+Copyright (c) 2014 Jon Schlinkert, contributors.
+Released under the MIT license
