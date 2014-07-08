@@ -1,0 +1,109 @@
+[
+  {
+    "description": "Doneable formidable",
+    "param": [
+      "{Stream} ctx",
+      "{Object} opts"
+    ],
+    "return": "{Function} Node-style callback, ready for yielding",
+    "api": "private",
+    "params": [
+      {
+        "type": "Stream",
+        "name": "ctx",
+        "description": ""
+      },
+      {
+        "type": "Object",
+        "name": "opts",
+        "description": ""
+      }
+    ],
+    "isPrivate": true,
+    "ignore": false,
+    "source": "function formy(ctx, opts) {\n  return function(done) {\n    var form = new forms.IncomingForm(opts);\n    form.parse(ctx.req, function(err, fields, files) {\n      if (err) {return done(err);}\n      done(null, {fields: fields, files: files});\n    });\n  };\n}\n\n",
+    "context": {
+      "type": "function",
+      "name": "formy",
+      "string": "formy()"
+    }
+  },
+  {
+    "description": "**Examples**\nFor a more comprehensive examples, see [examples](./examples) folder.\n- [`examples/multer`](./examples/multer.js) - usage like Express's bodyParser - [multer][multer-url] `npm run examples-multer`\n- [`examples/koa-router`](./examples/koa-router.js) - usage with Alex's [koa-router][koa-router-url] `npm run examples-koa-router`\n\n\n**Options**\nHowever, `koa-better-body` have few custom options, see also [co-body][cobody-url], [raw-body][rawbody-url], [formidable][formidable-url]",
+    "param": [
+      "{Boolean} `patchNode` Patch request body to Node's `ctx.req` object, default `false`",
+      "{Boolean} `patchKoa` Patch request body to Koa's `ctx.request` object, default `true`",
+      "{String|Number} `jsonLimit` The byte limit of the JSON body, default `1mb`",
+      "{String|Number} `formLimit` The byte limit of the form body, default `56kb`",
+      "{String} `encoding` Sets encoding for incoming form fields, default `utf-8`",
+      "{Boolean} `multipart` Support `multipart/form-data` request bodies, default `false`",
+      "{Object} `formidable` Options that are passing to `formidable`",
+      "{Number} `formidable.maxFields` See [formidable-options](./readme.md#formidable-options). our default `10`",
+      "{Boolean} `formidable.multiples` See [formidable-options](./readme.md#formidable-options), our default `true`",
+      "{Boolean} `formidable.keepExtensions` See [formidable-options](./readme.md#formidable-options), our default `true`"
+    ],
+    "return": "{GeneratorFunction} That you can use with [koa][koa-url] or [co][co-url]",
+    "api": "public",
+    "params": [
+      {
+        "type": "Boolean",
+        "name": "`patchNode`",
+        "description": "Patch request body to Node's `ctx.req` object, default `false`"
+      },
+      {
+        "type": "Boolean",
+        "name": "`patchKoa`",
+        "description": "Patch request body to Koa's `ctx.request` object, default `true`"
+      },
+      {
+        "type": "String|Number",
+        "name": "`jsonLimit`",
+        "description": "The byte limit of the JSON body, default `1mb`"
+      },
+      {
+        "type": "String|Number",
+        "name": "`formLimit`",
+        "description": "The byte limit of the form body, default `56kb`"
+      },
+      {
+        "type": "String",
+        "name": "`encoding`",
+        "description": "Sets encoding for incoming form fields, default `utf-8`"
+      },
+      {
+        "type": "Boolean",
+        "name": "`multipart`",
+        "description": "Support `multipart/form-data` request bodies, default `false`"
+      },
+      {
+        "type": "Object",
+        "name": "`formidable`",
+        "description": "Options that are passing to `formidable`"
+      },
+      {
+        "type": "Number",
+        "name": "`formidable.maxFields`",
+        "description": "See [formidable-options](./readme.md#formidable-options). our default `10`"
+      },
+      {
+        "type": "Boolean",
+        "name": "`formidable.multiples`",
+        "description": "See [formidable-options](./readme.md#formidable-options), our default `true`"
+      },
+      {
+        "type": "Boolean",
+        "name": "`formidable.keepExtensions`",
+        "description": "See [formidable-options](./readme.md#formidable-options), our default `true`"
+      }
+    ],
+    "isPrivate": false,
+    "ignore": false,
+    "source": "module.exports = function koaBody(options) {\n  var opts = xtend(true, defaultOptions, options || {});\n  \n  return function* koaBody(next){\n    var body = {}, json, form;\n    if (this.request.is('json'))  {\n      json = yield buddy.json(this, {encoding: opts.encoding, limit: opts.jsonLimit});\n      body.fields = json;\n    }\n    else if (this.request.is('urlencoded')) {\n      form = yield buddy.form(this, {encoding: opts.encoding, limit: opts.formLimit});\n      body.fields = form;\n    }\n    else if (this.request.is('multipart') && opts.multipart) {\n      body = yield formy(this, opts.formidable);\n    }\n\n    if (opts.patchNode) {\n      this.req.body = body;\n    }\n    if (opts.patchKoa) {\n      this.request.body = body;\n    }\n    yield next;\n  };\n};",
+    "context": {
+      "type": "method",
+      "receiver": "module",
+      "name": "exports",
+      "string": "module.exports()"
+    }
+  }
+]
