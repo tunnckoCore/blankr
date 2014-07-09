@@ -1,6 +1,6 @@
-# js-code-context
+# js-code-context [![NPM version][npmjs-shields]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url] [![Using ferver][ferver-img]][ferver-url]
+> RegExp expressions to parse javascrt
 > RegExp expressions to parse javascript code context - for node and the browser  
-[![NPM version][npmjs-shields]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
 
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
@@ -57,6 +57,9 @@ Released under the [`MIT`][license-url] license.
 [npmjs-url]: http://npm.im/js-code-context
 [npmjs-shields]: http://img.shields.io/npm/v/js-code-context.svg
 [npmjs-install]: https://nodei.co/npm/js-code-context.svg?mini=true
+
+[ferver-img]: http://img.shields.io/badge/using-ferver-orange.svg
+[ferver-url]: https://github.com/jonathanong/ferver
 
 [license-url]: https://github.com/tunnckoCore/js-code-context/blob/master/license.md
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg
