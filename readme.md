@@ -1,5 +1,6 @@
 # js-code-context [![NPM version][npmjs-shields]][npmjs-url] [![Using ferver][ferver-img]][ferver-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
-> RegExp expressions to parse javascript code context - for node and the browser  
+> RegExp expressions to parse javascript code context - for node and the browser.
+
 
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
@@ -52,27 +53,28 @@ Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors](https
 Released under the [`MIT`][license-url] license.
 
 
+
 [mocha-url]: https://github.com/visionmedia/mocha
-[npmjs-url]: http://npm.im/js-code-context
-[npmjs-shields]: http://img.shields.io/npm/v/js-code-context.svg
-[npmjs-install]: https://nodei.co/npm/js-code-context.svg?mini=true
 
-[ferver-img]: http://img.shields.io/badge/using-ferver-orange.svg
-[ferver-url]: https://github.com/jonathanong/ferver
+[npmjs-url]: http://npm.im/koa-better-body
+[npmjs-shields]: http://img.shields.io/npm/v/koa-better-body.svg
+[npmjs-install]: https://nodei.co/npm/koa-better-body.svg?mini=true
 
-[license-url]: https://github.com/tunnckoCore/js-code-context/blob/master/license.md
+[license-url]: https://github.com/tunnckoCore/koa-better-body/blob/master/license.md
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg
 
-[travis-url]: https://travis-ci.org/tunnckoCore/js-code-context
-[travis-img]: https://travis-ci.org/tunnckoCore/js-code-context.svg?branch=master
+[travis-url]: https://travis-ci.org/tunnckoCore/koa-better-body
+[travis-img]: https://travis-ci.org/tunnckoCore/koa-better-body.svg?branch=master
 
-[depstat-url]: https://david-dm.org/tunnckoCore/js-code-context
-[depstat-img]: https://david-dm.org/tunnckoCore/js-code-context.svg
+[depstat-url]: https://david-dm.org/tunnckoCore/koa-better-body
+[depstat-img]: https://david-dm.org/tunnckoCore/koa-better-body.svg
 
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore
 [author-github]: https://github.com/tunnckoCore
 [author-twitter]: https://twitter.com/tunnckoCore
-
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+
+[ferver-img]: http://img.shields.io/badge/using-ferver-brightgreen.svg
+[ferver-url]: https://github.com/jonathanong/ferver
