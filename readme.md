@@ -1,6 +1,6 @@
 # js-code-context [[badges]](#install)
-> RegExp expressions to parse javascript code context - for node and the browser.
-
+> RegExp expressions to parse javascript code context - for node and the browser.  
+![NPM version][npmjs-shields]][npmjs-url] [![Using ferver][ferver-img]][ferver-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
 
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
