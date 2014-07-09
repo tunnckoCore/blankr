@@ -1,5 +1,5 @@
 # js-code-context
-> RegExp expressions to parse javascript code context - for node and the browser
+> RegExp expressions to parse javascript code context - for node and the browser  
 [![NPM version][npmjs-shields]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
 
 
