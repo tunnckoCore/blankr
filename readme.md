@@ -77,5 +77,5 @@ Released under the [`MIT`][license-url] license.
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
 
-[ferver-img]: http://img.shields.io/badge/using-ferver-black.svg
+[ferver-img]: http://img.shields.io/badge/using-ferver-000000.svg
 [ferver-url]: https://github.com/jonathanong/ferver
