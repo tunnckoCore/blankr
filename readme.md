@@ -1,6 +1,7 @@
 
+# Badges
+> [![NPM version][npmjs-shields]][npmjs-url] [![Using ferver][ferver-img]][ferver-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
 # js-code-context
-# js-code-contextss [![NPM version][npmjs-shields]][npmjs-url] [![Using ferver][ferver-img]][ferver-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
 > RegExp expressions to parse javascript code context - for node and the browser.
 
 
