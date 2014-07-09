@@ -1,5 +1,6 @@
 # js-code-context
-> RegExp expressions to parse javascript code context - for node and the browser.  
+> RegExp expressions to parse javascript code context - for node and the browser.
+
 [![NPM version][npmjs-shields]][npmjs-url] [![Using ferver][ferver-img]][ferver-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
 
 
@@ -76,5 +77,5 @@ Released under the [`MIT`][license-url] license.
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
 
-[ferver-img]: http://img.shields.io/badge/using-ferver-C432D2.svg
+[ferver-img]: http://img.shields.io/badge/using-ferver-DC30DA.svg
 [ferver-url]: https://github.com/jonathanong/ferver
