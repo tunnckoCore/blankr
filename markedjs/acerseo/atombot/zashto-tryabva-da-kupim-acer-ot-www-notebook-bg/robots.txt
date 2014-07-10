@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /assets/
+Sitemap: http://www.zashto-tryabva-da-kupim-acer-ot-www-notebook-bg.charlike.pw/sitemap.xml
