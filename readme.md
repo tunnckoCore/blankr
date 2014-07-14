@@ -1,37 +1,45 @@
-# js-code-context
-> RegExp expressions to parse javascript code context - for nodejs and the browser.
+# randomorg-js
+> Random.org JSON-RPC Javascript API - for node, command line (cli) and the browser.
 
 [![NPM version][npmjs-shields]][npmjs-url]
 [![Using ferver][ferver-img]][ferver-url]
 [![Build Status][travis-img]][travis-url]
-[![Dependency Status][depstat-img]][depstat-url]
 
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
 > Install with [npm](https://npmjs.org)
 
 ```
-$ npm install js-code-context
+$ npm install randomorg-js
 ```
 
 
 ## Usage & Example
-> For a more comprehensive example, see the [tests](./test/index.js).
+> For a more comprehensive examples, see the [tests](./test/index.js).
 
 ```js
-var fs = require('fs');
-var parseCodeContext = require('js-code-context');
-var context = fs.readFileSync('./fixture.js','utf-8');
 
-parseCodeContext(context, function(err, obj) {
-  console.log(obj)
-  //=> returns array of parsed objects
-});
 
-parseCodeContext(context, 6, function(err, obj) {
-  console.log(obj)
-  //=> returns array with 1 object for parsed 7th line of context
-});
+```
+
+
+## CLI
+> CLI uses `.sync` method. But it's not so sync, if we must be honest - in fact it's asynchronous. It just returns resulted array in variable, not in callback.
+
+```
+$ npm install --global randomorg-js
+```
+```
+$ jsCodeContext --help
+
+Options
+  --help | -h  show help
+  --line | -l  specify which line to parse
+  --file | -f  file that want to parse
+
+Example
+  $ jsCodeContext -f ./test/fixture.js -l 6
+  //=> array with one object
 ```
 
 
@@ -53,25 +61,25 @@ $ npm test
 
 
 ## License [![MIT license][license-img]][license-url]
-Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors](https://github.com/tunnckoCore/js-code-context/graphs/contributors).  
+Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors][contrib-url].  
 Released under the [`MIT`][license-url] license.
-
 
 
 [mocha-url]: https://github.com/visionmedia/mocha
 
-[npmjs-url]: http://npm.im/koa-better-body
-[npmjs-shields]: http://img.shields.io/npm/v/koa-better-body.svg
-[npmjs-install]: https://nodei.co/npm/koa-better-body.svg?mini=true
+[contrib-url]: https://github.com/tunnckoCore/randomorg-js/graphs/contributors
+[npmjs-url]: http://npm.im/randomorg-js
+[npmjs-shields]: http://img.shields.io/npm/v/randomorg-js.svg
+[npmjs-install]: https://nodei.co/npm/randomorg-js.svg?mini=true
 
-[license-url]: https://github.com/tunnckoCore/koa-better-body/blob/master/license.md
+[license-url]: https://github.com/tunnckoCore/randomorg-js/blob/master/license.md
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg
 
-[travis-url]: https://travis-ci.org/tunnckoCore/koa-better-body
-[travis-img]: https://travis-ci.org/tunnckoCore/koa-better-body.svg?branch=master
+[travis-url]: https://travis-ci.org/tunnckoCore/randomorg-js
+[travis-img]: https://travis-ci.org/tunnckoCore/randomorg-js.svg?branch=master
 
-[depstat-url]: https://david-dm.org/tunnckoCore/koa-better-body
-[depstat-img]: https://david-dm.org/tunnckoCore/koa-better-body.svg
+[depstat-url]: https://david-dm.org/tunnckoCore/randomorg-js
+[depstat-img]: https://david-dm.org/tunnckoCore/randomorg-js.svg
 
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore
