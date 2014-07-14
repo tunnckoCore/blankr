@@ -19,7 +19,7 @@ $ npm install randomorg-js
 
 ```js
 
-
+soon
 ```
 
 
