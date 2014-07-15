@@ -1,20 +1,22 @@
 ## API
 ### Table of Contents
-- [RandomJs(body, statusCb)](#randomjs)
-- [RandomJs#request(statusCb)](#randomjsrequest)
-- [RandomJs#apikey(value, statusCb)](#randomjsapikey)
-- [RandomJs#jsonrpc(value, statusCb)](#randomjsjsonrpc)
-- [RandomJs#method(value, statusCb)](#randomjsmethod)
-- [RandomJs#params(value, statusCb)](#randomjsparams)
-- [RandomJs#id(value, statusCb)](#randomjsid)
-- [RandomJs#url(value, statusCb)](#randomjsurl)
-- [RandomJs#uri(value, statusCb)](#randomjsuri)
-- [RandomJs#callback(fn, statusCb)](#randomjscallback)
-- [RandomJs#headers(object, statusCb)](#randomjsheaders)
-- [RandomJs#post(done, statusCb)](#randomjspost)
+
 
 ### RandomJs()
+**members**
+- [request](#randomjs-request)
+- [apikey](#randomjs-apikey)
+- [jsonrpc](#randomjs-jsonrpc)
+- [method](#randomjs-method)
+- [params](#randomjs-params)
+- [id](#randomjs-id)
+- [url](#randomjs-url)
+- [uri](#randomjs-uri)
+- [callback](#randomjs-callback)
+- [headers](#randomjs-headers)
+- [post](#randomjs-post)
 
+**params**
 - `[body]` **{Object}** body object that will send to api
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
@@ -45,8 +47,9 @@ function RandomJs(body, statusCb) {
 }
 ```
 
-#### RandomJs#request()
+#### RandomJs# request
 
+**params**
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs|Object}** returns self or RandomJs._request object
 
@@ -62,8 +65,9 @@ RandomJs.prototype.request = function(statusCb) {
 };
 ```
 
-#### RandomJs#apikey()
+#### RandomJs# apikey
 
+**params**
 - `<apikey>` **{String}** you api key with that you will auth to api
 - `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
 - `return` **{RandomJs}**
@@ -76,8 +80,9 @@ RandomJs.prototype.apikey = function(value, statusCb) {
 };
 ```
 
-#### RandomJs#jsonrpc()
+#### RandomJs# jsonrpc
 
+**params**
 - `<value>` **{String}** 
 - `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
 - `return` **{RandomJs}**
@@ -90,8 +95,9 @@ RandomJs.prototype.jsonrpc = function(value, statusCb) {
 };
 ```
 
-#### RandomJs#method()
+#### RandomJs# method
 
+**params**
 - `<value>` **{String}** 
 - `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
 - `return` **{RandomJs}**
@@ -108,8 +114,9 @@ RandomJs.prototype.method = function(value, statusCb) {
 };
 ```
 
-#### RandomJs#params()
+#### RandomJs# params
 
+**params**
 - `<value>` **{Object}** 
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
@@ -128,8 +135,9 @@ RandomJs.prototype.params = function(value, statusCb) {
 };
 ```
 
-#### RandomJs#id()
+#### RandomJs# id
 
+**params**
 - `<value>` **{Object}** 
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
@@ -142,8 +150,9 @@ RandomJs.prototype.id = function(value, statusCb) {
 };
 ```
 
-#### RandomJs#url()
+#### RandomJs# url
 
+**params**
 - `<value>` **{String}** 
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
@@ -156,8 +165,9 @@ RandomJs.prototype.url = function(value, statusCb) {
 };
 ```
 
-#### RandomJs#uri()
+#### RandomJs# uri
 
+**params**
 - `<value>` **{String}** 
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
@@ -169,8 +179,9 @@ RandomJs.prototype.uri = function(value, statusCb) {
 };
 ```
 
-#### RandomJs#callback()
+#### RandomJs# callback
 
+**params**
 - `<fn>` **{Function}** 
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
@@ -183,8 +194,9 @@ RandomJs.prototype.callback = function(fn, statusCb) {
 };
 ```
 
-#### RandomJs#headers()
+#### RandomJs# headers
 
+**params**
 - `<object>` **{Object}** 
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
@@ -197,8 +209,9 @@ RandomJs.prototype.headers = function(object, statusCb) {
 };
 ```
 
-#### RandomJs#post()
+#### RandomJs# post
 
+**params**
 - `<done>` **{Function}** callback that will handle response
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
