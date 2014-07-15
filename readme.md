@@ -289,7 +289,7 @@ Send request to the JSON-RPC API
 ```js
 RandomJs.prototype.post = function(done, statusCb) {
   var cb = done || this._callback, finish = false;
-  if (isNode && done) {
+  if (isNode) {
     Request.post(this._request, cb);
   } else if (isBrowser && done) {
     var xhr = new XMLHttpRequest();
