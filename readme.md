@@ -17,7 +17,8 @@ $ npm install randomorg-js
 ## Usage / Example
 > For a more comprehensive examples, see the [tests](./test/index.js).
 
-#### node & browser (without browserify)
+**node & browser** (without browserify)
+
 ```js
 var JsonApi = new RandomJs();
 
@@ -52,7 +53,7 @@ $ npm test
 
 ### RandomJs()
 Initialize a new `RandomJs` instance with `body` object.
-Also see https://api.random.org/json-rpc/1/basic
+See also https://api.random.org/json-rpc/1/basic
 
 **members**
 - [request(statusCb)](#randomjs-request)
