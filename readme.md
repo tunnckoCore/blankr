@@ -291,7 +291,7 @@ RandomJs.prototype.post = function(done, statusCb) {
   var cb = done || this._callback, finish = false;
   if (isNode) {
     Request.post(this._request, cb);
-  } else if (isBrowser && done) {
+  } else if (isBrowser) {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', this._request.url, true);
     for (var header in this._request.headers) {
