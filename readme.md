@@ -1,17 +1,17 @@
 ## API
 ### Table of Contents
-- [RandomJs([body, statusCb])](#randomjsbodystatuscb)
+- [RandomJs([body, statusCb])](#randomjsbody-statuscb)
 - [RandomJs#request([statusCb])](#randomjsprototyperequeststatuscb)
-- [RandomJs#apikey(apikey[, statusCb])](#randomjsprototypeapikeyapikeystatuscb)
-- [RandomJs#jsonrpc(jsonrpc[, statusCb])](#randomjsprototypejsonrpcjsonrpcstatuscb)
-- [RandomJs#method(method[, statusCb])](#randomjsprototypemethodmethodstatuscb)
-- [RandomJs#params(params[, statusCb])](#randomjsprototypeparamsparamsstatuscb)
-- [RandomJs#id(id[, statusCb])](#randomjsprototypeididstatuscb)
-- [RandomJs#url(url[, statusCb])](#randomjsprototypeurlurlstatuscb)
-- [RandomJs#uri(uri[, statusCb])](#randomjsprototypeuriuristatuscb)
-- [RandomJs#callback(fn[, statusCb])](#randomjsprototypecallbackfnstatuscb)
-- [RandomJs#headers(headers[, statusCb])](#randomjsprototypeheadersheadersstatuscb)
-- [RandomJs#post(done[, statusCb])](#randomjsprototypepostdonestatuscb)
+- [RandomJs#apikey(apikey[, statusCb])](#randomjsprototypeapikeyapikey-statuscb)
+- [RandomJs#jsonrpc(jsonrpc[, statusCb])](#randomjsprototypejsonrpcjsonrpc-statuscb)
+- [RandomJs#method(method[, statusCb])](#randomjsprototypemethodmethod-statuscb)
+- [RandomJs#params(params[, statusCb])](#randomjsprototypeparamsparams-statuscb)
+- [RandomJs#id(id[, statusCb])](#randomjsprototypeidid-statuscb)
+- [RandomJs#url(url[, statusCb])](#randomjsprototypeurlurl-statuscb)
+- [RandomJs#uri(uri[, statusCb])](#randomjsprototypeuriuri-statuscb)
+- [RandomJs#callback(fn[, statusCb])](#randomjsprototypecallbackfn-statuscb)
+- [RandomJs#headers(headers[, statusCb])](#randomjsprototypeheadersheaders-statuscb)
+- [RandomJs#post(done[, statusCb])](#randomjsprototypepostdone-statuscb)
 
 ### RandomJs([body, statusCb])
 Initialize a new `RandomJs` instance with `body` object.
@@ -20,7 +20,6 @@ Initialize a new `RandomJs` instance with `body` object.
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 function RandomJs(body, statusCb) {
   if (!(this instanceof RandomJs)) {return new RandomJs(body, statusCb);}
@@ -53,7 +52,6 @@ Get status of request that will be send to API
 - `[statusCb]` **{Function}** callback that recieves 1 argument with request status
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.request = function(statusCb) {
   statusCb(this._request);
@@ -68,7 +66,6 @@ Set your API key
 - `[statusCb]` **{Function}** (optional) callback that recieves request status
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.apikey = function(apikey, statusCb) {
   this._body.params.apiKey = apikey;
@@ -84,7 +81,6 @@ Set version of Random.Org JSON RPC API
 - `[statusCb]` **{Function}** (optional) callback that recieves request status
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.jsonrpc = function(jsonrpc, statusCb) {
   this._body.jsonrpc = jsonrpc;
@@ -100,7 +96,6 @@ Set which rpc method to use
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.method = function(method, statusCb) {
   if (methodDefaults.hasOwnProperty(method)) {
@@ -120,7 +115,6 @@ Set params object that will be attached to the request body
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.params = function(params, statusCb) {
   if (typeof params === 'object') {
@@ -142,7 +136,6 @@ Set id request body
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.id = function(id, statusCb) {
   this._body.id = id;
@@ -159,7 +152,6 @@ always https://api.random.org/json-rpc/1/invoke, for now
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.url = function(url, statusCb) {
   this._url = url;
@@ -175,7 +167,6 @@ Short-hand for `.url`
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.uri = function(uri, statusCb) {
   this.url(uri, statusCb);
@@ -190,7 +181,6 @@ Callback that will handle response
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.callback = function(fn, statusCb) {
   this._callback = fn;
@@ -206,7 +196,6 @@ Callback that will handle response
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.headers = function(headers, statusCb) {
   this._request.headers = headers;
@@ -223,7 +212,6 @@ Send request to the JSON-RPC API
 - `[statusCb]` **{Function}** 
 - `return` **{RandomJs}**
 
-**Source:**
 ```js
 RandomJs.prototype.post = function(done, statusCb) {
   var cb = done || this._callback, finish = false;
@@ -257,6 +245,8 @@ if (isNode) {
 }
 //})();
 ```
+
+
 
 
 
