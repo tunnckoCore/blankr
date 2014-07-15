@@ -70,7 +70,7 @@ RandomJs.prototype.request = function(statusCb) {
 Set your API key
 
 **params**
-- `<apikey>` **{String}** you api key with that you will auth to api
+- `<apikey>` **{String}** your api key with that you will auth to api
 - `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
 - `return` **{RandomJs}**
 
