@@ -22,14 +22,13 @@ $ npm install randomorg-js
 var JsonApi = new RandomJs();
 
 var result = JsonApi
-  .apikey('3873f558-60bd-4697-ad98-eb3617df0427')
-  .headers({'User-Agent': 'tunnckoCore/RandomJS'})
+  .apikey('6b1e65b9-4186-45c2-8981-b77a9842c4f0')
   .method('generateStrings')
   .params({n:4,length:11})
-  .post(function(xhrOrError, stream, body) {
+  .post(function(xhrOrErr, stream, body) {
     console.log('==START==')
-    console.log('==xhrOrError==')
-    console.log(xhrOrError)
+    console.log('==xhrOrErr==')
+    console.log(xhrOrErr)
     console.log('==stream==')
     console.log(stream)
     console.log('==body==')
