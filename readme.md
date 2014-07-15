@@ -52,6 +52,7 @@ $ npm test
 
 ### RandomJs()
 Initialize a new `RandomJs` instance with `body` object.
+Also see https://api.random.org/json-rpc/1/basic
 
 **members**
 - [request(statusCb)](#randomjs-request)
@@ -172,7 +173,7 @@ RandomJs.prototype.method = function(value, statusCb) {
 Set params object that will be attached to the request body
 
 **params**
-- `<value>` **{Object}** default, `generateIntegers`'s defaults
+- `<value>` **{Object}** default, `generateIntegers`'s defaults - [index.js#L24-L29](./index.js#L24-L29)
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
