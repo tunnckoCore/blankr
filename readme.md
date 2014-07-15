@@ -1,7 +1,7 @@
 ## API Reference
 
 ### RandomJs()
-> Initialize a new `RandomJs` instance with `body` object.
+Initialize a new `RandomJs` instance with `body` object.
 
 **members**
 - [request(statusCb)](#randomjs-request)
