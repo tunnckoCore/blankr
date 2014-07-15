@@ -23,7 +23,7 @@ Initialize a new `Docks` instance with `content` to parse.
 - [parse(content)](#docks-parse)
 
 **params**
-- `<content>` **{String}** optional, content to parse
+- `[content]` **{String}** optional, content to parse
 
 **example**
 
@@ -160,7 +160,7 @@ Docks.prototype.result = function() {
 Parse only comments of given content
 
 **params**
-- `<content>` **{String}** optional, parse/extract `comments` of the given content
+- `[content]` **{String}** optional, parse/extract `comments` of the given content
 - `return` **{Docks}**
 
 **example**
@@ -189,7 +189,7 @@ Docks.prototype.parseComments = function(content) {
 Parse only source of given content
 
 **params**
-- `<content>` **{String}** optional, parse/extract `sources` of the given content
+- `[content]` **{String}** optional, parse/extract `sources` of the given content
 - `return` **{Docks}**
 
 **example**
@@ -220,7 +220,7 @@ Docks.prototype.parseSources = function(content) {
 Parse given content
 
 **params**
-- `<content>` **{String}** optional, content to parse
+- `[content]` **{String}** optional, content to parse
 - `return` **{Object}** object with `comments` array and `sources` array
 
 **example**
