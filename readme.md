@@ -1,6 +1,6 @@
 ## API
 ### Table of Contents
-- [RandomJs(body, statusCb)](#RandomJs)
+- [RandomJs(body, statusCb)](#randomjs)
 - [RandomJs#request(statusCb)](#request)
 - [RandomJs#apikey(value, statusCb)](#apikey)
 - [RandomJs#jsonrpc(value, statusCb)](#jsonrpc)
