@@ -192,9 +192,9 @@ RandomJs.prototype.uri = function(value, statusCb) {
 Callback that will handle the response.
 You must provide function with 3 arguments that are
 
-- `xhrOrErr` - if browser, will be xhr request object, else error object
-- `stream` - if browser, will be `null`, else `[request][request-url]'s stream`
-- `body` - always, response body of the request
+- `xhrOrErr` **{Object}** if browser, will be `xhr request`, else `error`
+- `stream` **{Stream}** if browser, will be `null`, else [`request's stream`][request-url]
+- `body` **{Object}** always, response body object of the request
 
 **params**
 - `<fn>` **{Function}** done(xhrOrErr, stream, body)
