@@ -47,7 +47,7 @@ function RandomJs(body, statusCb) {
 }
 ```
 
-#### RandomJs# request
+#### RandomJs# request()
 Get status of request that will be send to API
 
 **params**
@@ -66,7 +66,7 @@ RandomJs.prototype.request = function(statusCb) {
 };
 ```
 
-#### RandomJs# apikey
+#### RandomJs# apikey()
 Set your API key
 
 **params**
@@ -82,7 +82,7 @@ RandomJs.prototype.apikey = function(value, statusCb) {
 };
 ```
 
-#### RandomJs# jsonrpc
+#### RandomJs# jsonrpc()
 Set version of Random.Org JSON RPC API
 
 **params**
@@ -98,7 +98,7 @@ RandomJs.prototype.jsonrpc = function(value, statusCb) {
 };
 ```
 
-#### RandomJs# method
+#### RandomJs# method()
 Set which rpc method to use (see https://api.random.org/json-rpc/1/basic)
 
 **params**
@@ -118,7 +118,7 @@ RandomJs.prototype.method = function(value, statusCb) {
 };
 ```
 
-#### RandomJs# params
+#### RandomJs# params()
 Set params object that will be attached to the request body
 
 **params**
@@ -140,7 +140,7 @@ RandomJs.prototype.params = function(value, statusCb) {
 };
 ```
 
-#### RandomJs# id
+#### RandomJs# id()
 Set id request body
 
 **params**
@@ -156,7 +156,7 @@ RandomJs.prototype.id = function(value, statusCb) {
 };
 ```
 
-#### RandomJs# url
+#### RandomJs# url()
 Set url to the api endpoint
 always https://api.random.org/json-rpc/1/invoke, for now
 
@@ -173,7 +173,7 @@ RandomJs.prototype.url = function(value, statusCb) {
 };
 ```
 
-#### RandomJs# uri
+#### RandomJs# uri()
 Short-hand for `.url`
 
 **params**
@@ -188,7 +188,7 @@ RandomJs.prototype.uri = function(value, statusCb) {
 };
 ```
 
-#### RandomJs# callback
+#### RandomJs# callback()
 Callback that will handle response
 
 **params**
@@ -204,7 +204,7 @@ RandomJs.prototype.callback = function(fn, statusCb) {
 };
 ```
 
-#### RandomJs# headers
+#### RandomJs# headers()
 Callback that will handle response
 
 **params**
@@ -220,7 +220,7 @@ RandomJs.prototype.headers = function(object, statusCb) {
 };
 ```
 
-#### RandomJs# post
+#### RandomJs# post()
 Send request to the JSON-RPC API
 
 **params**
