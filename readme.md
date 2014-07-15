@@ -1,20 +1,18 @@
-## API
-### Table of Contents
-
+## API Reference
 
 ### RandomJs()
 **members**
-- [request](#randomjs-request)
-- [apikey](#randomjs-apikey)
-- [jsonrpc](#randomjs-jsonrpc)
-- [method](#randomjs-method)
-- [params](#randomjs-params)
-- [id](#randomjs-id)
-- [url](#randomjs-url)
-- [uri](#randomjs-uri)
-- [callback](#randomjs-callback)
-- [headers](#randomjs-headers)
-- [post](#randomjs-post)
+- [request(statusCb)](#randomjs-request)
+- [apikey(value, statusCb)](#randomjs-apikey)
+- [jsonrpc(value, statusCb)](#randomjs-jsonrpc)
+- [method(value, statusCb)](#randomjs-method)
+- [params(value, statusCb)](#randomjs-params)
+- [id(value, statusCb)](#randomjs-id)
+- [url(value, statusCb)](#randomjs-url)
+- [uri(value, statusCb)](#randomjs-uri)
+- [callback(fn, statusCb)](#randomjs-callback)
+- [headers(object, statusCb)](#randomjs-headers)
+- [post(done, statusCb)](#randomjs-post)
 
 **params**
 - `[body]` **{Object}** body object that will send to api
@@ -241,3 +239,4 @@ RandomJs.prototype.post = function(done, statusCb) {
   if (statusCb) {statusCb(this._request);}
 };
 ```
+
