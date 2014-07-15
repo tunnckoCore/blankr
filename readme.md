@@ -50,6 +50,7 @@ function Docks(content) {
 
 #### Docks# content()
 Provide content from who to parse comments/sources
+
 **params**
 - `<content>` **{String}** optional, content to parse
 - `return` **{Docks}**
@@ -77,6 +78,7 @@ Docks.prototype.content = function (content) {
 
 #### Docks# comments()
 Get comments from previously given content
+
 **params**
 - `return` **{Array}**
 
@@ -101,7 +103,8 @@ Docks.prototype.comments = function() {
 
 #### Docks# sources()
 Get source for every comment,
-from previously given content
+from previously given content.
+
 **params**
 - `return` **{Array}**
 
@@ -128,6 +131,7 @@ Docks.prototype.sources = function() {
 #### Docks# result()
 Get final parsed result
 from previously given content
+
 **params**
 - `return` **{Object}**
 
@@ -154,6 +158,7 @@ Docks.prototype.result = function() {
 
 #### Docks# parseComments()
 Parse only comments of given content
+
 **params**
 - `<content>` **{String}** optional, parse/extract `comments` of the given content
 - `return` **{Docks}**
@@ -182,6 +187,7 @@ Docks.prototype.parseComments = function(content) {
 
 #### Docks# parseSources()
 Parse only source of given content
+
 **params**
 - `<content>` **{String}** optional, parse/extract `sources` of the given content
 - `return` **{Docks}**
@@ -212,6 +218,7 @@ Docks.prototype.parseSources = function(content) {
 
 #### Docks# parse()
 Parse given content
+
 **params**
 - `<content>` **{String}** optional, content to parse
 - `return` **{Object}** object with `comments` array and `sources` array
