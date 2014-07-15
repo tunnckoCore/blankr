@@ -48,7 +48,7 @@ function RandomJs(body, statusCb) {
 ```
 
 #### RandomJs# request
-> Get status of request that will be send to API
+Get status of request that will be send to API
 
 **params**
 - `[statusCb]` **{Function}** callback that recieves request status
@@ -67,7 +67,7 @@ RandomJs.prototype.request = function(statusCb) {
 ```
 
 #### RandomJs# apikey
-> Set your API key
+Set your API key
 
 **params**
 - `<apikey>` **{String}** you api key with that you will auth to api
@@ -83,7 +83,7 @@ RandomJs.prototype.apikey = function(value, statusCb) {
 ```
 
 #### RandomJs# jsonrpc
-> Set version of Random.Org JSON RPC API
+Set version of Random.Org JSON RPC API
 
 **params**
 - `<value>` **{String}** 
@@ -99,7 +99,7 @@ RandomJs.prototype.jsonrpc = function(value, statusCb) {
 ```
 
 #### RandomJs# method
-> Set which rpc method to use (see https://api.random.org/json-rpc/1/basic)
+Set which rpc method to use (see https://api.random.org/json-rpc/1/basic)
 
 **params**
 - `<value>` **{String}** 
@@ -119,7 +119,7 @@ RandomJs.prototype.method = function(value, statusCb) {
 ```
 
 #### RandomJs# params
-> Set params object that will be attached to the request body
+Set params object that will be attached to the request body
 
 **params**
 - `<value>` **{Object}** 
@@ -141,7 +141,7 @@ RandomJs.prototype.params = function(value, statusCb) {
 ```
 
 #### RandomJs# id
-> Set id request body
+Set id request body
 
 **params**
 - `<value>` **{Object}** 
@@ -157,7 +157,7 @@ RandomJs.prototype.id = function(value, statusCb) {
 ```
 
 #### RandomJs# url
-> Set url to the api endpoint
+Set url to the api endpoint
 always https://api.random.org/json-rpc/1/invoke, for now
 
 **params**
@@ -174,7 +174,7 @@ RandomJs.prototype.url = function(value, statusCb) {
 ```
 
 #### RandomJs# uri
-> Short-hand for `.url`
+Short-hand for `.url`
 
 **params**
 - `<value>` **{String}** 
@@ -189,7 +189,7 @@ RandomJs.prototype.uri = function(value, statusCb) {
 ```
 
 #### RandomJs# callback
-> Callback that will handle response
+Callback that will handle response
 
 **params**
 - `<fn>` **{Function}** 
@@ -205,7 +205,7 @@ RandomJs.prototype.callback = function(fn, statusCb) {
 ```
 
 #### RandomJs# headers
-> Callback that will handle response
+Callback that will handle response
 
 **params**
 - `<object>` **{Object}** 
@@ -221,7 +221,7 @@ RandomJs.prototype.headers = function(object, statusCb) {
 ```
 
 #### RandomJs# post
-> Send request to the JSON-RPC API
+Send request to the JSON-RPC API
 
 **params**
 - `<done>` **{Function}** callback that will handle response
