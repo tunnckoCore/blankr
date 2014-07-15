@@ -320,7 +320,7 @@ RandomJs.prototype.post = function(done, statusCb) {
 + [github/tunnckoCore][author-github]
 + [twitter/tunnckoCore][author-twitter]
 + [npmjs/tunnckoCore][author-npmjs]
-
++ [more ...][author-more]
 
 ## License [![MIT license][license-img]][license-url]
 Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors][contrib-url].  
@@ -349,6 +349,7 @@ Released under the [`MIT`][license-url] license.
 [author-twitter]: https://twitter.com/tunnckoCore
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+[author-more]: http://j.mp/1stW47C
 
 [ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
 [ferver-url]: https://github.com/jonathanong/ferver
