@@ -1,5 +1,5 @@
 # randomorg-js
-> Random.org JSON-RPC Javascript API - for node, command line (cli) and the browser.
+> Streaming Random.org JSON-RPC Javascript API - for node, command line (cli) and the browser.
 
 [![NPM version][npmjs-shields]][npmjs-url]
 [![Using ferver][ferver-img]][ferver-url]
@@ -122,7 +122,7 @@ Set your API key
 
 **params**
 - `<apikey>` **{String}** your api key with that you will auth to api
-- `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
+- `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
 ```js
@@ -138,7 +138,7 @@ Set version of Random.Org JSON RPC API
 
 **params**
 - `<value>` **{String}** default `'2.0'`
-- `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
+- `[statusCb]` **{Function}** callback that recieves request status callback that recieves request status
 - `return` **{RandomJs}**
 
 ```js
@@ -154,7 +154,7 @@ Set which rpc method to use (see https://api.random.org/json-rpc/1/basic)
 
 **params**
 - `<value>` **{String}** default `'generateIntegers'`
-- `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
+- `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
 ```js
@@ -173,7 +173,7 @@ RandomJs.prototype.method = function(value, statusCb) {
 Set params object that will be attached to the request body
 
 **params**
-- `<value>` **{Object}** default, `generateIntegers`'s defaults - [index.js#L24-L29](./index.js#L24-L29)
+- `<value>` **{Object}** default, `generateIntegers`'s defaults - see [index.js#L24-L29](./index.js#L24-L29)
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
