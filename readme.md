@@ -86,7 +86,7 @@ RandomJs.prototype.apikey = function(value, statusCb) {
 Set version of Random.Org JSON RPC API
 
 **params**
-- `<value>` **{String}** 
+- `<value>` **{String}** default `'2.0'`
 - `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
 - `return` **{RandomJs}**
 
@@ -102,7 +102,7 @@ RandomJs.prototype.jsonrpc = function(value, statusCb) {
 Set which rpc method to use (see https://api.random.org/json-rpc/1/basic)
 
 **params**
-- `<value>` **{String}** 
+- `<value>` **{String}** default `'generateIntegers'`
 - `[statusCb]` **{Function}** callback that recieves request status  callback that recieves request status
 - `return` **{RandomJs}**
 
@@ -122,7 +122,7 @@ RandomJs.prototype.method = function(value, statusCb) {
 Set params object that will be attached to the request body
 
 **params**
-- `<value>` **{Object}** 
+- `<value>` **{Object}** default, `generateIntegers`'s defaults
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
@@ -144,7 +144,7 @@ RandomJs.prototype.params = function(value, statusCb) {
 Set id request body
 
 **params**
-- `<value>` **{Object}** 
+- `<value>` **{Object}** default `(0 | Math.random() * 1000)`
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
@@ -157,11 +157,11 @@ RandomJs.prototype.id = function(value, statusCb) {
 ```
 
 #### RandomJs# url()
-Set url to the api endpoint
-always https://api.random.org/json-rpc/1/invoke, for now
+Set url to the api endpoint it's
+always https://api.random.org/json-rpc/1/invoke
 
 **params**
-- `<value>` **{String}** 
+- `<value>` **{String}** default `https://api.random.org/json-rpc/1/invoke`
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
@@ -177,7 +177,7 @@ RandomJs.prototype.url = function(value, statusCb) {
 Short-hand for `.url`
 
 **params**
-- `<value>` **{String}** 
+- `<value>` **{String}** same as [#url](#randomjs-url)
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
@@ -189,10 +189,15 @@ RandomJs.prototype.uri = function(value, statusCb) {
 ```
 
 #### RandomJs# callback()
-Callback that will handle response
+Callback that will handle the response.
+You must provide function with 3 arguments that are
+
+- `xhrOrErr` - if browser, will be xhr request object, else error object
+- `stream` - if browser, will be `null`, else `[request][request-url]'s stream`
+- `body` - always, response body of the request
 
 **params**
-- `<fn>` **{Function}** 
+- `<fn>` **{Function}** done(xhrOrErr, stream, body)
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
@@ -205,10 +210,11 @@ RandomJs.prototype.callback = function(fn, statusCb) {
 ```
 
 #### RandomJs# headers()
-Callback that will handle response
+Headers that will send with request.
+Always append `{'Content-Type': 'application/json'}` header to others.
 
 **params**
-- `<object>` **{Object}** 
+- `<object>` **{Object}** default `{'Content-Type': 'application/json'}`
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
@@ -224,7 +230,7 @@ RandomJs.prototype.headers = function(object, statusCb) {
 Send request to the JSON-RPC API
 
 **params**
-- `<done>` **{Function}** callback that will handle response
+- `[done]` **{Boolean|Function}** if `false`, will use [#callback](#randomjs-callback)
 - `[statusCb]` **{Function}** callback that recieves request status
 - `return` **{RandomJs}**
 
