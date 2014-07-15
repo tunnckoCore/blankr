@@ -240,13 +240,4 @@ RandomJs.prototype.post = function(done, statusCb) {
   }
   if (statusCb) {statusCb(this._request);}
 };
-
-
-if (isNode) {
-  module.exports = RandomJs;
-} else {
-  window.RandomJs = RandomJs;
-}
-//})();
 ```
-
