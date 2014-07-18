@@ -1,0 +1,10 @@
+{
+  "name": "project-scaffolder-example",
+  "private": true,
+  "dependencies": {
+    "async": "~0.9.0",
+    "cli-prompt": "~0.4.1",
+    "handlebars": "~2.0.0-alpha.4",
+    "metalsmith": "*"
+  }
+}
