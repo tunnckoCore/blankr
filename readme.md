@@ -8,7 +8,7 @@ $ node generate.js parse > api.json
 $ node generate.js docs > api.md
 ```
 
-## API Reference
+## API Reference...
 
 ### Docks()
 Initialize a new `Docks` instance with `content` to parse.
