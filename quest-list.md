@@ -14,7 +14,7 @@
 14:15 Juwel of chaos  
 15:4 Light staff +2    
 16:4 Devil Eye +1  
-17:15 Box of Heavn
+17:15 Box of Heavn  
 18:15 hell fire scroll  
 19:16 horn of unilia  
 20:fery wings +2  
