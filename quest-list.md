@@ -57,7 +57,7 @@
 57:Win 1 sky event  
 58:3 mil Tochki v DS  
 59:20 Blue feathers  
-60:summon yeti jewel
+60:summon yeti jewel  
 61:Travia 7/20  
 62:32 Sack of magic  
 63:20 Orb Soldier Juwels  
