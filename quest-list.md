@@ -48,16 +48,16 @@
 48:20 Blast Scroll  
 49:Change Image or Your Char  
 50:7 Pokani za DS 4  
-51:Stay 2 Days in Only Week  
+51:Stay 2 Days in Online Week  
 52:25 Ice age  
 53:25 fire slash  
 54:Use duble stats in site  
 55:8 Dinorants  
 56:Find dungeon shop  
 57:Win 1 sky event  
-58:3 mil Tochki v DS  
+58:1 mil Tochki v DS  
 59:20 Blue feathers  
-60:summon yeti jewel  
+60:20+ summon yeti jewel  
 61:Travia 7/20  
 62:32 Sack of magic  
 63:20 Orb Soldier Juwels  
