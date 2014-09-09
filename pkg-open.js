@@ -3,6 +3,9 @@
 var npm = require('npm');
 var opn = require('opn');
 
+// Inspired by npm-repo, but little bit smaller.
+// No need of commander. @Sindre Sorhus's better cross-platform open solution.
+
 npm.load({}, function(er) {
     if (er) {
         console.error(err);
