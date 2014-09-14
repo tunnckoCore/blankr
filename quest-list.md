@@ -10,13 +10,13 @@
 10. 8 Satan  
 11. 8 Angels  
 12. 3 Duble axe+1  
-13. 5 Serpent Staff+0  
-14. 15 Juwel of chaos  
-15. 4 Light staff +2    
+13. 5 Serpent Staff+0 = 10 life  
+14. 15 Juwel of chaos = 10 soul 
+15. 4 Light staff +2  
 16. 4 Devil Eye +1  
-17. 15 Box of Heavn  
-18. 15 hell fire scroll  
-19. 16 horn of unilia  
+17. 15 Box of Heavn = BK wings 1lvl +9+luck  
+18. 15 hell fire scroll = 5 box+3  
+19. 16 horn of unilia = 150mil zen  
 20. fery wings +2  
 21. 10 town portal  
 22. 5 DS Pokani +1  
