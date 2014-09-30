@@ -1,3 +1,21 @@
+- [ ] [amxx] headshot mod
+- [ ] [amxx] giga, mega, super sounds - ultra configurable via cvars and config file
+- [ ] [book] seo book @ gitbook (bg, en?)
+- [ ] [misc] return to linux (work/nodejs) as dual-boot with win7 (games: LoL/CS)
+- [ ] [node] readdir streamable (50-100 lines, very basic core of next modules)
+- [ ] [node] few new modules in mind
+- [ ] [node] randomjs-org update, solving some issues
+- [ ] [node] docks and ock.js
+- [ ] [node] prodown wip - one more markdown module - CommonMark compitable, extendable
+- [ ] [node] pkg-open - simple, better url opener - using @sindresorhus's opn
+- [ ] [node] full reviewing of @jonschlinkert's modules, suggestions, collaboration
+- [ ] [node] node-task spec
+- [ ] [node] useful regexp's?
+- [ ] [node] gitter cli - port for node.js
+- [ ] [php] php projects docs, refactoring, code comments
+
+------
+
 testing readmes
 
 ------
