@@ -1,6 +1,6 @@
 - [ ] [amxx] headshot mod
 - [ ] [amxx] giga, mega, super sounds - ultra configurable via cvars and config file
-- [ ] [book] seo book @ gitbook (bg, en?)
+- [ ] [book] semantic seo book @ gitbook (bg, en?)
 - [ ] [misc] return to linux (work/nodejs) as dual-boot with win7 (games: LoL/CS)
 - [ ] [node] readdir streamable (50-100 lines, very basic core of next modules)
 - [ ] [node] few new modules in mind
