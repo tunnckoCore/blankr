@@ -14,6 +14,7 @@
 - [ ] [node] gitter cli - port for node.js
 - [ ] [php] php projects docs, refactoring, code comments
 - [ ] [node] MV*? / SPA / framework?, without jQuery - gator.js (events), page.js (routing) - same approach - [Frameworkless JS](https://muut.com/blog/technology/frameworkless-javascript.html)
+- [ ] [misc] register whistle-bg.tk domain - 8 euro (forgot to renew, wtf)
 
 ------
 
