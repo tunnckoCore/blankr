@@ -15,6 +15,7 @@
 - [ ] [php] php projects docs, refactoring, code comments
 - [ ] [node] MV*? / SPA / framework?, without jQuery - gator.js (events), page.js (routing) - same approach - [Frameworkless JS](https://muut.com/blog/technology/frameworkless-javascript.html)
 - [ ] [misc] register whistle-bg.tk domain - 8 euro (forgot to renew, wtf)
+- [ ] [js] full featured github based blog system (like prose.io?) 
 
 ------
 
