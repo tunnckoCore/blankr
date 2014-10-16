@@ -1,0 +1,132 @@
+L 09/24/2014 - 00:09:44: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 00:09:59: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be aim_map
+L 09/24/2014 - 00:17:04: -------- Mapchange to aim_map --------
+L 09/24/2014 - 00:17:04: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/24/2014 - 00:17:04: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 00:48:04: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 00:48:19: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be fy_iceworld
+L 09/24/2014 - 12:55:23: -------- Mapchange to fy_iceworld --------
+L 09/24/2014 - 12:55:24: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/24/2014 - 12:55:24: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 13:26:24: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 13:26:39: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be awp_india
+L 09/24/2014 - 13:33:44: -------- Mapchange to awp_india --------
+L 09/24/2014 - 13:33:44: [csdm_spawn_preset.amxx] No spawn points file found (addons/amxmodx/configs\csdm\awp_india.spawns.cfg)
+L 09/24/2014 - 13:33:44: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 02:04:44: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 02:04:59: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be cs_italy2
+L 09/24/2014 - 02:12:04: -------- Mapchange to cs_italy2 --------
+L 09/24/2014 - 02:12:04: [csdm_spawn_preset.amxx] Loaded 25 spawn points for map cs_italy2.
+L 09/24/2014 - 02:12:04: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 02:43:05: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 02:43:20: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be aim_map
+L 09/24/2014 - 02:50:25: -------- Mapchange to aim_map --------
+L 09/24/2014 - 02:50:25: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/24/2014 - 02:50:25: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 03:21:25: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 03:21:40: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be fy_iceworld
+L 09/24/2014 - 03:28:45: -------- Mapchange to fy_iceworld --------
+L 09/24/2014 - 03:28:45: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/24/2014 - 03:28:45: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 03:59:46: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 04:00:01: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be awp_india
+L 09/24/2014 - 04:07:06: -------- Mapchange to awp_india --------
+L 09/24/2014 - 04:07:06: [csdm_spawn_preset.amxx] No spawn points file found (addons/amxmodx/configs\csdm\awp_india.spawns.cfg)
+L 09/24/2014 - 04:07:06: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 04:38:06: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 04:38:21: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be cs_italy2
+L 09/24/2014 - 04:45:26: -------- Mapchange to cs_italy2 --------
+L 09/24/2014 - 04:45:26: [csdm_spawn_preset.amxx] Loaded 25 spawn points for map cs_italy2.
+L 09/24/2014 - 04:45:26: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 05:16:27: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 05:16:42: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be aim_map
+L 09/24/2014 - 05:23:47: -------- Mapchange to aim_map --------
+L 09/24/2014 - 05:23:47: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/24/2014 - 05:23:47: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 05:54:47: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 05:55:02: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be fy_iceworld
+L 09/24/2014 - 06:02:07: -------- Mapchange to fy_iceworld --------
+L 09/24/2014 - 06:02:07: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/24/2014 - 06:02:07: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 06:33:20: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 06:33:35: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be awp_india
+L 09/24/2014 - 06:40:41: -------- Mapchange to awp_india --------
+L 09/24/2014 - 06:40:41: [csdm_spawn_preset.amxx] No spawn points file found (addons/amxmodx/configs\csdm\awp_india.spawns.cfg)
+L 09/24/2014 - 06:40:41: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 07:11:41: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 07:11:56: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be cs_italy2
+L 09/24/2014 - 07:19:01: -------- Mapchange to cs_italy2 --------
+L 09/24/2014 - 07:19:01: [csdm_spawn_preset.amxx] Loaded 25 spawn points for map cs_italy2.
+L 09/24/2014 - 07:19:01: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 07:50:02: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 07:50:17: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be aim_map
+L 09/24/2014 - 07:57:22: -------- Mapchange to aim_map --------
+L 09/24/2014 - 07:57:22: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/24/2014 - 07:57:22: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 08:28:22: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 08:28:37: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be fy_iceworld
+L 09/24/2014 - 08:35:42: -------- Mapchange to fy_iceworld --------
+L 09/24/2014 - 08:35:42: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/24/2014 - 08:35:42: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 09:06:43: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 09:06:58: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be awp_india
+L 09/24/2014 - 09:14:02: -------- Mapchange to awp_india --------
+L 09/24/2014 - 09:14:03: [csdm_spawn_preset.amxx] No spawn points file found (addons/amxmodx/configs\csdm\awp_india.spawns.cfg)
+L 09/24/2014 - 09:14:03: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 09:45:03: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 09:45:18: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be cs_italy2
+L 09/24/2014 - 09:52:23: -------- Mapchange to cs_italy2 --------
+L 09/24/2014 - 09:52:23: [csdm_spawn_preset.amxx] Loaded 25 spawn points for map cs_italy2.
+L 09/24/2014 - 09:52:23: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 10:23:24: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 10:23:39: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be aim_map
+L 09/24/2014 - 10:30:43: -------- Mapchange to aim_map --------
+L 09/24/2014 - 10:30:44: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/24/2014 - 10:30:44: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 11:01:44: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 11:01:59: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be fy_iceworld
+L 09/24/2014 - 11:09:04: -------- Mapchange to fy_iceworld --------
+L 09/24/2014 - 11:09:04: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/24/2014 - 11:09:04: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 11:40:04: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 11:40:20: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be awp_india
+L 09/24/2014 - 11:47:24: -------- Mapchange to awp_india --------
+L 09/24/2014 - 11:47:24: [csdm_spawn_preset.amxx] No spawn points file found (addons/amxmodx/configs\csdm\awp_india.spawns.cfg)
+L 09/24/2014 - 11:47:24: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 12:18:25: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 12:18:40: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be cs_italy2
+L 09/24/2014 - 12:25:47: -------- Mapchange to cs_italy2 --------
+L 09/24/2014 - 12:25:47: [csdm_spawn_preset.amxx] Loaded 25 spawn points for map cs_italy2.
+L 09/24/2014 - 12:25:47: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 12:56:49: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 12:57:04: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be aim_map
+L 09/24/2014 - 13:04:08: -------- Mapchange to aim_map --------
+L 09/24/2014 - 13:04:09: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/24/2014 - 13:04:09: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 15:53:45: -------- Mapchange to de_dust2 --------
+L 09/24/2014 - 15:53:47: [csdm_spawn_preset.amxx] Loaded 40 spawn points for map de_dust2.
+L 09/24/2014 - 15:53:47: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 16:02:42: [admincmd.amxx] Cmd: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" changelevel "aim_map"
+L 09/24/2014 - 16:02:46: -------- Mapchange to aim_map --------
+L 09/24/2014 - 16:02:46: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/24/2014 - 16:02:46: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 16:36:06: -------- Mapchange to awp_india --------
+L 09/24/2014 - 16:36:06: [csdm_spawn_preset.amxx] No spawn points file found (addons/amxmodx/configs\csdm\awp_india.spawns.cfg)
+L 09/24/2014 - 16:36:06: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/24/2014 - 16:40:39: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO"
+L 09/24/2014 - 16:40:40: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:40: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:40: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:41: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:45: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:50: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:51: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:52: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:52: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:53: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 16:40:53: [adminchat.amxx] Chat: "[Born2Win] Luftwaffe<1><STEAM_0:0:185953616><>" csay "HELLLOOOOOOOOO "
+L 09/24/2014 - 17:10:53: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/24/2014 - 17:11:08: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be de_dust2
+L 09/24/2014 - 17:13:09: -------- Mapchange to de_dust2 --------
+L 09/24/2014 - 17:13:10: [csdm_spawn_preset.amxx] Loaded 40 spawn points for map de_dust2.
+L 09/24/2014 - 17:13:10: [csdm_main.amxx] CSDM spawn mode set to none

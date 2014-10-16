@@ -1,0 +1,27 @@
+L 09/25/2014 - 12:02:27: -------- Mapchange to aim_map --------
+L 09/25/2014 - 12:02:29: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/25/2014 - 12:02:29: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/25/2014 - 12:34:17: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/25/2014 - 12:34:32: [mapchooser.amxx] Vote: Voting for the nextmap finished. Map aim_map will be extended to next 15. minutes
+L 09/25/2014 - 12:40:37: [admincmd.amxx] Cmd: "[Born2Win] Lufthansa<1><STEAM_0:0:185953616><>" pause server
+L 09/25/2014 - 12:46:55: [admincmd.amxx] Cmd: "[Born2Win] Lufthansa<1><STEAM_0:0:185953616><>" unpause server
+L 09/25/2014 - 14:12:00: -------- Mapchange to fy_iceworld --------
+L 09/25/2014 - 14:12:02: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/25/2014 - 14:12:02: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/25/2014 - 14:22:23: [admincmd.amxx] Cmd: "[Born2Win] Lufthansa<1><STEAM_0:0:185953616><>" pause server
+L 09/25/2014 - 14:22:45: [admincmd.amxx] Cmd: "[Born2Win] Lufthansa<1><STEAM_0:0:185953616><>" unpause server
+L 09/25/2014 - 14:24:07: [admin.amxx] Login: "[Born2Win] Wehrmacht<17><STEAM_0:0:1035827091><>" became an admin (account "[Born2Win] Wehrmacht") (access "abcdefghijklmnopqrstu") (address "77.70.78.85")
+L 09/25/2014 - 14:39:49: -------- Mapchange to cs_italy2 --------
+L 09/25/2014 - 14:39:50: [csdm_spawn_preset.amxx] Loaded 25 spawn points for map cs_italy2.
+L 09/25/2014 - 14:39:50: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/25/2014 - 14:40:03: [admin.amxx] Login: "[Born2Win] Wehrmacht<2><STEAM_0:0:1035827091><>" became an admin (account "[Born2Win] Wehrmacht") (access "abcdefghijklmnopqrstu") (address "77.70.78.85")
+L 09/25/2014 - 15:00:04: [admincmd.amxx] Cmd: "[Born2Win] Wehrmacht<2><STEAM_0:0:1035827091><>" changelevel "aim_map"
+L 09/25/2014 - 15:00:08: -------- Mapchange to aim_map --------
+L 09/25/2014 - 15:00:09: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/25/2014 - 15:00:09: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/25/2014 - 15:00:10: [admin.amxx] Login: "[Born2Win] Wehrmacht<2><STEAM_0:0:1035827091><>" became an admin (account "[Born2Win] Wehrmacht") (access "abcdefghijklmnopqrstu") (address "77.70.78.85")
+L 09/25/2014 - 15:31:39: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/25/2014 - 15:31:54: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be de_dust2
+L 09/25/2014 - 15:33:47: -------- Mapchange to de_dust2 --------
+L 09/25/2014 - 15:33:47: [csdm_spawn_preset.amxx] Loaded 40 spawn points for map de_dust2.
+L 09/25/2014 - 15:33:47: [csdm_main.amxx] CSDM spawn mode set to none

@@ -1,0 +1,43 @@
+[en]
+AMX_REC_DEMO = AMX X Record Demo
+CS_REC_DEMO = \yRecord Demo to %s^n\w^n1. Yes^n2. No
+NOCS_REC_DEMO = Record Demo to %s^n^n1. Yes^n2. No
+CS_STOP_REC = \yStop Recording\w^n1. Yes
+NOCS_STOP_REC = Stop Recording^n1. Yes
+CS_SS = \yScreenshot^n\dDo you wish to take^na scoreboard screenshot?^n\w^n1. Yes^n2. No
+NOCS_SS = Screenshot^n\dDo you wish to take^na scoreboard screenshot?^n^n1. Yes^n2. No
+REC_DEMO_END = ^"Finishing demo recording of the file %s^"
+REC_DEMO_START = ^"Starting demo recording of the file %s^"
+
+[fr]
+AMX_REC_DEMO = AMX X Record Demo
+CS_REC_DEMO = \yEnregistrer une Demo dans le fichier %s^n\w^n1. Oui^n2. Non
+NOCS_REC_DEMO = Enregistrer une Demo dans le fichier %s^n^n1. Oui^n2. Non
+CS_STOP_REC = \yArreter l'enregistrement de la Demo\w^n1. Oui
+NOCS_STOP_REC = Arreter l'enregistrement de la Demo^n1. Oui
+CS_SS = \yCapture d'ecran^n\dVoulez-vous prendre^nune capture d'ecran du tableau des scores ?^n\w^n1. Oui^n2. Non
+NOCS_SS = Capture d'ecran^n\dVoulez-vous prendre^nune capture d'ecran du tableau des scores ?^n^n1. Oui^n2. Non
+REC_DEMO_END = ^"Termine l'enregistrement de la Demo dans le fichier %s^"
+REC_DEMO_START = ^"Commence l'enregistrement de la Demo dans le fichier %s^"
+
+[de]
+AMX_REC_DEMO = AMXX Demo aufzeichnen
+CS_REC_DEMO = \yDemo aufzeichnen: %s^n\w^n1. Ja^n2. Nein
+NOCS_REC_DEMO = Demo aufzeichnen: %s^n^n1. Ja^n2. Nein
+CS_STOP_REC = \yStop Aufnahme\w^n1. Ja
+NOCS_STOP_REC = Stop Aufnahme^n1. Ja
+CS_SS = \yScreenshot^n\Moechtest du einen ^na Scoreboard Screenshot?^n\w^n1. Ja^n2. Nein
+NOCS_SS = Screenshot^n\dMoechtest du einen^na Scoreboard Screenshot?^n^n1. Ja^n2. Nein
+REC_DEMO_END = ^"Demo fertig aufgezeichnet. Datei: %s^"
+REC_DEMO_START = ^"Demo gestartet. Datei: %s^"
+
+[pl]
+AMX_REC_DEMO = AMX X Nagrywanie Demo
+CS_REC_DEMO = \yNagraj Demo do pliku %s^n\w^n1. Tak^n2. Nie
+NOCS_REC_DEMO = Nagraj Demo do pliku %s^n^n1. Tak^n2. Nie
+CS_STOP_REC = \yZatrzymaj Nagrywanie\w^n1. Tak
+NOCS_STOP_REC = Zatrzymaj Nagrywanie^n1. Tak
+CS_SS = \yZrzut ekranu^n\dCzy chcesz zrzut ekranu^nz tablica wynikow?^n\w^n1. Tak^n2. Nie
+NOCS_SS = Zrzut ekranu^n\dCzy chcesz zrzut ekranu^nz tablica wynikow?^n^n1. Tak^n2. Nie
+REC_DEMO_END = ^"Zakonczenie nagrywania dema do pliku %s^"
+REC_DEMO_START = ^"Rozpoczecie nagrywania dema do pliku %s^"

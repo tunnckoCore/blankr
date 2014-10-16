@@ -1,0 +1,4 @@
+L 10/08/2014 - 16:52:24: -------- Mapchange to fy_iceworld --------
+L 10/08/2014 - 16:52:29: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 10/08/2014 - 16:52:29: [csdm_main.amxx] CSDM spawn mode set to none
+L 10/08/2014 - 16:52:30: [AMXX] Failed to open dictionary file: cstrike\addons\amxmodx\data\lang\resetscore.txt

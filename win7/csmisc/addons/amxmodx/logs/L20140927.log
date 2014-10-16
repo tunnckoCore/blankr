@@ -1,0 +1,49 @@
+L 09/27/2014 - 00:43:40: -------- Mapchange to de_dust2 --------
+L 09/27/2014 - 00:43:43: [csdm_spawn_preset.amxx] Loaded 40 spawn points for map de_dust2.
+L 09/27/2014 - 00:43:43: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 02:48:00: -------- Mapchange to de_dust2 --------
+L 09/27/2014 - 02:48:01: [csdm_spawn_preset.amxx] Loaded 40 spawn points for map de_dust2.
+L 09/27/2014 - 02:48:01: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 02:51:52: -------- Mapchange to fy_iceworld --------
+L 09/27/2014 - 02:51:53: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/27/2014 - 02:51:53: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 03:23:57: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/27/2014 - 03:24:12: [mapchooser.amxx] Vote: Voting for the nextmap finished. Map fy_iceworld will be extended to next 15. minutes
+L 09/27/2014 - 03:53:19: -------- Mapchange to aim_map --------
+L 09/27/2014 - 03:53:20: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/27/2014 - 03:53:20: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 04:19:00: -------- Mapchange to aim_map --------
+L 09/27/2014 - 04:19:01: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/27/2014 - 04:19:01: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 04:50:34: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/27/2014 - 04:50:49: [mapchooser.amxx] Vote: Voting for the nextmap finished. Map aim_map will be extended to next 15. minutes
+L 09/27/2014 - 05:26:30: -------- Mapchange to fy_iceworld --------
+L 09/27/2014 - 05:26:31: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/27/2014 - 05:26:31: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 05:26:31: [AMXX] Failed to open dictionary file: cstrike\addons\amxmodx\data\lang\resetscore.txt
+L 09/27/2014 - 05:58:17: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/27/2014 - 05:58:32: [mapchooser.amxx] Vote: Voting for the nextmap finished. Map fy_iceworld will be extended to next 15. minutes
+L 09/27/2014 - 06:17:53: -------- Mapchange to aim_map --------
+L 09/27/2014 - 06:17:54: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/27/2014 - 06:17:54: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 06:17:54: [AMXX] Failed to open dictionary file: cstrike\addons\amxmodx\data\lang\resetscore.txt
+L 09/27/2014 - 06:43:19: -------- Mapchange to aim_map --------
+L 09/27/2014 - 06:43:20: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/27/2014 - 06:43:20: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 06:43:20: [AMXX] Failed to open dictionary file: cstrike\addons\amxmodx\data\lang\resetscore.txt
+L 09/27/2014 - 06:43:51: -------- Mapchange to aim_map --------
+L 09/27/2014 - 06:43:51: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/27/2014 - 06:43:51: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 06:43:51: [AMXX] Failed to open dictionary file: cstrike\addons\amxmodx\data\lang\resetscore.txt
+L 09/27/2014 - 06:46:40: -------- Mapchange to aim_map --------
+L 09/27/2014 - 06:46:42: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/27/2014 - 06:46:42: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 06:46:42: [AMXX] Failed to open dictionary file: cstrike\addons\amxmodx\data\lang\resetscore.txt
+L 09/27/2014 - 07:18:55: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/27/2014 - 07:19:10: [mapchooser.amxx] Vote: Voting for the nextmap finished. Map aim_map will be extended to next 15. minutes
+L 09/27/2014 - 07:33:55: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/27/2014 - 07:34:10: [mapchooser.amxx] Vote: Voting for the nextmap finished. The nextmap will be fy_iceworld
+L 09/27/2014 - 07:36:15: -------- Mapchange to fy_iceworld --------
+L 09/27/2014 - 07:36:15: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/27/2014 - 07:36:15: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/27/2014 - 07:36:16: [AMXX] Failed to open dictionary file: cstrike\addons\amxmodx\data\lang\resetscore.txt

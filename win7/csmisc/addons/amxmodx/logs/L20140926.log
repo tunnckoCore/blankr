@@ -1,0 +1,24 @@
+L 09/26/2014 - 04:29:43: -------- Mapchange to de_dust2 --------
+L 09/26/2014 - 04:29:45: [csdm_spawn_preset.amxx] Loaded 40 spawn points for map de_dust2.
+L 09/26/2014 - 04:29:45: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/26/2014 - 04:32:59: [admincmd.amxx] Cmd: "[Born2Win] Lufthansa<1><STEAM_0:0:185953616><>" changelevel "fy_iceworld"
+L 09/26/2014 - 04:33:03: -------- Mapchange to fy_iceworld --------
+L 09/26/2014 - 04:33:04: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/26/2014 - 04:33:04: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/26/2014 - 15:59:53: -------- Mapchange to fy_iceworld --------
+L 09/26/2014 - 15:59:54: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/26/2014 - 15:59:54: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/26/2014 - 16:35:42: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/26/2014 - 16:35:57: [mapchooser.amxx] Vote: Voting for the nextmap finished. Map fy_iceworld will be extended to next 15. minutes
+L 09/26/2014 - 22:46:04: -------- Mapchange to fy_iceworld --------
+L 09/26/2014 - 22:46:08: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/26/2014 - 22:46:08: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/26/2014 - 23:06:30: -------- Mapchange to aim_map --------
+L 09/26/2014 - 23:06:31: [csdm_spawn_preset.amxx] Loaded 14 spawn points for map aim_map.
+L 09/26/2014 - 23:06:31: [csdm_main.amxx] CSDM spawn mode set to none
+L 09/26/2014 - 23:38:31: [mapchooser.amxx] Vote: Voting for the nextmap started
+L 09/26/2014 - 23:38:47: [mapchooser.amxx] Vote: Voting for the nextmap finished. Map aim_map will be extended to next 15. minutes
+L 09/26/2014 - 23:47:46: [admincmd.amxx] Cmd: "Uni-Tell.info<1><STEAM_0:0:185953616><>" changelevel "fy_iceworld"
+L 09/26/2014 - 23:47:49: -------- Mapchange to fy_iceworld --------
+L 09/26/2014 - 23:47:50: [csdm_spawn_preset.amxx] Loaded 11 spawn points for map fy_iceworld.
+L 09/26/2014 - 23:47:50: [csdm_main.amxx] CSDM spawn mode set to none

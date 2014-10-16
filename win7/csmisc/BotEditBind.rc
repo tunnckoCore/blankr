@@ -1,0 +1,14 @@
+bind f2 bot_nav_crouch
+bind f3 bot_nav_jump
+bind f4 bot_nav_disconnect
+bind - bot_nav_mark
+bind = bot_nav_merge
+bind p bot_nav_connect
+bind o bot_nav_splice
+bind ins bot_nav_split
+bind del bot_nav_delete
+bind [ bot_nav_begin_area
+bind ] bot_nav_end_area
+bind f9 bot_nav_toggle_place_mode
+bind f10 bot_nav_toggle_place_painting
+bind f11 bot_nav_place_pick

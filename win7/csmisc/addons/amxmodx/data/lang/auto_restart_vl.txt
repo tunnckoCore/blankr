@@ -1,0 +1,55 @@
+[en]
+AUTO_RESTART = ^n Auto Restart Round In ^n %.f Sec.
+GAME_STARTED = Game Started. Go Go Go !!!
+
+[de]
+AUTO_RESTART = [AMXX] ^n Automatischer Runden Neustart In ^n %.f Sek.
+GAME_STARTED = [AMXX] Spiel Gestartet. Los Los Los !!!
+
+[sv]
+AUTO_RESTART = [AMXX] ^n Automatisk omstart av runda om ^n %.f sekunder
+GAME_STARTED = [AMXX] Spelet har b'o'rjat. Go Go Go !!!
+
+[es]
+AUTO_RESTART = [AMXX] ^n Auto Restart en ^n %.f Sec.
+GAME_STARTED = [AMXX] El Juego Empezo. Vamos Vamos Vamos !!!
+
+[lt]
+AUTO_RESTART = [AMXX] ^n Automatinis Round'o Restartas Bus Uz ^n %.f Sekundziu.
+GAME_STARTED = [AMXX] Zaidimas Restartuotas. Pirmyn Pirmyn Pirmyn !!!  
+
+[nl]
+AUTO_RESTART = [AMXX] ^n De ronde herstart automatisch in ^n %.f seconden
+GAME_STARTED = [AMXX] Het spel is gestart. Ga Ga Ga!!!
+
+[bg]
+AUTO_RESTART = [AMXX] ^n Avtomatichnoto restartirane na runda shte zapochne sled ^n %.f sekundi
+GAME_STARTED = [AMXX] Igrata zapochna. Davai davai davai!!! 
+
+[fin]
+AUTO_RESTART = [AMXX] ^n Automaattinen kierroksen uudelleenkäynnistys ^n %.f sekunnissa
+GAME_STARTED = [AMXX] Peli alkoi. Mene Mene Mene!!!
+
+[sr]
+AUTO_RESTART = [AMXX] ^n Automatski start nove runde za ^n %.f sekundi
+GAME_STARTED = [AMXX]  Igra je pocela. idemo idemo idemo !!!
+
+[pt]
+AUTO_RESTART = [AMXX] ^n Reinicio automático da ronda em ^n %.f Seg
+GAME_STARTED = [AMXX] O jogo começou. Vai Vai Vai !!! 
+
+[pl]
+AUTO_RESTART = [AMXX] ^n Auto Restart Round za ^n %.f Sek.
+GAME_STARTED = [AMXX] Gra rozpoczeta. Ruchy Ruchy Ruchy !!!
+
+[ro]
+AUTO_RESTART = [AMXX] ^n Urmeaza un auto-restart in ^n %.f secunde
+GAME_STARTED = [AMXX] Joc repornit.  GL&HF !!!
+
+[cz]
+AUTO_RESTART = [AMXX] ^n Automaticky Restart Kola Za ^n %.f Sek.
+GAME_STARTED = [AMXX] Hra zacala. Go Go Go !!! 
+
+[fr]
+AUTO_RESTART = [AMXX] ^n Redemarrage automatique du round dans ^n %.f Sec.
+GAME_STARTED = [AMXX] Le jeu a commence. En avant !!!

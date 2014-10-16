@@ -1,0 +1,51 @@
+[en]
+KILL_MSG_KILL = !yKilled by !g%s !y! He stil has !t%d !yHP and !t%d !yAP ! (!g%d !y*Frags*)
+KILL_MSG_VIC = !yYou killed: !t%s !y!
+
+[ro]
+KILL_MSG_KILL = !yAi fost ucis de !g%s !y! Inca mai are !t%d !yViata si !t%d !yArmura ! (!g%d !y*Frag(uri)*)
+KILL_MSG_VIC = !yL-ai ucis pe: !t%s !y!
+
+[nl]
+KILL_MSG_KILL = !yGedood door !g%s !y! Hij heeft nog altijd !t%d !yHP en !t%d !yAP ! (!g%d !y*Frags*)
+KILL_MSG_VIC = !yYou killed: !t%s !y!
+
+[ru]
+KILL_MSG_KILL = !yTebja ubil !g%s !y! U nego ostalos' !t%d !yZhiznej i !t%d !yBroni ! (!g%d !y*Fragov*)
+KILL_MSG_VIC = !yTy ubil: !t%s !y!
+
+[de]
+KILL_MSG_KILL = !yGetoetet von !g%s !y! Er hat noch !t%d !yHP und !t%d !yAP ! (!g%d !y*Kills*)
+KILL_MSG_VIC = !yDu hast !t%s !y getoetet!
+
+[pl]
+KILL_MSG_KILL = !yZabity przez !g%s !y! On nadal ma !t%d !yHP i !t%d !yAP ! (!g%d !y*Fragi*)
+KILL_MSG_VIC = !yZabiles: !t%s !y! 
+
+[es]
+KILL_MSG_KILL = !yFuiste asesinado por !g%s !y! El tiene !t%d !yHP y !t%d !yAP ! (!g%d !y*Matados*)
+KILL_MSG_VIC = !yHas asesinado a: !t%s !y!
+
+[fr]
+KILL_MSG_KILL = !yTue par !g%s !y! Il a toujour !t%d !yHP et !t%d !yAP ! (!g%d !y*Frags*)
+KILL_MSG_VIC = !yTu as tue: !t%s !y!
+
+[sv]
+KILL_MSG_KILL = !yD'o'dad Av !g%s !y! Han har fortfarande !t%d !yHP och !t%d !yAP kvar! (!g%d !y*Frags*)
+KILL_MSG_VIC = !yDu har dödat: !t%s !y!
+
+[lt]
+KILL_MSG_KILL = !yTave nužude !g%s !y! Jis vis dar turi !t%d !yHP ir !t%d !yAP ! (!g%d !y*Nuzudymai*)
+KILL_MSG_VIC = !yTu nužudei: !t%s !y!
+
+[bg]
+KILL_MSG_KILL = !yUbit ot !g%s !y! Toi ima !t%d !yHP i !t%d !yAP ! (!g%d !y*Frag(a)*)
+KILL_MSG_VIC = !yTi ubi: !t%s !y!
+
+[tr]
+KILL_MSG_KILL = !yOlduren !g%s !y! Canini Aldi !t%d !yHP and !t%d !yAP ! (!g%d !y*Fraglar*)
+KILL_MSG_VIC = !ySen Oldurdun: !t%s !y!
+
+[bp]
+KILL_MSG_KILL = !yVoce Morto por !g%s !y! Ele tem !t%d !yHP e !t%d !yAP ! (!g%d !y*Frags*)
+KILL_MSG_VIC = !yVoce Matou: !t%s !y!
