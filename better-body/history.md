@@ -1,5 +1,5 @@
-## v1.0.3 / October 21, 2014
-- add `fieldsKey` optional options property https://github.com/tunnckoCore/koa-better-body/issues/1
+## v1.0.4 / October 21, 2014
+- add `fieldsKey` optional options property (closes https://github.com/tunnckoCore/koa-better-body/issues/1) that allows custom key name if string, or false if you want field's names to be in the `.body` not in `.body.fields`
 
 ## v1.0.3 / July 03, 2014
 - Pretty styling
@@ -41,11 +41,6 @@
 
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
-
-[author-dlau-github]: https://github.com/dlau
-[author-dlau-twitter]: https://twitter.com/daryllau
-[author-dlau-npmjs]: https://npmjs.org/~dlau
-[author-dlau-website]: http://weak.io/
 
 [cobody-url]: https://github.com/visionmedia/co-body
 [mocha-url]: https://github.com/visionmedia/mocha
