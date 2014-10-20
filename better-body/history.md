@@ -10,7 +10,7 @@
 - need suggestions for `error 413` handling, maybe [`raw-body`][rawbody-url] problem/logic?
 - when upload, always returned type is `application/octet-stream`, not `image/png`, `image/gif`, etc - maybe [`formidable`][formidable-url] problem/logic?
 - deprecation message also comes from `formidable`
-- ~always `json` and `urlencoded` bodies will be pushed to request `.body.fields` object.~ (fixed in v1.0.4)
+- ~~always `json` and `urlencoded` bodies will be pushed to request `.body.fields` object.~~ (fixed in v1.0.4)
 
 ---
 
