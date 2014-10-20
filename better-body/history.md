@@ -1,3 +1,6 @@
+## v1.0.3 / October 21, 2014
+- add `fieldsKey` optional options property https://github.com/tunnckoCore/koa-better-body/issues/1
+
 ## v1.0.3 / July 03, 2014
 - Pretty styling
 - auto badges
