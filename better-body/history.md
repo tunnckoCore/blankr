@@ -1,5 +1,5 @@
 ## v1.0.4 / October 21, 2014
-- add `fieldsKey` optional options property (closes https://github.com/tunnckoCore/koa-better-body/issues/1) that allows custom key name if string, or false if you want field's names to be in the `.body` not in `.body.fields`
+- add `fieldsKey` optional options property (closes https://github.com/tunnckoCore/koa-better-body/issues/1) that allows custom key name if string, or false if you want field's to be in the `.body` not in `.body.fields`
 
 ## v1.0.3 / July 03, 2014
 - Pretty styling
@@ -12,12 +12,8 @@
 - deprecation message also comes from `formidable`
 - ~~always `json` and `urlencoded` bodies will be pushed to request `.body.fields` object.~~ (fixed in v1.0.4)
 
----
-
 ## v1.0.0 / June 08, 2014
 - initial release
-
----
 
 
 
