@@ -7,7 +7,7 @@
 - [ ] [node] randomjs-org update, solving some issues
 - [ ] [node] docks and ock.js
 - [ ] [node] prodown wip - one more markdown module - CommonMark compitable, extendable
-- [ ] [node] pkg-open - simple, better url opener - using @sindresorhus's opn
+- [x] [node] pkg-open - simple, better url opener - using @sindresorhus's opn
 - [ ] [node] full reviewing of @jonschlinkert's modules, suggestions, collaboration
 - [ ] [node] node-task spec
 - [ ] [node] useful regexp's?
