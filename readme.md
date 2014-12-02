@@ -3,42 +3,21 @@
 - [ ] [book] semantic seo book @ gitbook (bg, en?)
 - [x] [misc] return to linux (work/nodejs) ~~as dual-boot with win7 (games: LoL/CS)~~
 - [ ] [node] readdir streamable (50-100 lines, very basic core of next modules)
-- [ ] [node] few new modules in mind
+- [x] [node] few new modules in mind
 - [ ] [node] randomjs-org update, solving some issues
 - [ ] [node] docks and ock.js
 - [ ] [node] prodown wip - one more markdown module - CommonMark compitable, extendable
-- [x] [node] pkg-open - simple, better url opener - using @sindresorhus's opn
+- [x] [node] [pkg-open](https://github.com/tunnckoCore/pkg-open) / [homepage](https://github.com/tunnckoCore/homepage) - simple, better url opener - using @sindresorhus's opn
 - [ ] [node] full reviewing of @jonschlinkert's modules, suggestions, collaboration
 - [ ] [node] node-task spec
-- [ ] [node] useful regexp's?
-- [ ] [node] gitter cli - port for node.js
+- [x] [node] useful regexp's? [RegExps Organization](https://github.com/regexps)
+- [x] [node] gitter cli - port for node.js
 - [ ] [php] php projects docs, refactoring, code comments
 - [ ] [node] MV*? / SPA / framework?, without jQuery - gator.js (events), page.js (routing) - same approach - [Frameworkless JS](https://muut.com/blog/technology/frameworkless-javascript.html)
 - [ ] [misc] register whistle-bg.tk domain - 8 euro (forgot to renew, wtf)
-- [ ] [js] full featured github based blog system (like prose.io?, plugins?, github/fb/g+/disqus comments?) 
-
-------
-
-testing readmes
-
-------
-
-+ 19 july 2014
-+ 20 july 2014
-+ 21 july 2014
-+ 22 july 2014
-+ 23 july 2014
-+ 24 july 2014
-+ 25 july 2014
-+ 26 july 2014
-+ 27 july 2014
-+ 28 july 2014
-+ 29 july 2014
-+ 30 july 2014
-
-------
-
-soon back in the game dfgdfgdfg dfsdfdsf
+- [x] [node] full featured github based blog system (like prose.io?, plugins?, github/fb/g+/disqus comments?)
+  - "Blogging platform, engine, service - Github-hosted and Javascript-powered" - [draft as issue](https://github.com/tunnckoCore/blankr/issues/1)
+- [ ] [node] more ideas and drafts can find in [issue tracker](https://github.com/tunnckoCore/blankr/issues)
 
 ------
 
