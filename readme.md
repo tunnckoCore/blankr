@@ -16,20 +16,22 @@ update - orange
 
 [tunnckoCore]: https://github.com/tunnckoCore
 
+[940058c-img]:https://img.shields.io/badge/%23940058c-adds-brightgreen.svg?style=flat
+[940058c-url]: https://github.com/tunnckoCore/dotfiles/commit/940058c
+
+[71b7d47-img]:https://img.shields.io/badge/%2371b7d47-fixes-yellow.svg?style=flat
+[71b7d47-url]: https://github.com/tunnckoCore/dotfiles/commit/71b7d47
+
 [b0ce680-img]:https://img.shields.io/badge/%23b0ce680-adds-brightgreen.svg?style=flat
 [b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
 
-[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-fixes-yellow.svg?style=flat
-[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
+[cc6c2e2-img]:https://img.shields.io/badge/%23cc6c2e2-removes-red.svg?style=flat
+[cc6c2e2-url]: https://github.com/tunnckoCore/dotfiles/commit/cc6c2e2
 
-[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-adds-brightgreen.svg?style=flat
-[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
+[5661e96-img]:https://img.shields.io/badge/%235661e96-update-blue.svg?style=flat
+[5661e96-url]: https://github.com/tunnckoCore/dotfiles/commit/5661e96
 
-[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-removes-red.svg?style=flat
-[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
 
-[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-update-blue.svg?style=flat
-[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
 
 
 - [ ] [amxx] headshot mod
