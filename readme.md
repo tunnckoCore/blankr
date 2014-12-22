@@ -1,3 +1,37 @@
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+
+add - brightgreen 
+fix - yellow 
+remove - red 
+update - orange 
+<div style="color: white; background: black;">#940058c</div>
+
+[![][940058c-img]][940058c-url] - add
+[![][71b7d47-img]][71b7d47-url]  fix
+[![][b0ce680-img]][b0ce680-url]  add
+[![][cc6c2e2-img]][cc6c2e2-url] - remove
+[![][5661e96-img]][5661e96-url] - update  
+
+
+[tunnckoCore]: https://github.com/tunnckoCore
+
+[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-adds-brightgreen.svg?style=flat
+[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
+
+[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-fixes-yellow.svg?style=flat
+[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
+
+[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-adds-brightgreen.svg?style=flat
+[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
+
+[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-removes-red.svg?style=flat
+[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
+
+[b0ce680-img]:https://img.shields.io/badge/%23b0ce680-update-blue.svg?style=flat
+[b0ce680-url]: https://github.com/tunnckoCore/dotfiles/commit/b0ce680
+
+
 - [ ] [amxx] headshot mod
 - [ ] [amxx] giga, mega, super sounds - ultra configurable via cvars and config file
 - [ ] [book] semantic seo book @ gitbook (bg, en?)
