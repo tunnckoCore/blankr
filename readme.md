@@ -7,11 +7,11 @@ remove - red
 update - orange 
 <div style="color: white; background: black;">#940058c</div>
 
-[![][940058c-img]][940058c-url] - add
-[![][71b7d47-img]][71b7d47-url]  fix
-[![][b0ce680-img]][b0ce680-url]  add
-[![][cc6c2e2-img]][cc6c2e2-url] - remove
-[![][5661e96-img]][5661e96-url] - update  
+[![][940058c-img]][940058c-url] - add  
+[![][71b7d47-img]][71b7d47-url] - fix  
+[![][b0ce680-img]][b0ce680-url] - add  
+[![][cc6c2e2-img]][cc6c2e2-url] - remove  
+[![][5661e96-img]][5661e96-url] - update    
 
 
 [tunnckoCore]: https://github.com/tunnckoCore
