@@ -1,7 +1,7 @@
 <?php
 /**
  * @author      George Yanev (http://github.com/tunnckoCore)
- * 
+ *
  * @license     MIT License (http://opensource.org/licenses/MIT)
  * @copyright   2013, WAF Development
  */
@@ -25,3 +25,4 @@ if (isset($_GET['oldUri']) && filter_var($_GET['oldUri'], FILTER_VALIDATE_URL)) 
         echo file_get_contents($realFile);
     }
 }
+

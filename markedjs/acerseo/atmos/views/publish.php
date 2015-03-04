@@ -1,7 +1,7 @@
 <?php
 /**
  * @author      George Yanev (http://github.com/tunnckoCore)
- * 
+ *
  * @license     MIT License (http://opensource.org/licenses/MIT)
  * @copyright   2013, WAF Development
  */
@@ -9,7 +9,7 @@ require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'config.php';
 ?>
 
 <article class="xlg-article">
-    <form action="<?= APP_URI ?>article/publish" method="post">
+    <form action="<?= APP_URI ?>?uri=article/publish" method="post">
         <header class="xlg-article-metadata">
             <div class="xlg-left xlg-article-metadata-author-pic">
                 <a href="#" title="Сайт / Профил в Google+">

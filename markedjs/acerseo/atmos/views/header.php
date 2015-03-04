@@ -1,7 +1,7 @@
 <?php
 /**
  * @author      George Yanev (http://github.com/tunnckoCore)
- * 
+ *
  * @license     MIT License (http://opensource.org/licenses/MIT)
  * @copyright   2013, WAF Development
  */
@@ -60,7 +60,7 @@ oo $ $ "$      o$$$$$$$$$    $$$$$$$$$$$$$    $$$$$$$$$o       $$$o$$o$
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">-->
         <meta name="google-site-verification" content="CfoCmA7J2brFCL0QabRlCqiftkLq6-pD_lyjBlMMVnk">
         <meta name="description" content="<?= $descrBuild ?>">
-        
+
 <?php
 if ($templateData['isArticle'] == 'yes') {
     /* ARTICLE FACEBOOK METAS */
@@ -106,34 +106,34 @@ if ($templateData['isArticle'] == 'yes') {
             <?php
         }
         ?>
-        
+
 
             <meta name="robots" content="noindex,nofollow">
 
-  <script src="//code.jquery.com/jquery-1.9.1.min.js"></script> 
+  <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
         <title><?= $titleBuild ?></title>
-        
+
         <link rel="author" href="https://plus.google.com/101032319194415059995">
 
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-        
+
         <script src="<?= APP_URI ?>assets/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="<?= APP_URI ?>assets/css/core.library.css">
         <link rel="stylesheet" href="<?= APP_URI ?>assets/css/fontello.css">
         <link rel="stylesheet" href="<?= APP_URI ?>assets/css/style.css">
-        
+
         <!-- include summernote -->
-        <link rel="stylesheet/less" type="text/css" href="<?= APP_URI ?>assets/summernote/summernote.less" /> 
+        <link rel="stylesheet/less" type="text/css" href="<?= APP_URI ?>assets/summernote/summernote.less" />
         <script type="text/javascript" src="<?= APP_URI ?>assets/summernote/summernote.js"></script>
-        
-        
+
+
         <link rel="alternate" type="application/atom+xml" title="AtomFeed - <?= APP_NAME ?>" href="<?= APP_URI ?>atom" />
 <?php echo $articleAtom; ?>
 
         <link rel="shortcut icon" href="<?= APP_URI ?>imgs/charlike-avatar.png">
-        
+
         <script src="<?= APP_URI ?>assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 
@@ -236,7 +236,7 @@ if ($templateData['isArticle'] == 'yes') {
         <meta name="NOTER2013" content="YES">
     </head>
     <body itemscope itemtype="http://schema.org/WebPage" id="toTopLink">
-        
+
         <div class="xlg-load-main" style="width: 800px; margin: 25% auto;">
             <div class="wrapper">
                 <div class="inner">
@@ -289,7 +289,7 @@ if ($templateData['isArticle'] == 'yes') {
                     <ul class="nav navbar-nav">
                         <li><a href="<?= APP_URI ?>" class="navbar-brand" rel="home">Acer SEO Блог</a></li>
                         <li><a href="<?= APP_URI.APP_SITEMAP ?>" class="navbar-brand">Карта на сайта</a></li>
-                        <li><a href="<?= APP_URI ?>atom" class="navbar-brand">Atom Feed</a></li>
+                        <li><a href="<?= APP_URI ?>?uri=atom" class="navbar-brand">Atom Feed</a></li>
                         <li><a href="https://www.facebook.com/zashtotryabvadakupimacerotwwwnotebookbg" class="navbar-brand">FB</a></li>
                         <li><a href="https://www.twitter.com/AcerOtNotebook_" class="navbar-brand">Twitter</a></li>
                         <li><a href="http://acer-notebookbg.com" class="navbar-brand"><?= APP_ACERSEO_KW ?></a></li>
@@ -312,9 +312,9 @@ if ($templateData['isArticle'] == 'yes') {
                 <h1><?= APP_NAME ?> за състезанието <?= APP_ACERSEO_KW ?></h1>
                 <p itemprop="articleBody">
                 <?php
-                
+
                 echo $templateData['data']['entry'][0]['title'] . ': ' . simpleCut(strip_tags($templateData['data']['entry'][0]['content']), 150)
-                
+
                 ?>
                 </p>
             </div>
@@ -328,11 +328,11 @@ if ($templateData['isArticle'] == 'yes') {
         if ($templateData['isArticle'] == 'yes') {
             ?>
         <div class="tm-global-hide" itemprop="breadcrumb">
-            <a href="<?=APP_URI?>">Acer SEO Blog</a> > 
+            <a href="<?=APP_URI?>">Acer SEO Blog</a> >
             <a href="<?=$templateData['data']['entry'][0]['id']?>"><?=$templateData['data']['entry'][0]['title']?></a>
         </div>
             <?php
         }
-        
+
         echo $significantLink;
-        
+

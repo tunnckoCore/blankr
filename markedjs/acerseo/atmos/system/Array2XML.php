@@ -1,7 +1,7 @@
 <?php
 /**
  * @author      George Yanev (http://github.com/tunnckoCore)
- * 
+ *
  * @license     MIT License (http://opensource.org/licenses/MIT)
  * @copyright   2013, WAF Development
  */
@@ -36,12 +36,12 @@
  *       $xml = Array2XML::createXML('root_node_name', $php_array);
  *       echo $xml->saveXML();
  */
- 
+
 class Array2XML {
- 
+
     private static $xml = null;
 	private static $encoding = 'UTF-8';
- 
+
     /**
      * Initialize the root XML node [optional]
      * @param $version
@@ -49,11 +49,11 @@ class Array2XML {
      * @param $format_output
      */
     public static function init($version = '1.0', $encoding = 'UTF-8', $format_output = true) {
-        self::$xml = new DomDocument($version, $encoding);
+        self::$xml = new \DOMDocument($version, $encoding);
         self::$xml->formatOutput = $format_output;
 		self::$encoding = $encoding;
     }
- 
+
     /**
      * Convert an Array to XML
      * @param string $node_name - name of the root node to be converted
@@ -63,11 +63,11 @@ class Array2XML {
     public static function &createXML($node_name, $arr=array()) {
         $xml = self::getXMLRoot();
         $xml->appendChild(self::convert($node_name, $arr));
- 
+
         self::$xml = null;    // clear the xml node in the class for 2nd time use.
         return $xml;
     }
- 
+
     /**
      * Convert an Array to XML
      * @param string $node_name - name of the root node to be converted
@@ -75,11 +75,11 @@ class Array2XML {
      * @return DOMNode
      */
     private static function &convert($node_name, $arr=array()) {
- 
+
         //print_arr($node_name);
         $xml = self::getXMLRoot();
         $node = $xml->createElement($node_name);
- 
+
         if(is_array($arr)){
             // get the attributes first.;
             if(isset($arr['@attributes'])) {
@@ -91,7 +91,7 @@ class Array2XML {
                 }
                 unset($arr['@attributes']); //remove the key from the array once done.
             }
- 
+
             // check if it has a value stored in @value, if yes store the value and return
             // else check if its directly stored as string
             if(isset($arr['@value'])) {
@@ -106,7 +106,7 @@ class Array2XML {
                 return $node;
             }
         }
- 
+
         //create subnodes using recursion
         if(is_array($arr)){
             // recurse to get the node for that key
@@ -128,16 +128,16 @@ class Array2XML {
                 unset($arr[$key]); //remove the key from the array once done.
             }
         }
- 
+
         // after we are done with all the keys in the array (if it is one)
         // we check if it has any text value, if yes, append it.
         if(!is_array($arr)) {
             $node->appendChild($xml->createTextNode(self::bool2str($arr)));
         }
- 
+
         return $node;
     }
- 
+
     /*
      * Get the root XML node, if there isn't one, create it.
      */
@@ -147,7 +147,7 @@ class Array2XML {
         }
         return self::$xml;
     }
- 
+
     /*
      * Get string representation of boolean value
      */
@@ -157,7 +157,7 @@ class Array2XML {
         $v = $v === false ? 'false' : $v;
         return $v;
     }
- 
+
     /*
      * Check if the tag name or attribute name contains illegal characters
      * Ref: http://www.w3.org/TR/xml/#sec-common-syn

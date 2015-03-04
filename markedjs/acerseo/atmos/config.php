@@ -1,7 +1,7 @@
 <?php
 /**
  * @author      George Yanev (http://github.com/tunnckoCore)
- * 
+ *
  * @license     MIT License (http://opensource.org/licenses/MIT)
  * @copyright   2013, WAF Development
  */
@@ -19,7 +19,7 @@ define('APP_ROOT', __DIR__ . DS);
 define('APP_PATH', APP_ROOT . 'application' . DS);
 define('APP_VIEWS', APP_ROOT . 'views' . DS);
 define('APP_SYSTEM', APP_ROOT . 'system' . DS);
-define('APP_PUBLIC', APP_ROOT . '../atombot/zashto-tryabva-da-kupim-acer-ot-www-notebook-bg' . DS);
+define('APP_PUBLIC', APP_ROOT . '..' . DS);
 define('APP_ATOMBOT', APP_PUBLIC . 'storage' . DS);
 define('APP_SITEMAP', 'sitemap.xml');
 define('APP_FEED', 'feed.atom');
@@ -27,7 +27,7 @@ define('APP_FEED', 'feed.atom');
 
 define('APP_GITHUB', 'Xmlogger-Platform');
 define('APP_NAME', 'Acer SEO Blog');
-define('APP_URI', 'http://localhost/GrithAPI/acerseo/atombot/zashto-tryabva-da-kupim-acer-ot-www-notebook-bg/');
+define('APP_URI', 'http://'.$_SERVER['SERVER_NAME'].':7890/');
 define('APP_SITE_IMG', APP_URI.'assets/imgs/acer03.jpg');
 define('APP_ACERSEO_KW', '"Защо трябва да купим Acer от www.Notebook.bg?"');
 define('APP_GPLUS_HASH', 'https://plus.google.com/s/%23');

@@ -1,7 +1,7 @@
 <?php
 /**
  * @author      George Yanev (http://github.com/tunnckoCore)
- * 
+ *
  * @license     MIT License (http://opensource.org/licenses/MIT)
  * @copyright   2013, WAF Development
  */
@@ -14,6 +14,7 @@ require '../../atmos/config.php';
 $request = requestUri();
 $results = count($request);
 
+var_dump($request);
 
 if ($request[0] == 'sitemaps.xml') {
     header("HTTP/1.1 301 Moved Permanently");
@@ -33,15 +34,15 @@ if ($request[0] == 'article' && $request[1] == 'publish' && $_POST) {
     $atomArticles = new AtomBotArticles($atomFeed, $atomEntries);
     $atomArticles->publish($_POST);
 } else {
-    
-    if ($request[1] == 'article') {            
+
+    if ($request[1] == 'article') {
         $xmlFile = file_get_contents(APP_ATOMBOT . $request[0] . '.atom');
 
         $xml = simplexml_load_string($xmlFile, 'SimpleXMLElement', LIBXML_NOCDATA);
         $array = json_decode(json_encode((array) $xml), TRUE);
         $templateData['isArticle'] = 'yes';
         $templateData['data'] = $array;
-        
+
         display('article.php', false, $templateData);
         exit;
     } elseif ($request[1] == 'atom') {
