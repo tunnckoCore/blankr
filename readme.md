@@ -1,9 +1,4 @@
 
-add - brightgreen 
-fix - yellow 
-remove - red 
-update - orange 
-<div style="color: white; background: black;">#940058c</div>
 
 [![][940058c-img]][940058c-url] - add  
 [![][71b7d47-img]][71b7d47-url] - fix  
