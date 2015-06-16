@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/LocalBusiness">
+    <head>
+        <!-- start: Meta -->
+        <meta charset="utf-8">
+        <title>Adminsbash &bull; Хостинг и споделяне на изображения, снимки, картинки</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <meta name="description" content="Прикачи изображения, свиркай си и ги сподели с приятели.
+              Най-добрият и гарантиран безплатен хостинг за изображения, картинки, снимки, аватари и фотоси">
+        <meta name="keywords" content="хостинг за изображения, имидж хостинг, прикачи, изображения, споделяне на изображения, хостинг,
+              uploading images, images hosting, photos hosting, sharing photos, photos uploading">
+        <meta name="robots" content="index,follow">
+
+        <!-- Add the following three tags inside head -->
+        <meta itemprop="name" content="Whistle Uploads">
+        <meta itemprop="description" content="Прикачи изображения, свиркай си и ги сподели с приятели.
+              Най-добрият и гарантиран безплатен хостинг за изображения, картинки, снимки, аватари и фотоси">
+        <meta itemprop="image" content="./img/whistle-image-cut.png">
+
+        <!-- end: Meta -->
+
+        <!-- start: CSS -->
+
+        <link rel="stylesheet" id="bootstrap-style" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" id="bootstrap-responsive-min" href="./css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" id="base-style" href="./css/style.css">
+
+        <link rel="stylesheet" id="base-style-responsive" href="./css/style-responsive.css">
+
+        <!--[if lt IE 7 ]>
+        <link id="ie-style" href="./css/style-ie.css" rel="stylesheet">
+        <![endif]-->
+        <!--[if IE 8 ]>
+        <link id="ie-style" href="./css/style-ie.css" rel="stylesheet">
+        <![endif]-->
+        <!--[if IE 9 ]>
+        <![endif]-->
+        <link rel="stylesheet" id="font-w-api" href="./css/w-api.css">
+        <!-- end: CSS -->
+
+
+        <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- start: Miscs -->
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+        <link rel="icon" href="./img/favicon.png" type="image/png">
+        <!-- end: Miscs -->
+
+        <!-- La javascript
+        ================================================== -->
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        <script src="http://twitter.github.io/bootstrap/assets/js/jquery.js"></script>
+        <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+        <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+        <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+
+
+        <style>
+            .cpw-top-nav-bar {
+                background: #E8E8E8;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E4E2', endColorstr='#D1D0CE'); /* IE 7 & 8 */
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#F0FFFF), to(#E8E8E8)); /* Safari 4+, Chrome 1-9 */
+                background-image: -webkit-linear-gradient(top, #FEFCFF, #E8E8E8);  /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+                background-image: -moz-linear-gradient(top,  #FEFCFF,  #E8E8E8); /* Firefox 3.6+ */
+                background-image: -ms-linear-gradient(top, #FEFCFF, #E8E8E8); /* IE 10+ */
+                background-image: -o-linear-gradient(top, #FEFCFF, #E8E8E8); /* Opera 11.10+ */
+            }
+            .cpw-top-nav-bar li.disabled,
+            .cpw-top-nav-bar li.disabled:hover {
+                font-weight: bold;
+                background: #efefef;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFCFF', endColorstr='#ececec'); /* IE 7 & 8 */
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#FEFCFF), to(#ececec)); /* Safari 4+, Chrome 1-9 */
+                background-image: -webkit-linear-gradient(top, #FEFCFF, #ececec);  /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+                background-image: -moz-linear-gradient(top,  #FEFCFF,  #ececec); /* Firefox 3.6+ */
+                background-image: -ms-linear-gradient(top, #FEFCFF, #ececec); /* IE 10+ */
+                background-image: -o-linear-gradient(top, #FEFCFF, #ececec); /* Opera 11.10+ */
+            }
+            .cpw-top-nav-bar li.current,
+            .cpw-top-nav-bar li.current:hover,
+            .cpw-top-nav-bar li:hover {
+                background: #ececec;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#e3e3e3'); /* IE 7 & 8 */
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#ececec), to(#e3e3e3)); /* Safari 4+, Chrome 1-9 */
+                background-image: -webkit-linear-gradient(top, #ececec, #e3e3e3);  /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+                background-image: -moz-linear-gradient(top,  #ececec,  #e3e3e3); /* Firefox 3.6+ */
+                background-image: -ms-linear-gradient(top, #ececec, #e3e3e3); /* IE 10+ */
+                background-image: -o-linear-gradient(top, #ececec, #e3e3e3); /* Opera 11.10+ */
+            }
+            .cpw-top-nav-title,
+            .cpw-top-nav-bar li.cpw-top-nav-title:hover,
+            .cpw-top-nav-title:hover,
+            li.cpw-top-nav-title:hover {
+                padding-top: 6px;
+                padding-right: 1%;
+                background: #E8E8E8;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E4E2', endColorstr='#D1D0CE'); /* IE 7 & 8 */
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#F0FFFF), to(#E8E8E8)); /* Safari 4+, Chrome 1-9 */
+                background-image: -webkit-linear-gradient(top, #FEFCFF, #E8E8E8);  /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+                background-image: -moz-linear-gradient(top,  #FEFCFF,  #E8E8E8); /* Firefox 3.6+ */
+                background-image: -ms-linear-gradient(top, #FEFCFF, #E8E8E8); /* IE 10+ */
+                background-image: -o-linear-gradient(top, #FEFCFF, #E8E8E8); /* Opera 11.10+ */
+            }
+        </style>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://www.steamdev.com/zclip/js/jquery.zclip.min.js"></script>
+    </head>
+
+    <body itemscope itemtype="http://schema.org/WebPage">
+        <div id="cpw-media">
+            <ul class="nav nav-pills cpw-top-nav-bar">
+                <li>
+                    <a href="http://www.charlike.pw/" rel="follow">Charlike PW</a>
+                </li>
+                <li class="disabled">
+                    <a href="http://www.whistle-bg.tk/" rel="home">Whistle Uploads</a>
+                </li>
+                <li>
+                    <a href="http://www.dewiz.eu/" rel="follow">Dewiz</a>
+                </li>
+                <li>
+                    <a href="http://www.liababy.eu/" rel="follow">LiaBaby</a>
+                </li>
+                <li>
+                    <a href="http://www.zashto-tryabva-da-kupim-acer-ot-www-notebook-bg.charlike.pw/" rel="follow">"Защо трябва да купим Acer от www.Notebook.bg?"</a>
+                </li>
+                <li class="pull-right cpw-top-nav-title">
+                    Хостинг и споделяне на изображения, снимки, картинки                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+
+            <section id="page-wrap" class="row-fluid login-box">
+                <header id="page-header">
+                    <h1 class="top-h" title="Хостинг и споделяне на изображения, снимки, картинки">Хостинг и споделяне на изображения, снимки, картинки</h1>
+                    <nav class="clearfix">
+                        <ul class="icons">
+                            <li><a href="./home.html" title="Homepage" rel="home"><i class="icon-home icon-large"></i></a></li>
+                            <li><a href="./home.html" title="Developers API"><i class="icon-puzzle-piece icon-large"></i></a></li>
+                            <li><a href="./help.html" title="Help"><i class="icon-question-sign icon-large"></i></a></li>
+                            <li><a href="./gallery.html" title="Gallery"><i class="icon-th icon-large"></i></a></li>
+                            <li class="nav-head"><a href="./">Хостинг и споделяне на изображения, снимки, картинки</a></li>
+                            <li>
+                                <a href="http://whistle-bg.tk/" target="_blank"
+                                   title="Хостинг и споделяне на изображения, снимки, картинки">
+                                    <i class="icon-mail-forward icon-large"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+<section id="blog-section">
+    <article class="w-article">
+        <h1 class="text-left">Администрация</h1>
+        <p class="clearfix">
+
+                            <form class="form-horizontal" action="" method="post">
+                        <input class="input-large span10" name="username" id="username" type="text" placeholder="type username"/>
+                        <input class="input-large span10" name="password" id="password" type="password" placeholder="type password"/>
+                        <button type="submit" class="btn btn-primary"><i class="icon-off icon-white"></i> Login</button>
+                    </form>
+                        </p>
+    </article>
+    <footer class="text-right">
+        &nbsp;
+    </footer>
+</section>
+
+                <center><a href="http://www.whistle-bg.tk/" target="_blank" title="Хостинг и споделяне на изображения, снимки, картинки"><img id="advertiser" src="http://www.whistle-bg.tk/uploads/76030290.png" alt="Advertisr"></a></center>
+                <footer id="page-footer">
+                    <p class="clearfix">
+                        <span class="pull-left">
+                            <a href="/index.php" title="Powered by Whistle API">Whistle Uploads</a> &copy 2013,
+                            <a href="http://www.charlike.pw/" title="CPW Media">Charlike PW Media</a>
+                        </span>
+                        <span class="pull-right">
+                            Perfectum Theme
+                        </span>
+                    </p>
+                </footer>
+            </section><!--/row-->
+        </div><!--/.fluid-container
+        <div id="fixedAds">
+            <img src="http://www.theshiftrp.com/uploads/gallery/album_6/gallery_78_6_17962.jpg">
+        </div>-->
+        <noscript>
+    <a href="http://www.tyxo.bg/?139999" title="Tyxo.bg counter"><img src="https://cnt.tyxo.bg/139999" width="1" height="1" border="0" alt="Tyxo.bg counter" /></a>
+  </noscript>
+  <script type="text/javascript">
+  <!--
+  d=document;d.write('<a href="https://www.tyxo.bg/?139999" title="Tyxo.bg counter"><img width="1" height="1" border="0" alt="Tyxo.bg counter" src="'+location.protocol+'//cnt.tyxo.bg/139999?rnd='+Math.round(Math.random()*2147483647));
+  d.write('&sp='+screen.width+'x'+screen.height+'&r='+escape(d.referrer)+'"></a>');
+  //-->
+  </script>
+    </body>
+</html>

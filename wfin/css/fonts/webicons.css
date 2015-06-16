@@ -1,0 +1,101 @@
+/* === Webicons === */
+.vd-icon
+{
+    display: inline-block;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+    text-indent: -999em;
+    text-align: left;
+}
+/* Behance */
+.vd-icon.behance
+{
+    background: url("../../images/icons/vd-behance.png")
+}
+/* Dribbble */
+.vd-icon.dribbble
+{
+    background: url("../../images/icons/vd-dribbble.png")
+}
+/* Evernote */
+.vd-icon.evernote
+{
+    background: url("../../images/icons/vd-evernote.png")
+}
+/* Facebook */
+.vd-icon.facebook
+{
+    background: url("../../images/icons/vd-facebook.png")
+}
+/* Flickr */
+.vd-icon.flickr
+{
+    background: url("../../images/icons/vd-flickr.png")
+}
+/* Google+ */
+.vd-icon.googleplus
+{
+    background: url("../../images/icons/vd-googleplus.png")
+}
+/* LinkedIn */
+.vd-icon.linkedin
+{
+    background: url("../../images/icons/vd-linkedin.png")
+}
+/* Pinterest */
+.vd-icon.pinterest
+{
+    background: url("../../images/icons/vd-pinterest.png")
+}
+/* RSS */
+.vd-icon.rss
+{
+    background: url("../../images/icons/vd-rss.png")
+}
+
+/* Tumblr */
+.vd-icon.tumblr
+{
+    background: url("../../images/icons/vd-tumblr.png")
+}
+/* Twitter */
+.vd-icon.twitter
+{
+    background: url("../../images/icons/vd-twitter.png")
+}
+/* Vimeo */
+.vd-icon.vimeo
+{
+    background: url("../../images/icons/vd-vimeo.png")
+}
+/* Wordpress */
+.vd-icon.wordpress
+{
+    background: url("../../images/icons/vd-wordpress.png")
+}
+/* YouTube */
+.vd-icon.youtube
+{
+    background: url("../../images/icons/vd-youtube.png")
+}
+/* Zerply */
+.vd-icon.zerply
+{
+    background: url("../../images/icons/vd-zerply.png")
+}
+/* Forrst */
+.vd-icon.forrst
+{
+    background: url("../../images/icons/vd-forrst.png")
+}
+/* Digg */
+.vd-icon.digg
+{
+    background: url("../../images/icons/vd-digg.png")
+}
+/* Blogger */
+.vd-icon.blogger
+{
+    background: url("../../images/icons/vd-blogger.png")
+}

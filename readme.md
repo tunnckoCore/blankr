@@ -1,4 +1,11 @@
-# blankr - backups and etc
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+
+add - brightgreen 
+fix - yellow 
+remove - red 
+update - orange 
+<div style="color: white; background: black;">#940058c</div>
 
 [![][940058c-img]][940058c-url] - add  
 [![][71b7d47-img]][71b7d47-url] - fix  
@@ -31,13 +38,13 @@
 - [ ] [amxx] giga, mega, super sounds - ultra configurable via cvars and config file
 - [ ] [book] semantic seo book @ gitbook (bg, en?)
 - [x] [misc] return to linux (work/nodejs) ~~as dual-boot with win7 (games: LoL/CS)~~
-- [ ] [node] readdir streamable (50-100 lines, very basic core of next modules)
+- [x] [node] readdir streamable (50-100 lines, very basic core of next modules)
 - [x] [node] few new modules in mind
-- [ ] [node] randomjs-org update, solving some issues
+- [x] [node] randomjs-org update, solving some issues
 - [ ] [node] docks and ock.js
 - [ ] [node] prodown wip - one more markdown module - CommonMark compitable, extendable
 - [x] [node] [pkg-open](https://github.com/tunnckoCore/pkg-open) / [homepage](https://github.com/tunnckoCore/homepage) - simple, better url opener - using @sindresorhus's opn
-- [ ] [node] full reviewing of @jonschlinkert's modules, suggestions, collaboration
+- [z] [node] full reviewing of @jonschlinkert's modules, suggestions, collaboration
 - [ ] [node] node-task spec
 - [x] [node] useful regexp's? [RegExps Organization](https://github.com/regexps)
 - [x] [node] gitter cli - port for node.js
@@ -46,7 +53,7 @@
 - [ ] [misc] register whistle-bg.tk domain - 8 euro (forgot to renew, wtf)
 - [x] [node] full featured github based blog system (like prose.io?, plugins?, github/fb/g+/disqus comments?)
   - "Blogging platform, engine, service - Github-hosted and Javascript-powered" - [draft as issue](https://github.com/tunnckoCore/blankr/issues/1)
-- [ ] [node] more ideas and drafts can find in [issue tracker](https://github.com/tunnckoCore/blankr/issues)
+- [x] [node] more ideas and drafts can find in [issue tracker](https://github.com/tunnckoCore/blankr/issues)
 
 ------
 
