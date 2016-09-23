@@ -1,0 +1,45 @@
+{
+  "name": "postjson",
+  "bert": 1,
+  "alf": null,
+  "version": "0.0.0",
+  "description": "Transforming JSON with plugins.",
+  "repository": "tunnckoCore/postjson",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "base": "^0.11.1",
+    "base-plugins": "^0.4.13",
+    "for-own": "^0.1.4",
+    "kind-of": "^3.0.4",
+    "lazy-cache": "^2.0.1",
+    "lazy-utils": "^1.0.1"
+  },
+  "devDependencies": {
+    "mukla": "^0.4.1",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js",
+    "utils.js"
+  ],
+  "keywords": [
+    "postjson"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}

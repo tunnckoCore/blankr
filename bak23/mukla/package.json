@@ -1,0 +1,44 @@
+{
+  "name": "mukla",
+  "version": "0.0.0",
+  "description": "Spectacular testing framework.",
+  "repository": "tunnckoCore/mukla",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "async-control": "^0.5.0",
+    "forward-object": "^0.1.1",
+    "get-fn-name": "^1.0.0",
+    "lazy-cache": "^2.0.1",
+    "lazy-utils": "^1.0.1",
+    "letta": "^0.5.2",
+    "set-value": "^0.3.3"
+  },
+  "devDependencies": {
+    "mukla": "^0.4.1",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js",
+    "utils.js"
+  ],
+  "keywords": [
+    "mukla"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}

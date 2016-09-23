@@ -1,0 +1,134 @@
+//////////
+// arrays
+//////////
+
+# address: [street, city, beta, state] 
+# or
+address: street, city, beta, state
+# =>
+# {
+#   "address": ["street", "city", "beta", "state"]
+# }
+
+# combo
+address: street, city, beta, state
+foo bar: "baz qux"
+# =>
+# {
+#   "address": ["street", "city", "beta", "state"],
+#   "foo bar": "baz qux"
+# }
+
+address:
+  street,
+  city,
+  beta;
+  state,
+// =>
+// {
+//   "address": ["street", "city", "beta;", "state"]
+// }
+
+address:
+  street
+  city;
+  beta
+  state
+// =>
+// {
+//   "address": ["street", "city;", "beta", "state"]
+// }
+
+// ??
+address: [
+  street,
+  city,
+  beta;,
+  gama,;
+  state,
+]
+// =>
+// {
+//   "address": ["street", "city", "beta;", "gama", "state"]
+// }
+
+// ??
+
+// address
+//   - street
+//   - city
+//   - state
+
+// address:
+//   - street
+//   - city
+//   - state
+
+
+#/////////
+# objects
+#/////////
+
+address:
+  street: // makes empty string
+  city: "foo bar"
+  state: some sentence
+// =>
+// {
+//   "address": {
+//     "street": "",
+//     "city": "foo bar",
+//     "state": "some sentence"
+//   }
+// }
+
+address loc:
+  'here': and there
+  no-matter: of quotes
+  "and the": dashes
+// =>
+// {
+//   "address loc": {
+//     "here": "and there",
+//     "no-matter": "of quotes",
+//     "and the": "dashes"
+//   }
+// }
+
+nested address:
+  obj: foo bar
+  location:
+    zip: 1437
+    city: 'sofia, bulgaria'
+  state: true
+  and some:
+    random,
+    one,
+    array,
+    two
+  super:
+    nested:
+      foo: address
+      bar: null
+    baz: qux sentence
+  final: done callback
+// =>
+// {
+//   "nested address": {
+//     "obj": "foo bar",
+//     "location": {
+//       "zip": 1437,
+//       "city": "sofia, bulgaria"
+//     },
+//     "state": true,
+//     "and some": ["random", "one", "array", "two"],
+//     "super": {
+//       "nested": {
+//         "foo": "address",
+//         "bar": null
+//       },
+//       "baz": "qux sentence"
+//     },
+//     "final": "done callback"
+//   }
+// }

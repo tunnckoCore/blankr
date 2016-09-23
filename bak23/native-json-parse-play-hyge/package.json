@@ -1,0 +1,25 @@
+{
+  "2":"sa",
+  "bool": true,
+  "name": "hyge",
+  "description": "foo bar baz",
+  "license": "MIT",
+  "lit":false,
+  "scripts": {
+    "aa": "bb",
+    "cc": {
+      "dd": "bar baz"
+    }
+  },
+  "version": "0.0.0",
+  "some array": [
+    1,
+    "str",
+    23,
+    true,
+    false,
+    null
+  ],
+  "foo": -34,
+  "bar": null
+}
