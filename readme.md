@@ -10,15 +10,18 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 > By using [commitizen][czfriendly-url] and [conventional commit messages][conventional-messages-url], 
 maintaining meaningful [ChangeLog][changelogmd-url] 
 and commit history based on [global conventions][conventions-url], 
-following [StandardJS][standard-url] code style and having always up-to-date dependencies through
-services like [GreenKeeper][greenkeeper-url] and [David-DM][daviddm-url] this 
-package has **top quality** forever.
+following [StandardJS][standard-url] code style through [ESLint][eslint-url] and
+having always up-to-date dependencies through integrations
+like [GreenKeeper][gk-integration-url] and services like [David-DM][daviddm-url]
+this package has **top quality** forever.
 
 [![code climate][codeclimate-img]][codeclimate-url] 
 [![code style][standard-img]][standard-url] 
 [![commitizen friendly][czfriendly-img]][czfriendly-url] 
+[![greenkeeper friendly][gkfriendly-img]][gkfriendly-url] 
 [![dependencies][daviddm-deps-img]][daviddm-deps-url] 
-[![develop deps][daviddm-devdeps-img]][daviddm-devdeps-url] 
+<!-- uncomment when need -->
+<!-- [![develop deps][daviddm-devdeps-img]][daviddm-devdeps-url] -->
 
 ## Stability 💯
 
@@ -456,6 +459,9 @@ _Project scaffolded using [charlike][] cli._
 [czfriendly-url]: http://commitizen.github.io/cz-cli
 [czfriendly-img]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 
+[gkfriendly-url]: https://greenkeeper.io/
+[gkfriendly-img]: https://img.shields.io/badge/greenkeeper-friendly-brightgreen.svg
+
 [codementor-url]: https://www.codementor.io/tunnckocore?utm_source=github&utm_medium=button&utm_term=tunnckocore&utm_campaign=github
 [codementor-img]: https://img.shields.io/badge/code%20mentor-live%20session-brightgreen.svg
 
@@ -480,8 +486,9 @@ _Project scaffolded using [charlike][] cli._
 [appveyor-ci-url]: https://appveyor.com
 [codecov-coverage-url]: https://codecov.io
 [semver-url]: http://semver.org
+[eslint-url]: http://eslint.org
 [conventional-messages-url]: https://github.com/conventional-changelog/conventional-changelog
-[greenkeeper-url]: https://greenkeeper.io
+[gk-integration-url]: https://github.com/integration/greenkeeper
 [daviddm-url]: https://david-dm.org
 [open-issue-url]: https://github.com/tunnckoCore/dush-router/issues/new
 [contributing-url]: https://github.com/tunnckoCore/dush-router/blob/master/CONTRIBUTING.md
