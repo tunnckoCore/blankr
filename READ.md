@@ -476,7 +476,7 @@ _Project scaffolded using [charlike][] cli._
 [supportchat-url]: https://gitter.im/tunnckoCore/support
 [supportchat-img]: https://img.shields.io/gitter/room/tunnckoCore/support.svg
 
-[bulgaria-url]: https://google.com
+[bulgaria-url]: https://www.google.bg/search?q=Sofia%2C+Bulgaria "One of the top 10 best places for start-up business in the world, especially in IT technologies"
 
 [changelogmd-url]: https://github.com/tunnckoCore/dush-router/blob/master/CHANGELOG.md
 [conventions-url]: https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md
