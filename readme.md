@@ -13,12 +13,16 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 [![dependencies][daviddm-deps-img]][daviddm-deps-url] 
 [![develop deps][daviddm-devdeps-img]][daviddm-devdeps-url] 
 
-## Stability
+By following [Semantic Versioning]() and using [standard-version]() as release tool, 
+this package is very stable. Its tests are passing both on [Windows (AppVeyor)]() 
+and [Linux (CircleCI)]() with results from 100% to [400%]() test coverage, reported respectively
+by [CodeCov]() and [nyc](). So it _Just Works ™_.
 
-By following [Semantic Versioning]() through [standard-version]() releasing tool, maintaining
-a meaningful [ChangeLog]() and commit history - based on [global conventions](), 
-we provide very stable builds with [~ 400%]() of [nyc]() and 100% on [CodeCov]() test coverages
-that _Just Works ™_ both on [Windows (AppVeyor)]() and [Linux (CircleCI)]().
+[![follows semver][semver-img]][semver-url] 
+[![semantic releases][strelease-img]][strelease-url] 
+[![linux build][circle-img]][circle-url] 
+[![windows build][appveyor-img]][appveyor-url] 
+[![code coverage][codecov-img]][codecov-url] 
 
 [![follows semver][semver-img]][semver-url] 
 [![semantic releases][strelease-img]][strelease-url] 
