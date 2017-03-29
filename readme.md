@@ -15,8 +15,8 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 
 ## Stability
 
-> By following [Semantic Versioning]() through [standard-version][] releasing tool, maintaining
-a meaningful [ChangeLog][_changelog-url] and commit history - based on [global conventions](), 
+> By following [Semantic Versioning]() through [standard-version]() releasing tool, maintaining
+a meaningful [ChangeLog]() and commit history - based on [global conventions](), 
 we provide very stable builds with [~ 400%]() test coverage on [CodeCov]() that works both on [Windows (AppVeyor)]() and 
 [Linux (CircleCI)]()
 
@@ -25,7 +25,6 @@ we provide very stable builds with [~ 400%]() test coverage on [CodeCov]() that 
 [![linux build][circle-img]][circle-url] 
 [![windows build][appveyor-img]][appveyor-url] 
 [![code coverage][codecov-img]][codecov-url] 
-
 ## Support
 
 [![tunnckoCore support][supportchat-img]][supportchat-url] 
