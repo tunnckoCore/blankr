@@ -15,16 +15,20 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 
 ## Stability
 
-> By following [Semantic Versioning]() through [standard-version]() releasing tool, 
-this package is very stable and its tests are passing both on [Windows (AppVeyor)]() 
-and [Linux (CircleCI)]() with results from 100% to [400%]() test coverage, reported respectively
-by [CodeCov]() and [nyc (istanbuljs)]().
+> By following [Semantic Versioning](http://semver.org) through [standard-version][] releasing tool, 
+this package is very stable and its tests are passing both on [Windows (AppVeyor)](https://appveyor.com) 
+and [Linux (CircleCI)](https://circleci.com) with results from 100% to [400%](./package.json) test coverage, reported respectively
+by [CodeCov](https://codecov.io) and [nyc (istanbul)](https://istanbul.js.org/).
 
 [![follows semver][semver-img]][semver-url] 
 [![semantic releases][strelease-img]][strelease-url] 
 [![linux build][circle-img]][circle-url] 
 [![windows build][appveyor-img]][appveyor-url] 
 [![code coverage][codecov-img]][codecov-url] 
+[![nyc coverage][istanbulcov-img]][istanbulcov-url] 
+
+[istanbulcov-url]: https://twitter.com/tunnckoCore/status/841768516965568512
+[istanbulcov-img]: https://img.shields.io/badge/nyc-400%-brightgreen.svg
 
 ## Support
 
