@@ -15,10 +15,10 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 
 ## Stability
 
-By following [Semantic Versioning]() and using [standard-version]() as release tool, 
+> By following [Semantic Versioning]() and using [standard-version]() as release tool, 
 this package is very stable. Its tests are passing both on [Windows (AppVeyor)]() 
 and [Linux (CircleCI)]() with results from 100% to [400%]() test coverage, reported respectively
-by [CodeCov]() and [nyc](). So it _Just Works ™_.
+by [CodeCov]() and [nyc (istanbul)](). So it _Just Works™_.
 
 [![follows semver][semver-img]][semver-url] 
 [![semantic releases][strelease-img]][strelease-url] 
