@@ -16,8 +16,8 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 ## Stability
 
 > By following [Semantic Versioning](http://semver.org) through [standard-version][] releasing tool, 
-this package is very stable and its tests are passing both on [Windows (AppVeyor)](https://appveyor.com) 
-and [Linux (CircleCI)](https://circleci.com) with results from 100% to [400%](./package.json) test coverage, reported respectively
+this package is **very stable** and its tests are **passing** both on [Windows (AppVeyor)](https://appveyor.com) 
+and [Linux (CircleCI)](https://circleci.com) with results from 100% to [400%](./package.json) test **coverage**, reported respectively
 by [CodeCov](https://codecov.io) and [nyc (istanbul)](https://istanbul.js.org/).
 
 [![follows semver][semver-img]][semver-url] 
@@ -28,7 +28,7 @@ by [CodeCov](https://codecov.io) and [nyc (istanbul)](https://istanbul.js.org/).
 [![nyc coverage][istanbulcov-img]][istanbulcov-url] 
 
 [istanbulcov-url]: https://twitter.com/tunnckoCore/status/841768516965568512
-[istanbulcov-img]: https://img.shields.io/badge/nyc-400%-brightgreen.svg
+[istanbulcov-img]: https://img.shields.io/badge/coverage-400%25-brightgreen.svg
 
 ## Support
 
@@ -645,7 +645,7 @@ _Project scaffolded using [charlike][] cli._
 [appveyor-img]: https://img.shields.io/appveyor/ci/tunnckoCore/dush-router/master.svg?label=windows
 
 [codecov-url]: https://codecov.io/gh/tunnckoCore/dush-router
-[codecov-img]: https://img.shields.io/codecov/c/github/tunnckoCore/dush-router/master.svg
+[codecov-img]: https://img.shields.io/codecov/c/github/tunnckoCore/dush-router/master.svg?label=codecov
 
 [daviddm-deps-url]: https://david-dm.org/tunnckoCore/dush-router
 [daviddm-deps-img]: https://img.shields.io/david/tunnckoCore/dush-router.svg
