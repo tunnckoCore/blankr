@@ -1,6 +1,6 @@
-# {%= name %} {%= badge('npm') %} [![github tags][ghtag-img]][ghtag-url] [![mit license][license-img]][license-url]
+# dush-router [![NPM version](https://img.shields.io/npm/v/dush-router.svg?style=flat)](https://www.npmjs.com/package/dush-router) [![github tags][ghtag-img]][ghtag-url] [![mit license][license-img]][license-url]
 
-> {%= description %}
+> A simple regex-based router for `dush`, `base`, `minibase` and anything based on them. Works on Browser and Node.js
 
 _You might also be interested in [dush-no-chaining][], [dush-methods][] and [dush-tap-report][], 
 a plugins for [dush][] microscopic event emitter with simple & powerful plugin system._
@@ -15,26 +15,24 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 
 ## Stability
 
-> By following [Semantic Versioning]() through [standard-version]() releasing tool, maintaining
+By following [Semantic Versioning]() through [standard-version]() releasing tool, maintaining
 a meaningful [ChangeLog]() and commit history - based on [global conventions](), 
-we provide very stable builds with [~ 400%]() test coverage on [CodeCov]() that works both on [Windows (AppVeyor)]() and 
-[Linux (CircleCI)]()
+we provide very stable builds with [~ 400%]() of [nyc]() and 100% on [CodeCov]() test coverages
+that _Just Works ™_ both on [Windows (AppVeyor)]() and [Linux (CircleCI)]().
 
 [![follows semver][semver-img]][semver-url] 
 [![semantic releases][strelease-img]][strelease-url] 
 [![linux build][circle-img]][circle-url] 
 [![windows build][appveyor-img]][appveyor-url] 
 [![code coverage][codecov-img]][codecov-url] 
+
 ## Support
 
 [![tunnckoCore support][supportchat-img]][supportchat-url] 
 [![code mentor][codementor-img]][codementor-url] 
 [![paypal donate][paypalme-img]][paypalme-url] 
-{%= badge('downloads') %} 
+[![NPM monthly downloads](https://img.shields.io/npm/dm/dush-router.svg?style=flat)](https://npmjs.org/package/dush-router) 
 [![npm total downloads][downloads-img]][downloads-url] 
-
-
-
 ## Highlights :sparkles:
 - **Small:** Really small and lightweight
 - **Easy:** Regex-based routing, for simple cases
