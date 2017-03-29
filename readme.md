@@ -16,7 +16,7 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 ## Stability
 
 > By following [Semantic Versioning]() and using [standard-version]() as release tool, 
-this package has very stable builds and its tests are passing both on [Windows (AppVeyor)]() 
+this package is very stable and its tests are passing both on [Windows (AppVeyor)]() 
 and [Linux (CircleCI)]() with results from 100% to [400% test coverage](), reported respectively
 by [CodeCov]() and [nyc (istanbul)](). So it _Just Works™_.
 
