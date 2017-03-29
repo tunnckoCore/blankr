@@ -13,16 +13,12 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 [![dependencies][daviddm-deps-img]][daviddm-deps-url] 
 [![develop deps][daviddm-devdeps-img]][daviddm-devdeps-url] 
 
+## Stability
+
 By following [Semantic Versioning]() and using [standard-version]() as release tool, 
 this package is very stable. Its tests are passing both on [Windows (AppVeyor)]() 
 and [Linux (CircleCI)]() with results from 100% to [400%]() test coverage, reported respectively
 by [CodeCov]() and [nyc](). So it _Just Works ™_.
-
-[![follows semver][semver-img]][semver-url] 
-[![semantic releases][strelease-img]][strelease-url] 
-[![linux build][circle-img]][circle-url] 
-[![windows build][appveyor-img]][appveyor-url] 
-[![code coverage][codecov-img]][codecov-url] 
 
 [![follows semver][semver-img]][semver-url] 
 [![semantic releases][strelease-img]][strelease-url] 
@@ -37,6 +33,7 @@ by [CodeCov]() and [nyc](). So it _Just Works ™_.
 [![paypal donate][paypalme-img]][paypalme-url] 
 [![NPM monthly downloads](https://img.shields.io/npm/dm/dush-router.svg?style=flat)](https://npmjs.org/package/dush-router) 
 [![npm total downloads][downloads-img]][downloads-url] 
+
 ## Highlights :sparkles:
 - **Small:** Really small and lightweight
 - **Easy:** Regex-based routing, for simple cases
