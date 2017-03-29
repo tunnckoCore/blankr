@@ -17,7 +17,7 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 
 > By following [Semantic Versioning](http://semver.org) through [standard-version][] releasing tool, 
 this package is **very stable** and its tests are passing both on [Windows (AppVeyor)](https://appveyor.com) 
-and [Linux (CircleCI)](https://circleci.com) with results from 100% to [~400%](./package.json) test **coverage**, reported respectively
+and [Linux (CircleCI)](https://circleci.com) with results from 100% to [400%](./package.json) test **coverage**, reported respectively
 by [CodeCov](https://codecov.io) and [nyc (istanbul)](https://istanbul.js.org/).
 
 [![follows semver][semver-img]][semver-url] 
