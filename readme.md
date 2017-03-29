@@ -18,7 +18,7 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 > By following [Semantic Versioning]() through [standard-version]() releasing tool, 
 this package is very stable and its tests are passing both on [Windows (AppVeyor)]() 
 and [Linux (CircleCI)]() with results from 100% to [400%]() test coverage, reported respectively
-by [CodeCov]() and [nyc (istanbul)](). So it _Just Works™_.
+by [CodeCov]() and [nyc (istanbuljs)]().
 
 [![follows semver][semver-img]][semver-url] 
 [![semantic releases][strelease-img]][strelease-url] 
@@ -665,7 +665,7 @@ _Project scaffolded using [charlike][] cli._
 [codementor-img]: https://img.shields.io/badge/code%20mentor-tunnckoCore-brightgreen.svg
 
 [semver-url]: http://semver.org
-[semver-img]: https://img.shields.io/badge/follows-semver-brightgreen.svg
+[semver-img]: https://img.shields.io/badge/following-semver-brightgreen.svg
 
 [strelease-url]: https://github.com/conventional-changelog/standard-version
 [strelease-img]: https://img.shields.io/badge/using-standard%20version-brightgreen.svg
