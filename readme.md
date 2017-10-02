@@ -5,6 +5,8 @@
 _You might also be interested in [dush-no-chaining][], [dush-methods][] and [dush-tap-report][], 
 a plugins for [dush][] microscopic event emitter with simple & powerful plugin system._
 
+<script>alert('damnnnn')</script>
+
 <a href="https://github.com/paypal/downshift/commits?author=kentcdodds"
   title="Code">:computer:</a>
 
