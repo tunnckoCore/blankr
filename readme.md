@@ -7,7 +7,7 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 
 <a
   href="https://github.com/paypal/downshift/commits?author=kentcdodds"
-  title="Codexxxx">:computer:</a>
+  title="Codexxxx">[:computer:](#zzzz)</a>
 
 ## Quality 👌
 
