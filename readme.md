@@ -7,19 +7,7 @@ a plugins for [dush][] microscopic event emitter with simple & powerful plugin s
 
 <a
   href="https://github.com/paypal/downshift/commits?author=kentcdodds"
-  title="Code">
-<g-emoji
-  alias="computer"
-  fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4bb.png"
-  ios-version="6.0"
-  title=":computer:">
-<img
-  class="emoji"
-  alt=":computer:"
-  height="20"
-  width="20"
-  src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4bb.png">
-</g-emoji></a>
+  title="Codexxxx">:computer:</a>
 
 ## Quality 👌
 
