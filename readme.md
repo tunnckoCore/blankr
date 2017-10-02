@@ -5,8 +5,10 @@
 _You might also be interested in [dush-no-chaining][], [dush-methods][] and [dush-tap-report][], 
 a plugins for [dush][] microscopic event emitter with simple & powerful plugin system._
 
-<a onload="javascript:alert(12)" href="https://github.com/paypal/downshift/commits?author=kentcdodds"
-  title="Code">:computer:</a>
+<a
+  href="https://github.com/paypal/downshift/commits?author=kentcdodds"
+  title="Code">
+[:metro:](#infra "metrZox")</a>
 
 
 ## Quality 👌
