@@ -5,7 +5,21 @@
 _You might also be interested in [dush-no-chaining][], [dush-methods][] and [dush-tap-report][], 
 a plugins for [dush][] microscopic event emitter with simple & powerful plugin system._
 
-<a href="barabara" class="vuhhy">bruhh</a>
+<a
+  href="https://github.com/paypal/downshift/commits?author=kentcdodds"
+  title="Code">
+<g-emoji
+  alias="computer"
+  fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4bb.png"
+  ios-version="6.0"
+  title=":computer:">
+<img
+  class="emoji"
+  alt=":computer:"
+  height="20"
+  width="20"
+  src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4bb.png">
+</g-emoji></a>
 
 ## Quality 👌
 
