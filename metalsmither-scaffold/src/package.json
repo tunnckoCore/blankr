@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "co-body": "*",
-    "extend": "1.3.0",
+    "extend": "3.0.2",
     "formidable": "1.0.15"
   },
   "devDependencies": {
