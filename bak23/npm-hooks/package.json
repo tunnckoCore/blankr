@@ -29,7 +29,7 @@
     "mukla": "^0.4.1",
     "nyc": "^8.1.0",
     "standard": "^8.0.0",
-    "standard-version": "^2.4.0",
+    "standard-version": "^8.0.1",
     "validate-commit-msg": "^2.8.0"
   },
   "files": [
